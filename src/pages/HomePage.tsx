@@ -184,16 +184,24 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.06 }}
+                transition={{ duration: 0.3, delay: i * 0.06, type: 'spring', stiffness: 520, damping: 32, mass: 0.6 }}
                 style={{
                   display: 'flex', alignItems: 'center', gap: 14,
                   padding: '16px 20px',
                   background: 'rgba(255,255,255,0.03)',
                   border: '1px solid rgba(255,255,255,0.07)',
                   borderRadius: 12,
-                  transition: 'all 0.2s',
+                  transition: 'transform 0.14s ease, border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease',
+                  willChange: 'transform',
+                  transformOrigin: 'center',
                 }}
-                whileHover={{ borderColor: '#ca8a04', background: 'rgba(255, 215, 0, 0.03)' }}
+                whileHover={{
+                  y: -4,
+                  borderColor: '#ca8a04',
+                  background: 'rgba(255, 215, 0, 0.05)',
+                  boxShadow: '0 12px 32px rgba(251,191,36,0.1)',
+                  transition: { type: 'spring', stiffness: 650, damping: 28, mass: 0.45 },
+                }}
               >
                 <CheckCircle2 size={18} color="#fbbf24" />
                 <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>{f}</span>
@@ -224,7 +232,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
+                transition={{ duration: 0.4, delay: i * 0.1, type: 'spring', stiffness: 460, damping: 30, mass: 0.65 }}
                 style={{
                   position: 'relative',
                   padding: '28px 24px',
@@ -234,15 +242,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   border: `1px solid ${plan.popular ? 'rgba(255,183,3,0.3)' : 'rgba(255,255,255,0.08)'}`,
                   borderRadius: 20,
                   overflow: 'hidden',
-                  transition: 'all 0.25s',
+                  transition: 'transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease',
                   cursor: 'default',
                   textAlign: 'center',
+                  willChange: 'transform',
+                  transformOrigin: 'center',
                 }}
                 whileHover={{
-                  y: -6,
+                  y: -7,
                   borderColor: plan.accent + '80',
-                  boxShadow: `0 20px 60px ${plan.accent}20`,
+                  boxShadow: `0 26px 68px ${plan.accent}2a`,
+                  transition: { type: 'spring', stiffness: 600, damping: 26, mass: 0.5 },
                 }}
+                whileTap={{ y: -4 }}
               >
                 {/* Top accent line */}
                 <div style={{
@@ -307,7 +319,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                     border: 'none', borderRadius: 10,
                     color: '#fff', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.9rem',
                     textDecoration: 'none',
-                    transition: 'all 0.2s',
+                    transition: 'transform 0.14s ease, box-shadow 0.14s ease, filter 0.14s ease',
                     boxShadow: `0 4px 16px ${plan.accent}30`,
                   }}
                 >
