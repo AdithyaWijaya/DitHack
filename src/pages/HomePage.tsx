@@ -124,14 +124,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             style={{
               display: 'flex', alignItems: 'center', gap: 8,
               padding: '13px 28px', borderRadius: 10,
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.1)',
+              background: '#a855f7',
+              border: '1px solid #a855f7',
               cursor: 'pointer',
               color: '#fff', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.95rem',
               transition: 'all 0.2s',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,183,3,0.5)'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.06)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.1)'; }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#9333ea'; (e.currentTarget as HTMLElement).style.borderColor = '#9333ea'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#a855f7'; (e.currentTarget as HTMLElement).style.borderColor = '#a855f7'; }}
           >
             Lihat Harga <ShoppingCart size={16} />
           </button>
