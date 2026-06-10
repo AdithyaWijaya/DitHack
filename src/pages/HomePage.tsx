@@ -97,8 +97,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           {...fadeUp(0.14)}
           style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.55)', marginBottom: 40, maxWidth: 540, margin: '0 auto 40px' }}
         >
-          Tampilkan jawaban langsung di tab Wayground & Kahoot.
-          Tidak terdeteksi. Selalu akurat.
+          Shows answers directly in the Wayground & Kahoot tabs. Undetected. Always accurate.
         </motion.p>
 
         <motion.div {...fadeUp(0.2)} style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 60 }}>
@@ -112,10 +111,17 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               color: '#000', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.95rem',
               letterSpacing: '-0.2px',
               boxShadow: '0 4px 24px rgba(251,191,36,0.35)',
-              transition: 'transform 0.2s, box-shadow 0.2s',
+              transform: 'translateY(0px) scale(1)',
+              transition: 'transform 0.2s, box-shadow 0.2s, background 0.2s',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(251,191,36,0.55)'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(251,191,36,0.35)'; }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px) scale(1.02)';
+              (e.currentTarget as HTMLElement).style.boxShadow = '0 14px 44px rgba(251,191,36,0.45), 0 0 24px rgba(251,191,36,0.25)';
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLElement).style.transform = 'translateY(0px) scale(1)';
+              (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(251,191,36,0.35)';
+            }}
           >
             Mulai Install <ArrowRight size={16} />
           </button>
@@ -128,10 +134,22 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               border: '1px solid #a855f7',
               cursor: 'pointer',
               color: '#fff', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.95rem',
-              transition: 'all 0.2s',
+              boxShadow: '0 4px 24px rgba(168,85,247,0.25)',
+              transform: 'translateY(0px) scale(1)',
+              transition: 'transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#9333ea'; (e.currentTarget as HTMLElement).style.borderColor = '#9333ea'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#a855f7'; (e.currentTarget as HTMLElement).style.borderColor = '#a855f7'; }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLElement).style.background = '#9333ea';
+              (e.currentTarget as HTMLElement).style.borderColor = '#9333ea';
+              (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px) scale(1.02)';
+              (e.currentTarget as HTMLElement).style.boxShadow = '0 14px 44px rgba(168,85,247,0.45), 0 0 24px rgba(168,85,247,0.25)';
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLElement).style.background = '#a855f7';
+              (e.currentTarget as HTMLElement).style.borderColor = '#a855f7';
+              (e.currentTarget as HTMLElement).style.transform = 'translateY(0px) scale(1)';
+              (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(168,85,247,0.25)';
+            }}
           >
             Lihat Harga <ShoppingCart size={16} />
           </button>
