@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DitHack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <!-- ══════ LOGIN ══════ -->
+    <div id="login-screen">
+      <div class="login-card">
+        <div class="login-logo">
+          <div class="login-logo-icon">
+            <img src="/static/icodh.png" alt="Logo" class="logo-img" />
+          </div>
+          <h1>Admin DitHack</h1>
+          <p>Login untuk melanjutkan</p>
+        </div>
+        <div class="login-error" id="login-error">
+          Username atau password salah.
+        </div>
+        <div class="form-group">
+          <label class="form-label">Username</label>
+          <input class="form-input" id="login-user" type="text" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input class="form-input" id="login-pass" type="password" />
+        </div>
+        <button
+          class="btn btn-primary btn-full"
+          id="login-btn"
+          style="margin-top: 8px"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+
+    <!-- ══════ APP ══════ -->
+    <div id="app">
+      <!-- Sidebar -->
+      <div id="sidebar-overlay"></div>
+      <aside id="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-icon">
+            <img src="/static/icodh.png" alt="Logo" class="brand-logo" />
+          </div>
+          <div class="brand-text">
+            <h2>Admin DitHack</h2>
+            <span>Management System</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-section">Main</div>
+          <div class="nav-item active" data-page="dashboard">
+            <span class="nav-icon"><i class="fa-solid fa-chart-bar"></i></span>
+            Dashboard
+          </div>
+
+          <div class="nav-section">Data</div>
+          <div class="nav-item" data-page="licenses">
+            <span class="nav-icon"><i class="fa-solid fa-key"></i></span>
+            Token
+            <span class="nav-badge" id="nav-badge-lic">—</span>
+          </div>
+          <div class="nav-item" data-page="devices">
+            <span class="nav-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+            Device
+          </div>
+          <div class="nav-item" data-page="cache">
+            <span class="nav-icon"><i class="fa-solid fa-database"></i></span>
+            Cache DB
+          </div>
+          <div class="nav-item" data-page="cheatnetwork">
+            <span class="nav-icon"><i class="fa-solid fa-gauge-high"></i></span>
+            CN Usage
+          </div>
+
+          <div class="nav-section">Transaksi</div>
+          <div class="nav-item" data-page="sales">
+            <span class="nav-icon"
+              ><i class="fa-solid fa-rupiah-sign"></i
+            ></span>
+            Penjualan
+          </div>
+          <div class="nav-item" data-page="usage">
+            <span class="nav-icon"><i class="fa-solid fa-chart-line"></i></span>
+            Penggunaan
+          </div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="user-avatar">A</div>
+            <div>
+              <div class="user-name" id="user-name-display">Admin</div>
+              <div class="user-role">Super Admin</div>
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-full btn-sm" id="logout-btn">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div id="main">
+        <div id="topbar">
+          <button id="menu-toggle">☰</button>
+          <div id="page-title">Dashboard</div>
+          <div class="topbar-spacer"></div>
+          <button id="refresh-page-btn" title="Refresh data" aria-label="Refresh data">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+          <div class="flex items-center gap-2">
+            <div class="status-dot"></div>
+            <span class="status-label">Online</span>
+          </div>
+        </div>
+
+        <div id="content">
+          <!-- ── PAGE: Dashboard ── -->
+          <div class="page active" id="page-dashboard">
+            <div class="stats-grid" id="stat-cards"></div>
+
+            <div class="charts-grid">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <div class="card-title">Pendapatan 30 Hari</div>
+                    <div class="card-subtitle">Revenue harian (IDR)</div>
+                  </div>
+                </div>
+                <div class="chart-wrap">
+                  <canvas id="chart-revenue"></canvas>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <div class="card-title">Status Lisensi</div>
+                    <div class="card-subtitle">Distribusi saat ini</div>
+                  </div>
+                </div>
+                <div class="chart-wrap">
+                  <canvas id="chart-license"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom-grid">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-title">Penggunaan API (14 Hari)</div>
+                </div>
+                <div class="chart-wrap"><canvas id="chart-usage"></canvas></div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-title">Aktivitas Terbaru</div>
+                  <button
+                    class="btn btn-ghost btn-sm"
+                    onclick="loadUsagePage()"
+                  >
+                    Lihat Semua
+                  </button>
+                </div>
+                <div class="activity-list" id="recent-activity">
+                  <div class="empty-state">
+                    <div class="empty-icon">
+                      <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                    <div class="empty-desc">Memuat...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: Licenses ── -->
+          <div class="page" id="page-licenses">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Manajemen Token</h2>
+                <p>Kelola semua Token pengguna</p>
+              </div>
+              <button class="btn btn-primary" onclick="openLicenseModal()">
+                ＋ Tambah Token
+              </button>
+            </div>
+
+            <div class="search-bar">
+              <div class="search-input-wrap">
+                <span class="search-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  class="search-input"
+                  id="lic-search"
+                  type="text"
+                  placeholder="Cari kode atau owner..."
+                  oninput="filterLicenses()"
+                />
+              </div>
+              <div class="tabs" style="margin-bottom: 0">
+                <button
+                  class="tab-btn active"
+                  data-filter="all"
+                  onclick="setLicenseFilter('all', this)"
+                >
+                  Semua
+                </button>
+                <button
+                  class="tab-btn"
+                  data-filter="AKTIF"
+                  onclick="setLicenseFilter('AKTIF', this)"
+                >
+                  Aktif
+                </button>
+                <button
+                  class="tab-btn"
+                  data-filter="EXPIRED"
+                  onclick="setLicenseFilter('EXPIRED', this)"
+                >
+                  Expired
+                </button>
+                <button
+                  class="tab-btn"
+                  data-filter="TIDAK AKTIF"
+                  onclick="setLicenseFilter('TIDAK AKTIF', this)"
+                >
+                  Nonaktif
+                </button>
+                <button
+                  class="tab-btn"
+                  data-filter="UNBOUND"
+                  onclick="setLicenseFilter('UNBOUND', this)"
+                >
+                  Unbound
+                </button>
+              </div>
+            </div>
+
+            <div class="card" style="padding: 0">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Token</th>
+                      <th>Owner</th>
+                      <th>Akun CN</th>
+                      <th>Expired</th>
+                      <th>Status</th>
+                      <th>Device</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="lic-tbody">
+                    <tr>
+                      <td colspan="8">
+                        <div class="empty-state">
+                          <div class="empty-icon">
+                            <i class="fa-solid fa-hourglass"></i>
+                          </div>
+                          <div class="empty-desc">Memuat...</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: Devices ── -->
+          <div class="page" id="page-devices">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Device</h2>
+                <p>Daftar perangkat yang ter-bind ke lisensi</p>
+              </div>
+            </div>
+
+            <div class="search-bar">
+              <div class="search-input-wrap">
+                <span class="search-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  class="search-input"
+                  id="device-search"
+                  type="text"
+                  placeholder="Cari token, device id, atau device name..."
+                  oninput="filterDevices()"
+                />
+              </div>
+            </div>
+
+            <div class="card" style="padding: 0">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Token</th>
+                      <th>Device ID</th>
+                      <th>Device Name</th>
+                      <th>Bound At</th>
+                      <th>Last Seen</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="device-tbody">
+                    <tr>
+                      <td colspan="7">
+                        <div class="empty-state">
+                          <div class="empty-icon">
+                            <i class="fa-solid fa-hourglass"></i>
+                          </div>
+                          <div class="empty-desc">Memuat...</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: Cache ── -->
+          <div class="page" id="page-cache">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Cache Database</h2>
+                <p>Isi cache Quizizz dan Kahoot</p>
+              </div>
+              <button
+                class="btn btn-danger btn-sm"
+                onclick="clearCache(activeCacheTab)"
+              >
+                <i class="fa-solid fa-trash"></i> Hapus Semua
+              </button>
+            </div>
+
+            <div id="cache-quizizz-panel">
+              <div class="cache-toolbar">
+                <div class="search-input-wrap">
+                  <span class="search-icon"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                  <input
+                    class="search-input"
+                    id="qz-search"
+                    type="text"
+                    placeholder="Cari PIN..."
+                    oninput="filterCache('qz')"
+                  />
+                </div>
+                <div class="tabs cache-tabs">
+                  <button
+                    class="tab-btn active"
+                    onclick="switchCacheTab('quizizz', this)"
+                  >
+                    Quizizz
+                  </button>
+                  <button
+                    class="tab-btn"
+                    onclick="switchCacheTab('kahoot', this)"
+                  >
+                    Kahoot
+                  </button>
+                </div>
+              </div>
+              <div class="card" style="padding: 0">
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>PIN</th>
+                        <th>Diperbarui</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody id="qz-tbody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div id="cache-kahoot-panel" style="display: none">
+              <div class="cache-toolbar">
+                <div class="search-input-wrap">
+                  <span class="search-icon"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                  <input
+                    class="search-input"
+                    id="kh-search"
+                    type="text"
+                    placeholder="Cari PIN/Link..."
+                    oninput="filterCache('kh')"
+                  />
+                </div>
+                <div class="tabs cache-tabs">
+                  <button
+                    class="tab-btn"
+                    onclick="switchCacheTab('quizizz', this)"
+                  >
+                    Quizizz
+                  </button>
+                  <button
+                    class="tab-btn active"
+                    onclick="switchCacheTab('kahoot', this)"
+                  >
+                    Kahoot
+                  </button>
+                </div>
+              </div>
+              <div class="card" style="padding: 0">
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>PIN / Link</th>
+                        <th>Diperbarui</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody id="kh-tbody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: Sales ── -->
+          <div class="page" id="page-sales">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Log Penjualan</h2>
+                <p>Riwayat transaksi & pendapatan</p>
+              </div>
+              <button class="btn btn-primary" onclick="openSaleModal()">
+                ＋ Catat Penjualan
+              </button>
+            </div>
+            <div class="sales-stats-grid" id="sales-stats"></div>
+            <div class="card" style="padding: 0">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Token</th>
+                      <th>Owner</th>
+                      <th>Phone</th>
+                      <th>Jumlah</th>
+                      <th>Pembayaran</th>
+                      <th>Catatan</th>
+                      <th>Tanggal</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sales-tbody">
+                    <tr>
+                      <td colspan="9">
+                        <div class="empty-state">
+                          <div class="empty-icon">
+                            <i class="fa-solid fa-hourglass"></i>
+                          </div>
+                          <div class="empty-desc">Memuat...</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: Usage ── -->
+          <div class="page" id="page-usage">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Log Penggunaan</h2>
+                <p>Aktivitas penggunaan API</p>
+              </div>
+              <button class="btn btn-danger btn-sm" onclick="clearUsage()">
+                <i class="fa-solid fa-trash"></i> Bersihkan Log
+              </button>
+            </div>
+
+            <div class="search-bar">
+              <div class="search-input-wrap">
+                <span class="search-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  class="search-input"
+                  id="usage-search"
+                  type="text"
+                  placeholder="Cari kode atau PIN..."
+                  oninput="filterUsage()"
+                />
+              </div>
+              <div class="tabs" style="margin-bottom: 0">
+                <button
+                  class="tab-btn active"
+                  data-ufilter="all"
+                  onclick="setUsageFilter('all', this)"
+                >
+                  Semua
+                </button>
+                <button
+                  class="tab-btn"
+                  data-ufilter="quizizz"
+                  onclick="setUsageFilter('quizizz', this)"
+                >
+                  Quizizz
+                </button>
+                <button
+                  class="tab-btn"
+                  data-ufilter="kahoot"
+                  onclick="setUsageFilter('kahoot', this)"
+                >
+                  Kahoot
+                </button>
+              </div>
+            </div>
+
+            <div class="card" style="padding: 0">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Token</th>
+                      <th>Endpoint</th>
+                      <th>PIN / Link</th>
+                      <th>Status</th>
+                      <th>Waktu</th>
+                    </tr>
+                  </thead>
+                  <tbody id="usage-tbody">
+                    <tr>
+                      <td colspan="6">
+                        <div class="empty-state">
+                          <div class="empty-icon">
+                            <i class="fa-solid fa-hourglass"></i>
+                          </div>
+                          <div class="empty-desc">Memuat...</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PAGE: CheatNetwork Usage ── -->
+          <div class="page" id="page-cheatnetwork">
+            <div class="page-header">
+              <div class="page-header-left">
+                <h2>Usage CheatNetwork</h2>
+                <p>Akun cookie, sisa usage, dan limit dari API CheatNetwork</p>
+              </div>
+              <button class="btn btn-primary" onclick="openCheatnetworkModal()">
+                <i class="fa-solid fa-plus"></i> Tambah Akun
+              </button>
+            </div>
+
+            <div id="cheatnetwork-content">
+              <div class="empty-state">
+                <div class="empty-icon">
+                  <i class="fa-solid fa-hourglass"></i>
+                </div>
+                <div class="empty-desc">Memuat...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /content -->
+      </div>
+      <!-- /main -->
+    </div>
+    <!-- /app -->
+
+    <!-- ══════ MODALS ══════ -->
+
+    <!-- License Modal -->
+    <div
+      id="modal-license"
+      style="display: none"
+      class="modal-overlay"
+      onclick="if (event.target === this) closeModal('modal-license');"
+    >
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-title" id="lic-modal-title">Tambah Token</div>
+          <button class="modal-close" onclick="closeModal('modal-license')">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Token</label>
+            <input
+              class="form-input"
+              id="lic-code"
+              placeholder="ex: DH-XXXXX"
+              style="font-family: var(--font-mono)"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Owner</label>
+            <input
+              class="form-input"
+              id="lic-owner"
+              placeholder="ex: Alex Joseph"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Akun Cookie CheatNetwork</label>
+            <select class="form-select" id="lic-cheatnetwork-account"></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tanggal Expired</label>
+            <input class="form-input" id="lic-expired" type="date" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Status</label>
+            <select class="form-select" id="lic-active">
+              <option value="true">Aktif</option>
+              <option value="false">Nonaktif</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" onclick="closeModal('modal-license')">
+            Batal
+          </button>
+          <button
+            class="btn btn-primary"
+            id="lic-save-btn"
+            onclick="saveLicense()"
+          >
+            Simpan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CheatNetwork Account Modal -->
+    <div
+      id="modal-cheatnetwork"
+      style="display: none"
+      class="modal-overlay"
+      onclick="if (event.target === this) closeModal('modal-cheatnetwork');"
+    >
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-title" id="cn-modal-title">Tambah Akun CheatNetwork</div>
+          <button class="modal-close" onclick="closeModal('modal-cheatnetwork')">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Nama Akun</label>
+            <input class="form-input" id="cn-name" placeholder="ex: DiTX" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Token Cookie</label>
+            <textarea
+              class="form-textarea mono"
+              id="cn-cookie-token"
+              placeholder="token=..."
+              style="min-height: 140px"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Status</label>
+            <select class="form-select" id="cn-active">
+              <option value="true">Aktif</option>
+              <option value="false">Nonaktif</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" onclick="closeModal('modal-cheatnetwork')">
+            Batal
+          </button>
+          <button
+            class="btn btn-primary"
+            id="cn-save-btn"
+            onclick="saveCheatnetworkAccount()"
+          >
+            Simpan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sale Modal -->
+    <div
+      id="modal-sale"
+      style="display: none"
+      class="modal-overlay"
+      onclick="if (event.target === this) closeModal('modal-sale');"
+    >
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-title">Catat Penjualan</div>
+          <button class="modal-close" onclick="closeModal('modal-sale')">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Token</label>
+            <input
+              class="form-input"
+              id="sale-code"
+              placeholder="ex: DH-XXXXX"
+              style="font-family: var(--font-mono)"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Owner</label>
+            <input
+              class="form-input"
+              id="sale-owner"
+              placeholder="ex: Alex Joseph"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nomor WhatsApp</label>
+            <input
+              class="form-input"
+              id="sale-phone"
+              type="text"
+              placeholder="ex: 08123456789"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Jumlah (IDR)</label>
+            <input
+              class="form-input"
+              id="sale-amount"
+              type="number"
+              placeholder="ex: 15000"
+              min="0"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Metode Pembayaran</label>
+            <select class="form-select" id="sale-method">
+              <option>Transfer Bank</option>
+              <option>DANA</option>
+              <option>OVO</option>
+              <option>GoPay</option>
+              <option>ShopeePay</option>
+              <option>QRIS</option>
+              <option>Cash</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Catatan (opsional)</label>
+            <textarea
+              class="form-textarea"
+              id="sale-notes"
+              placeholder="Catatan tambahan..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" onclick="closeModal('modal-sale')">
+            Batal
+          </button>
+          <button class="btn btn-primary" onclick="saveSale()">Simpan</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div
+      id="modal-confirm"
+      style="display: none"
+      class="modal-overlay"
+      onclick="if (event.target === this) closeModal('modal-confirm');"
+    >
+      <div class="modal" style="max-width: 380px">
+        <div class="modal-header">
+          <div class="modal-title" id="confirm-title">Konfirmasi</div>
+          <button class="modal-close" onclick="closeModal('modal-confirm')">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <p
+            id="confirm-msg"
+            style="color: var(--text-2); font-size: 14px; white-space: pre-line"
+          ></p>
+        </div>
+        <div class="modal-footer confirm-danger">
+          <button class="btn btn-ghost" onclick="closeModal('modal-confirm')">
+            Batal
+          </button>
+          <button class="btn btn-danger" id="confirm-ok-btn">Ya</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast-container"></div>
+    <script src="/static/admin.js"></script>
+  </body>
+</html>
