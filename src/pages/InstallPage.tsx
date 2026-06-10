@@ -233,7 +233,7 @@ export default function InstallPage() {
         viewport={{ once: true }} transition={{ duration: 0.5 }}
       >
         {sectionHeader(<Play size={18} color="#06D6A0" />, 'Video Tutorial')}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 20 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
           {videos.map((v, i) => (
             <motion.div key={i}
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
@@ -243,7 +243,9 @@ export default function InstallPage() {
                 {v.title}
               </p>
               <div style={{
-                position: 'relative', paddingBottom: '56.25%', height: 0,
+                position: 'relative', zIndex: 1,
+                aspectRatio: '16 / 9',
+                paddingBottom: '56.25%', height: 0,
                 borderRadius: 14, overflow: 'hidden',
                 border: '1px solid rgba(255,255,255,0.08)',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
@@ -255,7 +257,7 @@ export default function InstallPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowFullScreen
                   loading="lazy"
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block' }}
                 />
               </div>
             </motion.div>
