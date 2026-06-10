@@ -168,24 +168,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           padding: '48px 36px',
           gap: 4,
         }}
-      >
-        {/* Decorative accent */}
-        <div style={{
-          position: 'absolute',
-          top: 60, right: -40,
-          width: 140, height: 140,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(168,85,247,0.18) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }} />
-        <div style={{
-          position: 'absolute',
-          bottom: 80, left: -20,
-          width: 100, height: 100,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }} />
+      > 
 
         {/* Label */}
         <p style={{
