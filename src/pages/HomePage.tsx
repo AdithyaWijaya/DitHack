@@ -236,6 +236,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   overflow: 'hidden',
                   transition: 'all 0.25s',
                   cursor: 'default',
+                  textAlign: 'center',
                 }}
                 whileHover={{
                   y: -6,
@@ -262,11 +263,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   letterSpacing: '0.1em',
                   marginBottom: 16,
                   fontWeight: 600,
+                  textAlign: 'center',
                 }}>
                   {plan.badge}
                 </span>
 
-                <div style={{ fontSize: '2rem', marginBottom: 10 }}>{plan.icon}</div>
+                <div style={{ display: 'flex', justifyContent: 'center', fontSize: '2rem', marginBottom: 10 }}>
+                  {plan.icon}
+                </div>
                 <h3 style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.1rem', marginBottom: 8, letterSpacing: '-0.3px' }}>
                   {plan.name}
                 </h3>
