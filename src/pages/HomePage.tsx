@@ -175,9 +175,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   borderRadius: 12,
                   transition: 'all 0.2s',
                 }}
-                whileHover={{ borderColor: 'rgba(6,214,160,0.3)', background: 'rgba(6,214,160,0.05)' }}
+                whileHover={{ borderColor: '#ca8a04', background: 'rgba(255, 215, 0, 0.03)' }}
               >
-                <CheckCircle2 size={18} color="#06D6A0" />
+                <CheckCircle2 size={18} color="#fbbf24" />
                 <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.75)' }}>{f}</span>
               </motion.div>
             ))}

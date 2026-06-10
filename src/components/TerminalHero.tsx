@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 
 const lines = [
-  '> Initializing DitHack v2.0...',
+  '> Initializing DitHack...',
   '> Loading quiz engine...',
   '> Answer extractor: READY',
   '> Status: UNDETECTED ✓',

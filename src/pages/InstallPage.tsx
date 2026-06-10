@@ -175,7 +175,7 @@ export default function InstallPage() {
                 padding: '16px 20px',
                 background: 'rgba(255,255,255,0.025)',
                 border: '1px solid rgba(255,255,255,0.07)',
-                borderLeft: '3px solid #7C3AED',
+                borderLeft: '3px solid #fbbf24',
                 borderRadius: '0 12px 12px 0',
                 transition: 'all 0.2s',
               }}
