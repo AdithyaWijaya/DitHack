@@ -1,5 +1,3 @@
-import { Zap } from 'lucide-react';
-
 export default function Footer() {
   return (
     <footer style={{
@@ -8,18 +6,19 @@ export default function Footer() {
       textAlign: 'center',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 10 }}>
-        <div style={{
-          width: 26, height: 26,
-          background: 'linear-gradient(135deg, #7C3AED, #06D6A0)',
-          borderRadius: 6,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>
-          <Zap size={14} color="#fff" fill="#fff" />
-        </div>
+        <img
+          src="/icodh.png"
+          alt="DitHack logo"
+          style={{
+            width: 26,
+            height: 26,
+            borderRadius: 6,
+            objectFit: 'cover',
+            display: 'block',
+          }}
+        />
         <span style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1rem', letterSpacing: '-0.3px' }}>
-          <span style={{ color: '#a855f7' }}>Dit</span>
-          <span style={{ color: '#fbbf24' }}>Hack</span>
-          <span style={{ color: '#a855f7' }}>!</span>
+          <span style={{ color: '#a855f7' }}>DitHack!</span>
         </span>
       </div>
       <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.8rem' }}>

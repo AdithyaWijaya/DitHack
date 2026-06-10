@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: string;
@@ -58,18 +58,19 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             onClick={() => handleClick('home')}
             style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'none', border: 'none', cursor: 'pointer' }}
           >
-            <div style={{
-              width: 32, height: 32,
-              background: 'linear-gradient(135deg, #7C3AED, #06D6A0)',
-              borderRadius: 8,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <Zap size={18} color="#fff" fill="#fff" />
-            </div>
+            <img
+              src="/icodh.png"
+              alt="DitHack logo"
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: 8,
+                objectFit: 'cover',
+                display: 'block',
+              }}
+            />
             <span style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.2rem', color: '#fff', letterSpacing: '-0.5px' }}>
-              <span style={{ color: '#a855f7' }}>Dit</span>
-              <span style={{ color: '#fbbf24' }}>Hack</span>
-              <span style={{ color: '#a855f7' }}>!</span>
+              <span style={{ color: '#a855f7' }}>DitHack!</span>
             </span>
           </button>
 
