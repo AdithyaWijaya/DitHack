@@ -91,7 +91,9 @@ export default function InstallPage() {
             fontSize: 'clamp(2rem, 5vw, 2.8rem)', letterSpacing: '-1.5px',
             marginBottom: 10,
           }}>
-            Install <span style={{ background: 'linear-gradient(135deg, #7C3AED, #06D6A0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>DitHack!</span>
+            Install <span style={{ color: '#a855f7' }}>Dit</span>
+          <span style={{ color: '#fbbf24' }}>Hack</span>
+          <span style={{ color: '#a855f7' }}>!</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.95rem' }}>
             Salin script, buat bookmark, dan mulai gunakan.
@@ -119,7 +121,7 @@ export default function InstallPage() {
                 ))}
               </div>
               <span style={{ fontFamily: 'JetBrains Mono', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginLeft: 8 }}>
-                DitHack.bookmarklet.js
+                DitHack.js
               </span>
             </div>
             <button

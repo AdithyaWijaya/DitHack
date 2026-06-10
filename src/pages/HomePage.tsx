@@ -88,14 +88,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             marginBottom: 20,
           }}
         >
-          <span style={{ color: '#7C3AED' }}>Dit</span>
-          <span style={{
-            background: 'linear-gradient(135deg, #06D6A0, #7C3AED)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>Hack</span>
-          <span style={{ color: '#7C3AED' }}>!</span>
+          <span style={{ color: '#a855f7' }}>Dit</span>
+          <span style={{ color: '#fbbf24' }}>Hack</span>
+          <span style={{ color: '#a855f7' }}>!</span>
         </motion.h1>
 
         <motion.p

@@ -67,8 +67,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <Zap size={18} color="#fff" fill="#fff" />
             </div>
             <span style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.2rem', color: '#fff', letterSpacing: '-0.5px' }}>
-              Dit<span style={{ color: '#06D6A0' }}>Hack</span>
-              <span style={{ color: '#7C3AED' }}>!</span>
+              <span style={{ color: '#a855f7' }}>Dit</span>
+              <span style={{ color: '#fbbf24' }}>Hack</span>
+              <span style={{ color: '#a855f7' }}>!</span>
             </span>
           </button>
 
