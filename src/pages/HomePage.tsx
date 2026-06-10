@@ -107,15 +107,15 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             style={{
               display: 'flex', alignItems: 'center', gap: 8,
               padding: '13px 28px', borderRadius: 10,
-              background: 'linear-gradient(135deg, #7C3AED, #06D6A0)',
+              background: '#fbbf24',
               border: 'none', cursor: 'pointer',
-              color: '#fff', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.95rem',
+              color: '#000', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '0.95rem',
               letterSpacing: '-0.2px',
-              boxShadow: '0 4px 24px rgba(124,58,237,0.35)',
+              boxShadow: '0 4px 24px rgba(251,191,36,0.35)',
               transition: 'transform 0.2s, box-shadow 0.2s',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(124,58,237,0.5)'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(124,58,237,0.35)'; }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(251,191,36,0.55)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(251,191,36,0.35)'; }}
           >
             Mulai Install <ArrowRight size={16} />
           </button>
