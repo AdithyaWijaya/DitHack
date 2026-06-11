@@ -1,1772 +1,1765 @@
-function a0_0xcf0d() {
-  const _0x7ebfc6 = [
-    "mediaUrl",
-    "fullscreenEnabled",
-    "QuizID\x20Kahoot",
-    "addEventListener",
-    "20px",
-    "right",
-    "click",
-    "Masukkan\x20Token\x20terlebih\x20dahulu!",
-    "360px",
-    "userSelect",
-    "#4b4bfF",
-    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>",
-    "span",
-    "search",
-    "0.7",
-    "500px",
-    "quizizz-content",
-    "mouseup",
-    "se-resize",
-    "Error\x20fetching\x20answers:",
-    "json",
-    "status",
-    "resolve",
-    "defineProperty",
-    "toLowerCase",
-    "availHeight",
-    "oncontextmenu",
-    "getElementById",
-    "message",
-    "offsetTop",
-    "\x20!important;\x20border-radius:\x206px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none\x20!important;\x20background:\x20#0066ff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white\x20!important;\x20font-size:\x20",
-    "quizizz-fetch-btn",
-    "Server\x20error,\x20hubungi\x20admin!",
-    "display",
-    "dithack-logout-modal",
-    "#ff6b6b",
-    "maxHeight",
-    "14px",
-    "width:80%;\x20padding:10px;\x20background:#4b4bfF;\x20color:white;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;",
-    "max",
-    "includes",
-    "<span\x20style=\x22background:#dbeafe;\x20color:#1d4ed8;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>B/S</span>",
-    "indexOf",
-    "body",
-    "Bearer\x20",
-    "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Belum\x20ada\x20data\x20jawaban</div>",
-    "4px",
-    "0\x200.1em",
-    "call",
-    "display:\x20flex;\x20flex-direction:\x20column;\x20gap:\x20",
-    "setMockDimensions",
-    "previousSibling",
-    "true_false",
-    "title",
-    "text",
-    "scale(1)",
-    "11507364hFTnMh",
-    "6200xmpPhh",
-    "calc(100%\x20-\x2020px)",
-    "kahoot",
-    "\x0a\x20\x20\x20\x20\x20\x20margin-left:\x208px;\x20width:\x20",
-    "0\x206px\x2020px\x20rgba(0,0,0,0.3)",
-    "preventDefault",
-    "30px",
-    "overflow",
-    "TEXT_NODE",
-    "column",
-    "middle",
-    "16px",
-    "structure",
-    "focus",
-    "\x0a\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x20inset:\x200\x20!important;\x20z-index:\x2010000000\x20!important;\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(0,0,0,0.6)\x20!important;\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20font-family:\x20Inter,\x20system-ui,\x20sans-serif\x20!important;\x20padding:\x2014px\x20!important;\x0a\x20\x20\x20\x20",
-    "mozRequestFullScreen",
-    "dithack-fontawesome",
-    "get",
-    "success",
-    "Token\x20sudah\x20expired\x20pada\x20",
-    "Logout\x20DitHack?",
-    "MCQ",
-    "trim",
-    "ignoreAnswers",
-    "white",
-    "<span\x20style=\x22background:#ede9fe;\x20color:#7c3aed;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>ISIAN</span>",
-    "onvisibilitychange",
-    "<div\x20style=\x22border:2px\x20solid\x20#22c55e;\x20border-radius:8px;\x20padding:8px\x2010px;\x20background:#f0fdf4;\x20margin-bottom:6px;\x20font-size:13px;\x20color:#10b981;\x20font-weight:bold;\x20word-wrap:break-word;\x20overflow-wrap:break-word;\x20box-sizing:border-box;\x20overflow:hidden;\x22>",
-    "7320280bmVyOX",
-    "answer",
-    "dithack-license-submit",
-    "options",
-    "40420752vEduDe",
-    "owner",
-    "clientX",
-    "\x20!important;\x20min-height:\x2020px\x20!important;",
-    "2px\x20solid\x20#fbbf24",
-    "stylesheet",
-    "flex:1\x20!important;\x20padding:10px\x20!important;\x20border:1px\x20solid\x20#d1d5db\x20!important;\x20border-radius:7px\x20!important;\x20background:#fff\x20!important;\x20color:#111827\x20!important;\x20cursor:pointer\x20!important;\x20font-weight:600\x20!important;",
-    "Kahoot",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201\x20!important;\x20padding:\x208px\x2012px\x20!important;\x20border-radius:\x208px\x200\x200\x208px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc\x20!important;\x20border-right:\x20none\x20!important;\x20font-size:\x2014px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px\x20!important;\x20line-height:\x2024px\x20!important;\x20box-sizing:\x20border-box\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20outline:\x20none\x20!important;\x20margin:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
-    "nodeName",
-    "8px",
-    "10746ALbxol",
-    "5399795uMChBi",
-    "dithack-license-input",
-    "absolute",
-    "center",
-    "contains",
-    "font-size:16px\x20!important;\x20font-weight:700\x20!important;\x20margin-bottom:8px\x20!important;",
-    "error",
-    "Wayground",
-    "2904wWaZeE",
-    "auto",
-    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>Gagal\x20mengambil\x20data</div>",
-    "target",
-    "color:\x20#333\x20!important;\x20margin:\x200\x200\x20",
-    "Memvalidasi...",
-    "3054qoFZzm",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#ffffff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x20",
-    "70vh",
-    "fullscreenElement",
-    "msRequestFullscreen",
-    "height",
-    "fixed",
-    "color",
-    "top",
-    "div",
-    "font-size:13px\x20!important;\x20line-height:1.45\x20!important;\x20color:#4b5563\x20!important;\x20margin-bottom:16px\x20!important;",
-    "gap",
-    "button",
-    "15px",
-    "type",
-    "media",
-    "Selamat\x20datang\x20",
-    "sticky",
-    "questionMedia",
-    "question",
-    "#008800",
-    "0px",
-    "data-pin",
-    "100%",
-    "now",
-    "length",
-    "\x200\x20!important;\x20font-size:\x20",
-    "disabled",
-    "fullscreenchange",
-    "12px",
-    "\x20!important;\x20outline:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x20margin-bottom:\x20",
-    "#f9fafb",
-    "hidden",
-    "quiz",
-    "Token\x20akan\x20dilepas\x20dari\x20perangkat\x20ini\x20dan\x20perlu\x20login\x20ulang\x20untuk\x20memakai\x20DitHack.",
-    "detail",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:8px;\x20overflow:hidden;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22math-answer\x20dithack-nomath\x22>",
-    "BLANK",
-    "quizizz",
-    "mozExitFullScreen",
-    "quizizz-results",
-    "join",
-    "offsetWidth",
-    "focusin",
-    "dithack_device_id",
-    ";\x20font-weight:\x20bold;",
-    "cursor:\x20pointer;\x20font-weight:\x20bold;\x20font-size:\x20",
-    "filter",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2020px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20999998\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s\x20ease,\x20transform\x200.2s\x20ease\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20",
-    "random",
-    "expired",
-    "0\x208px",
-    "textContent",
-    "offsetHeight",
-    "DitHack!",
-    "marginLeft",
-    "location",
-    "78dkwnPa",
-    "focusout",
-    "44px",
-    "https://dithack.vercel.app/frontend/src/ico/icodh.png",
-    "getItem",
-    "[License]\x20Validation\x20error:",
-    "50px",
-    "<img\x20src=\x22",
-    "map",
-    "placeholder",
-    "touchmove",
-    "</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20",
-    "stretch",
-    "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Memuat\x20data...</div>",
-    "padding:20px;\x20text-align:center;",
-    "move",
-    "transform",
-    "find",
-    "Token\x20sudah\x20digunakan\x20di\x20perangkat\x20lain",
-    "value",
-    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>Gagal\x20mengambil\x20data.\x20Coba\x20masukkan\x20PIN\x20manual.</div>",
-    "Cari\x20soal...",
-    "28px",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x202px\x204px\x20rgba(0,0,0,0.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-left:\x204px\x20solid\x20",
-    ";\x0a\x20\x20\x20\x20\x20\x20display:\x20inline-flex;\x20align-items:\x20center;\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20border:\x20none;\x20border-radius:\x206px;\x20background:\x20rgba(255,255,255,0.2);\x0a\x20\x20\x20\x20\x20\x20color:\x20white;\x20cursor:\x20pointer;\x20font-size:\x20",
-    "rel",
-    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
-    "crypto",
-    "width",
-    "head",
-    "width:80%;\x20padding:10px;\x20border:1px\x20solid\x20#ccc;\x20border-radius:8px;\x20margin-bottom:10px;\x20font-size:14px;",
-    "Fullscreen\x20request\x20blocked",
-    "quizizz-hack-frame",
-    "visible",
-    "onfullscreenerror",
-    "https://api-dithack.up.railway.app",
-    "opacity",
-    "\x20!important;\x20text-align:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
-    "Enter",
-    "mousemove",
-    "webkitRequestFullscreen",
-    "dataset",
-    "#00aa00",
-    "touches",
-    "cssText",
-    "DitHack\x20loaded!",
-    "script[type=\x22math/tex\x22],\x20script[type=\x22math/asciimath\x22]",
-    "13px",
-    "#ff6b35",
-    "\x22\x20style=\x22width:100%;\x20height:auto;\x20max-height:160px;\x20object-fit:contain;\x20border-radius:6px;\x20margin-bottom:4px;\x20display:block;\x20box-sizing:border-box;\x22\x20onerror=\x22this.style.display=\x27none\x27\x22>",
-    "none",
-    "remove",
-    "touchstart",
-    "auth",
-    "layout",
-    "dithack-license-modal",
-    "6iJrShz",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2042px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2042px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20contain\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none\x20!important;\x0a\x20\x20\x20\x20",
-    "block",
-    "Batal",
-    "innerWidth",
-    "flex",
-    "#333",
-    "11px",
-    "style",
-    "6770bRfQZC",
-    "webkitExitFullscreen",
-    ".katex-display",
-    "[Bypass]\x20Mock\x20dimensions\x20set\x20to:\x20",
-    "input",
-    "string",
-    "img",
-    "Error\x20validasi\x20Token.\x20Pastikan\x20terhubung\x20internet!",
-    "data",
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
-    "onclick",
-    "40px",
-    "hostname",
-    "appendChild",
-    "availWidth",
-    "\x20!important;\x20font-weight:\x20bold\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
-    "touchend",
-    "setItem",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22dithack-nomath\x22>",
-    "Belum\x20punya\x20token?\x20<a\x20href=\x22https://dithack.vercel.app\x22\x20target=\x22_blank\x22\x20style=\x22color:\x20#4b4bfF;\x20text-decoration:\x20none;\x22>Beli\x20di\x20sini</a>",
-    "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Tidak\x20ada\x20hasil\x20pencarian</div>",
-    "url",
-    "\x0a\x20\x20\x20\x20\x20\x20width:\x20min(320px,\x2092vw)\x20!important;\x20background:\x20#fff\x20!important;\x20color:\x20#111827\x20!important;\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2010px\x20!important;\x20border:\x201px\x20solid\x20#e5e7eb\x20!important;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x2012px\x2030px\x20rgba(0,0,0,0.25)\x20!important;\x20padding:\x2018px\x20!important;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center\x20!important;\x0a\x20\x20\x20\x20",
-    ".katex-mathml",
-    "Inter,\x20system-ui,\x20sans-serif",
-    "<div\x20style=\x22color:#999;\x20font-size:12px;\x20font-style:italic;\x22>Tidak\x20ada\x20jawaban\x20tersedia</div>",
-    "href",
-    "scale(0.95)",
-    "assign",
-    "7jTmhAk",
-    "\x20!important;\x20font-weight:\x20bold\x20!important;",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x20padding:\x20",
-    "onblur",
-    "linear-gradient(135deg,\x20transparent\x2050%,\x20#4b4bfF\x2050%)",
-    "0.1",
-    "resize",
-    "/kahoot?link=",
-    "10px",
-    "nodeType",
-    "prototype",
-    "isArray",
-    "\x20!important;",
-    "display:flex\x20!important;\x20gap:10px\x20!important;\x20justify-content:center\x20!important;",
-    "background",
-    "querySelectorAll",
-    "innerHTML",
-    "<span\x20style=\x22background:#fef3c7;\x20color:#d97706;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>MULTI</span>",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x20top:\x200\x20!important;\x20left:\x200\x20!important;\x20right:\x200\x20!important;\x20bottom:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.85)\x20!important;\x20display:\x20flex\x20!important;\x20align-items:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center\x20!important;\x20z-index:\x209999999\x20!important;\x20font-family:\x20\x27Segoe\x20UI\x27,\x20Inter,\x20system-ui,\x20sans-serif\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
-    "Logout",
-    "replace",
-    "mousedown",
-    "quizizz-pin-input",
-    "randomUUID",
-    "flex:1;\x20padding:10px;\x20background:#ccc;\x20color:#333;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;\x20font-weight:bold;",
-    "/quizizz?pin=",
-    "toString",
-    "reject",
-    "dithack-katex-css",
-    "</div>",
-    "font-size:\x20",
-    "alt",
-    ".hide-tail",
-    "display:flex;\x20gap:8px;\x20margin-bottom:12px;\x20justify-content:center;",
-    "createElement",
-    "left",
-    "6px",
-    "stopPropagation",
-    "200px",
-    "innerHeight",
-    "image",
-    "fullscreenerror",
-    ";\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20",
-    "link",
-    "clientY",
-    "quizizz-hack-toggle",
-    "onfocus",
-    "\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22max-width:100%;\x20border-radius:8px;\x20margin-top:8px;\x20display:block;\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onerror=\x22this.style.display=\x27none\x27\x22>",
-    "setAttribute",
-    "pin",
-    "[data-pin],\x20.game-pin,\x20[class*=\x22pin\x22]",
-    "cursor:\x20pointer;\x20padding:\x206px\x2010px;\x20background:\x20rgba(255,255,255,0.2);\x20border-radius:\x206px;\x20font-size:\x20",
-    "Kode\x20Game\x20Wayground",
-    "log",
-    "Token\x20tidak\x20aktif!",
-    "outerWidth",
-    "visibilityState",
-    "/logout",
-    "Login",
-    "valid",
-    "exitFullscreen",
-    "answers",
-    "Error\x20fetching\x20Kahoot\x20answers:",
-    "\x20!important;\x20margin-top:\x20",
-    "forEach",
-    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Sembunyikan\x20katex-mathml\x20(duplikat\x20teks)\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex-mathml\x20{\x20display:\x20none\x20!important;\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20katex-display:\x20inline\x20agar\x20menyatu\x20dengan\x20teks\x20soal\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex-display\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200.15em\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Kunci\x20fix\x20garis\x20akar:\x20.hide-tail\x20harus\x20overflow:hidden\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.hide-tail\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20SVG\x20akar:\x20width=\x22400em\x22\x20dihapus\x20di\x20JS,\x20pastikan\x20max-width\x20via\x20CSS\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Pastikan\x20card\x20tidak\x20overflow\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
-    "verticalAlign",
-    "18px",
-  ];
-  a0_0xcf0d = function () {
-    return _0x7ebfc6;
-  };
-  return a0_0xcf0d();
-}
-function a0_0x3c60(_0x23a3b5, _0x243242) {
-  _0x23a3b5 = _0x23a3b5 - 0x1b7;
-  const _0xcf0d96 = a0_0xcf0d();
-  let _0x3c60cc = _0xcf0d96[_0x23a3b5];
-  return _0x3c60cc;
-}
-((function (_0x77e72d, _0x270989) {
-  const _0x5b961b = a0_0x3c60,
-    _0x49bae0 = _0x77e72d();
+((function (_0x1bb1bd, _0x5e9502) {
+  const _0x510678 = a0_0x50c6,
+    _0x4335ed = _0x1bb1bd();
   while (!![]) {
     try {
-      const _0x4f7999 =
-        (-parseInt(_0x5b961b(0x2df)) / 0x1) *
-          (-parseInt(_0x5b961b(0x204)) / 0x2) +
-        (parseInt(_0x5b961b(0x1cb)) / 0x3) *
-          (-parseInt(_0x5b961b(0x1c5)) / 0x4) +
-        (-parseInt(_0x5b961b(0x1bd)) / 0x5) *
-          (parseInt(_0x5b961b(0x23c)) / 0x6) +
-        (-parseInt(_0x5b961b(0x262)) / 0x7) *
-          (-parseInt(_0x5b961b(0x2fb)) / 0x8) +
-        (-parseInt(_0x5b961b(0x1bc)) / 0x9) *
-          (parseInt(_0x5b961b(0x245)) / 0xa) +
-        -parseInt(_0x5b961b(0x2de)) / 0xb +
-        parseInt(_0x5b961b(0x2ff)) / 0xc;
-      if (_0x4f7999 === _0x270989) break;
-      else _0x49bae0["push"](_0x49bae0["shift"]());
-    } catch (_0x582c60) {
-      _0x49bae0["push"](_0x49bae0["shift"]());
+      const _0x142631 =
+        parseInt(_0x510678(0x2f1)) / 0x1 +
+        (parseInt(_0x510678(0x1ea)) / 0x2) *
+          (-parseInt(_0x510678(0x2be)) / 0x3) +
+        (-parseInt(_0x510678(0x2d7)) / 0x4) *
+          (-parseInt(_0x510678(0x275)) / 0x5) +
+        -parseInt(_0x510678(0x23d)) / 0x6 +
+        parseInt(_0x510678(0x208)) / 0x7 +
+        (parseInt(_0x510678(0x221)) / 0x8) *
+          (parseInt(_0x510678(0x1b7)) / 0x9) +
+        -parseInt(_0x510678(0x2b1)) / 0xa;
+      if (_0x142631 === _0x5e9502) break;
+      else _0x4335ed["push"](_0x4335ed["shift"]());
+    } catch (_0x2aca01) {
+      _0x4335ed["push"](_0x4335ed["shift"]());
     }
   }
-})(a0_0xcf0d, 0xcff1e),
+})(a0_0x1fb2, 0xd1e84),
   (function () {
     "use strict";
-    const _0x9a0e70 = a0_0x3c60;
-    const _0x196f80 = _0x9a0e70(0x227),
-      _0x55881d = _0x9a0e70(0x1f7);
-    function _0x4ca0a4() {
-      const _0x5de67d = _0x9a0e70;
-      let _0x508e08 = localStorage["getItem"](_0x55881d);
-      if (_0x508e08) return _0x508e08;
+    const _0x595930 = a0_0x50c6;
+    const _0xed865b = "https://api-dithack.up.railway.app",
+      _0x344323 = _0x595930(0x270);
+    function _0x340986() {
+      const _0x153b6f = _0x595930;
+      let _0x5d12fb = localStorage[_0x153b6f(0x21c)](_0x344323);
+      if (_0x5d12fb) return _0x5d12fb;
       return (
-        window[_0x5de67d(0x21f)] && crypto[_0x5de67d(0x279)]
-          ? (_0x508e08 = crypto[_0x5de67d(0x279)]())
-          : (_0x508e08 =
-              "dh-" +
-              Date[_0x5de67d(0x1e3)]()[_0x5de67d(0x27c)](0x24) +
+        window[_0x153b6f(0x1cd)] && crypto[_0x153b6f(0x2b3)]
+          ? (_0x5d12fb = crypto["randomUUID"]())
+          : (_0x5d12fb =
+              _0x153b6f(0x1ff) +
+              Date[_0x153b6f(0x1d7)]()["toString"](0x24) +
               "-" +
-              Math[_0x5de67d(0x1fc)]()
-                [_0x5de67d(0x27c)](0x24)
-                ["slice"](0x2, 0xc)),
-        localStorage[_0x5de67d(0x256)](_0x55881d, _0x508e08),
-        _0x508e08
+              Math["random"]()[_0x153b6f(0x2d2)](0x24)["slice"](0x2, 0xc)),
+        localStorage[_0x153b6f(0x1ca)](_0x344323, _0x5d12fb),
+        _0x5d12fb
       );
     }
-    function _0x863dec() {
-      const _0x29c901 = _0x9a0e70;
+    function _0x19917c() {
+      const _0xb39536 = _0x595930;
       return {
         Authorization:
-          _0x29c901(0x2d2) + localStorage[_0x29c901(0x208)](_0x29c901(0x239)),
-        "x-device-id": _0x4ca0a4(),
+          _0xb39536(0x230) + localStorage[_0xb39536(0x21c)](_0xb39536(0x285)),
+        "x-device-id": _0x340986(),
       };
     }
-    function _0x229190() {
-      const _0x302f64 = _0x9a0e70;
-      if (document[_0x302f64(0x2c1)](_0x302f64(0x2ef))) return;
-      const _0x102238 = document[_0x302f64(0x284)](_0x302f64(0x28d));
-      ((_0x102238["id"] = _0x302f64(0x2ef)),
-        (_0x102238["rel"] = "stylesheet"),
-        (_0x102238[_0x302f64(0x25f)] = _0x302f64(0x24e)),
-        document[_0x302f64(0x221)][_0x302f64(0x252)](_0x102238));
+    function _0x92c9ce() {
+      const _0x279f0a = _0x595930;
+      if (document[_0x279f0a(0x1cb)](_0x279f0a(0x2ca))) return;
+      const _0x4cc664 = document[_0x279f0a(0x2c6)](_0x279f0a(0x1e2));
+      ((_0x4cc664["id"] = _0x279f0a(0x2ca)),
+        (_0x4cc664[_0x279f0a(0x1c9)] = _0x279f0a(0x1bb)),
+        (_0x4cc664[_0x279f0a(0x1f1)] =
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"),
+        document[_0x279f0a(0x2cd)][_0x279f0a(0x1ce)](_0x4cc664));
     }
-    async function _0x2a582f(_0xfe346b) {
-      const _0x3bd3ba = _0x9a0e70;
+    async function _0x1b8075(_0x5447e4) {
+      const _0x583330 = _0x595930;
       try {
-        const _0x688ee6 = await _0xfe346b[_0x3bd3ba(0x2ba)]();
+        const _0x3acc4a = await _0x5447e4[_0x583330(0x236)]();
         return (
-          _0x688ee6[_0x3bd3ba(0x1ee)] ||
-          _0x688ee6[_0x3bd3ba(0x2c2)] ||
-          _0x3bd3ba(0x2c6)
+          _0x3acc4a["detail"] || _0x3acc4a[_0x583330(0x20d)] || _0x583330(0x232)
         );
-      } catch (_0x2d388a) {
-        return _0x3bd3ba(0x2c6);
+      } catch (_0x4aac21) {
+        return _0x583330(0x232);
       }
     }
-    async function _0x4f86b3(_0x9de185) {
-      const _0x203841 = _0x9a0e70;
+    async function _0x2bb374(_0x49188c) {
+      const _0x11c164 = _0x595930;
       try {
-        const _0x35ab39 = await fetch(
-          _0x196f80 + "/check/" + encodeURIComponent(_0x9de185),
-          { headers: { "x-device-id": _0x4ca0a4() } },
+        const _0xf14065 = await fetch(
+          _0xed865b + "/check/" + encodeURIComponent(_0x49188c),
+          { headers: { "x-device-id": _0x340986() } },
         );
-        if (_0x35ab39[_0x203841(0x2bb)] === 0x194)
+        if (_0xf14065[_0x11c164(0x2ff)] === 0x194)
           return { valid: ![], message: "Token\x20tidak\x20valid!" };
-        if (_0x35ab39[_0x203841(0x2bb)] === 0x199)
-          return { valid: ![], message: _0x203841(0x216) };
-        if (!_0x35ab39["ok"])
-          return { valid: ![], message: await _0x2a582f(_0x35ab39) };
-        const _0x32690b = await _0x35ab39[_0x203841(0x2ba)](),
-          _0x597389 = new Date(_0x32690b[_0x203841(0x1fd)]),
-          _0x5064d9 = new Date();
-        if (!_0x32690b["active"])
-          return { valid: ![], message: _0x203841(0x298) };
-        if (_0x597389 < _0x5064d9)
+        if (_0xf14065["status"] === 0x199)
+          return { valid: ![], message: _0x11c164(0x205) };
+        if (!_0xf14065["ok"])
+          return { valid: ![], message: await _0x1b8075(_0xf14065) };
+        const _0x4b8f56 = await _0xf14065[_0x11c164(0x236)](),
+          _0x364bfd = new Date(_0x4b8f56[_0x11c164(0x255)]),
+          _0x4a9ebf = new Date();
+        if (!_0x4b8f56[_0x11c164(0x1c4)])
+          return { valid: ![], message: _0x11c164(0x1c6) };
+        if (_0x364bfd < _0x4a9ebf)
           return {
             valid: ![],
-            message: _0x203841(0x2f2) + _0x32690b["expired"],
+            message:
+              "Token\x20sudah\x20expired\x20pada\x20" +
+              _0x4b8f56[_0x11c164(0x255)],
           };
         return {
           valid: !![],
-          message: _0x203841(0x1db) + _0x32690b[_0x203841(0x300)] + "!",
-          owner: _0x32690b[_0x203841(0x300)],
+          message: _0x11c164(0x2a5) + _0x4b8f56[_0x11c164(0x26d)] + "!",
+          owner: _0x4b8f56[_0x11c164(0x26d)],
         };
-      } catch (_0x19dff6) {
+      } catch (_0x17d349) {
         return (
-          console[_0x203841(0x1c3)](_0x203841(0x209), _0x19dff6),
-          { valid: ![], message: _0x203841(0x24c) }
+          console[_0x11c164(0x1fe)](_0x11c164(0x262), _0x17d349),
+          { valid: ![], message: _0x11c164(0x2c9) }
         );
       }
     }
-    function _0x2573f0() {
-      const _0xbb4faf = _0x9a0e70,
-        _0x2ec9ca = document[_0xbb4faf(0x2c1)](_0xbb4faf(0x23b));
-      if (_0x2ec9ca) _0x2ec9ca[_0xbb4faf(0x237)]();
-      _0x229190();
-      const _0x3d2c0d = window[_0xbb4faf(0x240)] <= 0x1e0,
-        _0x1f1138 = _0x3d2c0d ? _0xbb4faf(0x2ea) : _0xbb4faf(0x2aa),
-        _0x44fe4f = _0x3d2c0d ? _0xbb4faf(0x2a5) : _0xbb4faf(0x2aa),
-        _0x3d2492 = _0x3d2c0d ? _0xbb4faf(0x1e8) : _0xbb4faf(0x233),
-        _0x40f715 = _0x3d2c0d ? "8px\x2010px" : "10px\x2012px",
-        _0x5b2f32 = _0x3d2c0d ? _0xbb4faf(0x1bb) : "10px",
-        _0x5ddfba = _0x3d2c0d ? _0xbb4faf(0x1bb) : _0xbb4faf(0x26a),
-        _0x5585a2 = _0x3d2c0d ? _0xbb4faf(0x2d4) : "6px",
-        _0xe5964b = _0x3d2c0d ? _0xbb4faf(0x286) : _0xbb4faf(0x1bb),
-        _0x39ac8e = _0x3d2c0d ? _0xbb4faf(0x1e8) : _0xbb4faf(0x2cb),
-        _0x5dd1a2 = document[_0xbb4faf(0x284)](_0xbb4faf(0x1d4));
-      ((_0x5dd1a2["id"] = _0xbb4faf(0x23b)),
-        (_0x5dd1a2[_0xbb4faf(0x244)][_0xbb4faf(0x230)] = _0xbb4faf(0x274)));
-      const _0x4628dd = document[_0xbb4faf(0x284)]("div");
-      _0x4628dd[_0xbb4faf(0x244)][_0xbb4faf(0x230)] =
-        _0xbb4faf(0x1cc) +
-        _0x1f1138 +
+    function _0xc9efc8() {
+      const _0x1c7d48 = _0x595930,
+        _0x201a7d = document[_0x1c7d48(0x1cb)](_0x1c7d48(0x2c0));
+      if (_0x201a7d) _0x201a7d[_0x1c7d48(0x1f0)]();
+      _0x92c9ce();
+      const _0x156770 = window[_0x1c7d48(0x1f4)] <= 0x1e0,
+        _0x47842e = _0x156770 ? _0x1c7d48(0x20e) : _0x1c7d48(0x1fc),
+        _0x391090 = _0x156770 ? _0x1c7d48(0x2f4) : _0x1c7d48(0x1fc),
+        _0x1b3666 = _0x156770 ? _0x1c7d48(0x29c) : "13px",
+        _0xf8ad9d = _0x156770 ? "8px\x2010px" : "10px\x2012px",
+        _0xcfd868 = _0x156770 ? "8px" : _0x1c7d48(0x2a8),
+        _0x12dc79 = _0x156770 ? _0x1c7d48(0x254) : "10px",
+        _0x50a48d = _0x156770 ? _0x1c7d48(0x2df) : _0x1c7d48(0x25f),
+        _0x2c997f = _0x156770 ? _0x1c7d48(0x25f) : _0x1c7d48(0x254),
+        _0x16e7e9 = _0x156770 ? _0x1c7d48(0x29c) : _0x1c7d48(0x29b),
+        _0x1183ad = document[_0x1c7d48(0x2c6)]("div");
+      ((_0x1183ad["id"] = _0x1c7d48(0x2c0)),
+        (_0x1183ad["style"][_0x1c7d48(0x226)] = _0x1c7d48(0x2e8)));
+      const _0x2cb74d = document[_0x1c7d48(0x2c6)](_0x1c7d48(0x245));
+      _0x2cb74d[_0x1c7d48(0x23c)][_0x1c7d48(0x226)] =
+        _0x1c7d48(0x2ee) +
+        _0x47842e +
         "\x20!important;\x20border-radius:\x2010px\x20!important;\x20text-align:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20350px\x20!important;\x20width:\x2090%\x20!important;\x20box-shadow:\x200\x204px\x2020px\x20rgba(0,\x200,\x200,\x200.2)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ddd\x20!important;\x20height:\x20auto\x20!important;\x20min-height:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20";
-      const _0x4092b4 = document[_0xbb4faf(0x284)]("h2");
-      ((_0x4092b4[_0xbb4faf(0x1ff)] = _0xbb4faf(0x201)),
-        (_0x4092b4[_0xbb4faf(0x244)][_0xbb4faf(0x230)] =
-          _0xbb4faf(0x1c9) +
-          _0x39ac8e +
-          _0xbb4faf(0x1e5) +
-          _0x44fe4f +
-          _0xbb4faf(0x263)));
-      const _0x284427 = document[_0xbb4faf(0x284)](_0xbb4faf(0x249));
-      ((_0x284427[_0xbb4faf(0x1d9)] = _0xbb4faf(0x2dc)),
-        (_0x284427["id"] = _0xbb4faf(0x1be)),
-        (_0x284427[_0xbb4faf(0x20d)] = "Token\x20Anda"),
-        (_0x284427[_0xbb4faf(0x244)][_0xbb4faf(0x230)] =
-          _0xbb4faf(0x264) +
-          _0x40f715 +
+      const _0x22695e = document[_0x1c7d48(0x2c6)]("h2");
+      ((_0x22695e[_0x1c7d48(0x242)] = _0x1c7d48(0x210)),
+        (_0x22695e["style"][_0x1c7d48(0x226)] =
+          _0x1c7d48(0x2fd) +
+          _0x16e7e9 +
+          _0x1c7d48(0x1c7) +
+          _0x391090 +
+          _0x1c7d48(0x21a)));
+      const _0x59bfab = document["createElement"]("input");
+      ((_0x59bfab[_0x1c7d48(0x2fa)] = _0x1c7d48(0x2ed)),
+        (_0x59bfab["id"] = _0x1c7d48(0x1f9)),
+        (_0x59bfab[_0x1c7d48(0x2d9)] = _0x1c7d48(0x24d)),
+        (_0x59bfab["style"]["cssText"] =
+          _0x1c7d48(0x28f) +
+          _0xf8ad9d +
           "\x20!important;\x20border-radius:\x206px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#000\x20!important;\x20background:\x20#fff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333\x20!important;\x20font-size:\x20" +
-          _0x3d2492 +
-          _0xbb4faf(0x1e9) +
-          _0x5ddfba +
-          _0xbb4faf(0x229)));
-      const _0x2f6147 = document["createElement"](_0xbb4faf(0x1d4));
-      ((_0x2f6147["id"] = "dithack-license-message"),
-        (_0x2f6147[_0xbb4faf(0x244)][_0xbb4faf(0x230)] =
-          "color:\x20#d00\x20!important;\x20font-size:\x20" +
-          _0x3d2492 +
-          _0xbb4faf(0x2a1) +
-          _0x5585a2 +
-          _0xbb4faf(0x302)));
-      const _0x5c0a9d = document[_0xbb4faf(0x284)](_0xbb4faf(0x1d7));
-      ((_0x5c0a9d[_0xbb4faf(0x1ff)] = _0xbb4faf(0x29c)),
-        (_0x5c0a9d["id"] = _0xbb4faf(0x2fd)),
-        (_0x5c0a9d["style"]["cssText"] =
-          _0xbb4faf(0x264) +
-          _0x5b2f32 +
-          _0xbb4faf(0x2c4) +
-          _0x3d2492 +
-          _0xbb4faf(0x254)));
-      const _0x22d785 = document[_0xbb4faf(0x284)]("p");
+          _0x1b3666 +
+          _0x1c7d48(0x25a) +
+          _0x12dc79 +
+          _0x1c7d48(0x2a9)));
+      const _0x3c9b75 = document[_0x1c7d48(0x2c6)](_0x1c7d48(0x245));
+      ((_0x3c9b75["id"] = _0x1c7d48(0x2e7)),
+        (_0x3c9b75[_0x1c7d48(0x23c)][_0x1c7d48(0x226)] =
+          _0x1c7d48(0x257) +
+          _0x1b3666 +
+          _0x1c7d48(0x1b9) +
+          _0x50a48d +
+          _0x1c7d48(0x1e7)));
+      const _0x34cd13 = document[_0x1c7d48(0x2c6)]("button");
+      ((_0x34cd13[_0x1c7d48(0x242)] = _0x1c7d48(0x295)),
+        (_0x34cd13["id"] = "dithack-license-submit"),
+        (_0x34cd13[_0x1c7d48(0x23c)][_0x1c7d48(0x226)] =
+          _0x1c7d48(0x28f) +
+          _0xcfd868 +
+          _0x1c7d48(0x209) +
+          _0x1b3666 +
+          _0x1c7d48(0x25e)));
+      const _0x2bf998 = document["createElement"]("p");
       return (
-        (_0x22d785["innerHTML"] = _0xbb4faf(0x258)),
-        (_0x22d785[_0xbb4faf(0x244)][_0xbb4faf(0x230)] =
-          "color:\x20#666\x20!important;\x20font-size:\x20" +
-          (_0x3d2c0d ? _0xbb4faf(0x243) : _0xbb4faf(0x1e8)) +
-          "\x20!important;\x20margin-top:\x20" +
-          _0xe5964b +
-          _0xbb4faf(0x26e)),
-        _0x4628dd[_0xbb4faf(0x252)](_0x4092b4),
-        _0x4628dd["appendChild"](_0x284427),
-        _0x4628dd[_0xbb4faf(0x252)](_0x5c0a9d),
-        _0x4628dd["appendChild"](_0x2f6147),
-        _0x4628dd[_0xbb4faf(0x252)](_0x22d785),
-        _0x5dd1a2["appendChild"](_0x4628dd),
-        document[_0xbb4faf(0x2d1)]["appendChild"](_0x5dd1a2),
-        (_0x5c0a9d[_0xbb4faf(0x24f)] = async () => {
-          const _0x30763f = _0xbb4faf,
-            _0x478c71 = _0x284427["value"]["trim"]();
-          if (!_0x478c71) {
-            ((_0x2f6147[_0x30763f(0x1ff)] = _0x30763f(0x2ad)),
-              (_0x2f6147["style"][_0x30763f(0x1d2)] = "#ff6b6b"));
+        (_0x2bf998[_0x1c7d48(0x2ae)] = _0x1c7d48(0x1bf)),
+        (_0x2bf998[_0x1c7d48(0x23c)][_0x1c7d48(0x226)] =
+          _0x1c7d48(0x271) +
+          (_0x156770 ? "11px" : _0x1c7d48(0x29c)) +
+          _0x1c7d48(0x1b9) +
+          _0x2c997f +
+          _0x1c7d48(0x2b7)),
+        _0x2cb74d["appendChild"](_0x22695e),
+        _0x2cb74d[_0x1c7d48(0x1ce)](_0x59bfab),
+        _0x2cb74d[_0x1c7d48(0x1ce)](_0x34cd13),
+        _0x2cb74d[_0x1c7d48(0x1ce)](_0x3c9b75),
+        _0x2cb74d["appendChild"](_0x2bf998),
+        _0x1183ad[_0x1c7d48(0x1ce)](_0x2cb74d),
+        document["body"][_0x1c7d48(0x1ce)](_0x1183ad),
+        (_0x34cd13[_0x1c7d48(0x1dd)] = async () => {
+          const _0x2232bb = _0x1c7d48,
+            _0x3ed7b0 = _0x59bfab[_0x2232bb(0x284)][_0x2232bb(0x1d3)]();
+          if (!_0x3ed7b0) {
+            ((_0x3c9b75[_0x2232bb(0x242)] =
+              "Masukkan\x20Token\x20terlebih\x20dahulu!"),
+              (_0x3c9b75[_0x2232bb(0x23c)][_0x2232bb(0x2c2)] = "#ff6b6b"));
             return;
           }
-          ((_0x5c0a9d["textContent"] = _0x30763f(0x1ca)),
-            (_0x5c0a9d[_0x30763f(0x1e6)] = !![]),
-            (_0x5c0a9d[_0x30763f(0x244)][_0x30763f(0x228)] = _0x30763f(0x2b4)));
-          const _0x181bd4 = await _0x4f86b3(_0x478c71);
-          _0x181bd4[_0x30763f(0x29d)]
-            ? ((_0x2f6147["textContent"] = _0x181bd4[_0x30763f(0x2c2)]),
-              (_0x2f6147[_0x30763f(0x244)][_0x30763f(0x1d2)] =
-                _0x30763f(0x22e)),
-              (_0x5c0a9d[_0x30763f(0x1ff)] = "Aktif!"),
-              (_0x5c0a9d["style"][_0x30763f(0x270)] = _0x30763f(0x1df)),
-              localStorage["setItem"](_0x30763f(0x239), _0x478c71),
+          ((_0x34cd13[_0x2232bb(0x242)] = _0x2232bb(0x1df)),
+            (_0x34cd13[_0x2232bb(0x2fc)] = !![]),
+            (_0x34cd13[_0x2232bb(0x23c)][_0x2232bb(0x2c3)] = "0.7"));
+          const _0x5a5414 = await _0x2bb374(_0x3ed7b0);
+          _0x5a5414[_0x2232bb(0x2d6)]
+            ? ((_0x3c9b75[_0x2232bb(0x242)] = _0x5a5414[_0x2232bb(0x20d)]),
+              (_0x3c9b75[_0x2232bb(0x23c)]["color"] = _0x2232bb(0x2af)),
+              (_0x34cd13[_0x2232bb(0x242)] = _0x2232bb(0x2c8)),
+              (_0x34cd13[_0x2232bb(0x23c)][_0x2232bb(0x23f)] =
+                _0x2232bb(0x290)),
+              localStorage[_0x2232bb(0x1ca)]("auth", _0x3ed7b0),
               setTimeout(() => {
-                const _0x431a1d = _0x30763f;
-                (_0x5dd1a2[_0x431a1d(0x237)](), _0x3fe2cb());
+                (_0x1183ad["remove"](), _0x56fb04());
               }, 0x5dc))
-            : ((_0x2f6147[_0x30763f(0x1ff)] = _0x181bd4[_0x30763f(0x2c2)]),
-              (_0x2f6147[_0x30763f(0x244)][_0x30763f(0x1d2)] =
-                _0x30763f(0x2c9)),
-              (_0x5c0a9d["textContent"] = _0x30763f(0x29c)),
-              (_0x5c0a9d[_0x30763f(0x1e6)] = ![]),
-              (_0x5c0a9d[_0x30763f(0x244)][_0x30763f(0x228)] = "1"));
+            : ((_0x3c9b75[_0x2232bb(0x242)] = _0x5a5414[_0x2232bb(0x20d)]),
+              (_0x3c9b75[_0x2232bb(0x23c)]["color"] = _0x2232bb(0x2a2)),
+              (_0x34cd13[_0x2232bb(0x242)] = _0x2232bb(0x295)),
+              (_0x34cd13["disabled"] = ![]),
+              (_0x34cd13[_0x2232bb(0x23c)][_0x2232bb(0x2c3)] = "1"));
         }),
-        _0x284427["addEventListener"]("keypress", (_0xc2bf69) => {
-          const _0x568e27 = _0xbb4faf;
-          _0xc2bf69["key"] === _0x568e27(0x22a) &&
-            _0x5c0a9d[_0x568e27(0x2ac)]();
+        _0x59bfab[_0x1c7d48(0x2f3)](_0x1c7d48(0x2a4), (_0x2fadc6) => {
+          const _0x3ad5b4 = _0x1c7d48;
+          _0x2fadc6[_0x3ad5b4(0x25b)] === "Enter" && _0x34cd13["click"]();
         }),
-        setTimeout(() => _0x284427["focus"](), 0x64),
-        _0x5dd1a2
+        setTimeout(() => _0x59bfab[_0x1c7d48(0x27b)](), 0x64),
+        _0x1183ad
       );
     }
-    function _0x5697b0() {
-      _0x2573f0();
+    function _0x36dfe0() {
+      _0xc9efc8();
     }
-    const _0x408256 = window["addEventListener"],
-      _0x3f9b1b = document[_0x9a0e70(0x2a9)],
-      _0x2aec9f = EventTarget
-        ? EventTarget["prototype"][_0x9a0e70(0x2a9)]
+    const _0x49c4b5 = window[_0x595930(0x2f3)],
+      _0x158a6f = document["addEventListener"],
+      _0x52f1fd = EventTarget
+        ? EventTarget["prototype"][_0x595930(0x2f3)]
         : null,
-      _0x11468d = [
+      _0x3f72e9 = [
         "blur",
-        _0x9a0e70(0x2ec),
-        "visibilitychange",
-        _0x9a0e70(0x1f6),
-        _0x9a0e70(0x205),
-        _0x9a0e70(0x268),
-        _0x9a0e70(0x1e7),
-        _0x9a0e70(0x28b),
-        "contextmenu",
+        _0x595930(0x27b),
+        _0x595930(0x258),
+        "focusin",
+        _0x595930(0x222),
+        _0x595930(0x244),
+        "fullscreenchange",
+        _0x595930(0x2b0),
+        _0x595930(0x2b9),
       ];
-    (Object[_0x9a0e70(0x2bd)](document, "hidden", {
+    (Object[_0x595930(0x217)](document, _0x595930(0x240), {
       get: function () {
         return ![];
       },
       configurable: ![],
     }),
-      Object[_0x9a0e70(0x2bd)](document, _0x9a0e70(0x29a), {
+      Object[_0x595930(0x217)](document, _0x595930(0x248), {
         get: function () {
-          const _0x2f8600 = _0x9a0e70;
-          return _0x2f8600(0x225);
+          const _0xeab237 = _0x595930;
+          return _0xeab237(0x298);
         },
         configurable: ![],
       }),
-      Object[_0x9a0e70(0x2bd)](document, _0x9a0e70(0x2f9), {
+      Object[_0x595930(0x217)](document, _0x595930(0x239), {
         get: function () {
           return null;
         },
         set: function () {},
         configurable: ![],
       }),
-      Object["defineProperty"](window, _0x9a0e70(0x290), {
+      Object[_0x595930(0x217)](window, _0x595930(0x2e4), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }),
-      Object["defineProperty"](window, _0x9a0e70(0x265), {
+      Object[_0x595930(0x217)](window, _0x595930(0x253), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }),
-      Object[_0x9a0e70(0x2bd)](window, "onresize", {
+      Object["defineProperty"](window, _0x595930(0x2d4), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }));
-    let _0x25d41c = window[_0x9a0e70(0x240)],
-      _0xc2f039 = window[_0x9a0e70(0x289)];
-    (Object[_0x9a0e70(0x2bd)](window, _0x9a0e70(0x240), {
+    let _0x23ce4d = window[_0x595930(0x1f4)],
+      _0x15155d = window[_0x595930(0x22e)];
+    (Object[_0x595930(0x217)](window, _0x595930(0x1f4), {
       get: function () {
-        return _0x25d41c;
+        return _0x23ce4d;
       },
       configurable: !![],
     }),
-      Object["defineProperty"](window, "innerHeight", {
+      Object[_0x595930(0x217)](window, _0x595930(0x22e), {
         get: function () {
-          return _0xc2f039;
+          return _0x15155d;
         },
         configurable: !![],
       }),
-      Object[_0x9a0e70(0x2bd)](window, _0x9a0e70(0x299), {
+      Object[_0x595930(0x217)](window, _0x595930(0x214), {
         get: function () {
-          return _0x25d41c;
+          return _0x23ce4d;
         },
         configurable: !![],
       }),
-      Object[_0x9a0e70(0x2bd)](window, "outerHeight", {
+      Object[_0x595930(0x217)](window, "outerHeight", {
         get: function () {
-          return _0xc2f039;
+          return _0x15155d;
         },
         configurable: !![],
       }),
-      Object[_0x9a0e70(0x2bd)](screen, _0x9a0e70(0x220), {
+      Object[_0x595930(0x217)](screen, _0x595930(0x264), {
         get: function () {
           return 0x780;
         },
         configurable: !![],
       }),
-      Object[_0x9a0e70(0x2bd)](screen, _0x9a0e70(0x1d0), {
+      Object[_0x595930(0x217)](screen, _0x595930(0x1d8), {
         get: function () {
           return 0x438;
         },
         configurable: !![],
       }),
-      Object["defineProperty"](screen, _0x9a0e70(0x253), {
+      Object[_0x595930(0x217)](screen, _0x595930(0x2e6), {
         get: function () {
           return 0x780;
         },
         configurable: !![],
       }),
-      Object[_0x9a0e70(0x2bd)](screen, _0x9a0e70(0x2bf), {
+      Object[_0x595930(0x217)](screen, "availHeight", {
         get: function () {
           return 0x410;
         },
         configurable: !![],
       }),
-      (window[_0x9a0e70(0x2d8)] = function (_0x1ea0cc, _0x3c52c8) {
-        const _0x4e95fa = _0x9a0e70;
-        ((_0x25d41c = _0x1ea0cc),
-          (_0xc2f039 = _0x3c52c8),
-          console[_0x4e95fa(0x297)](
-            _0x4e95fa(0x248) + _0x1ea0cc + "x" + _0x3c52c8,
+      (window[_0x595930(0x272)] = function (_0xe14d6e, _0x464600) {
+        const _0x39185d = _0x595930;
+        ((_0x23ce4d = _0xe14d6e),
+          (_0x15155d = _0x464600),
+          console[_0x39185d(0x2ef)](
+            _0x39185d(0x269) + _0xe14d6e + "x" + _0x464600,
           ));
       }),
-      Object["defineProperty"](document, _0x9a0e70(0x1ce), {
+      Object[_0x595930(0x217)](document, _0x595930(0x287), {
         get: function () {
-          const _0x123338 = _0x9a0e70;
-          return document[_0x123338(0x284)]("div");
+          const _0x4b9ff7 = _0x595930;
+          return document["createElement"](_0x4b9ff7(0x245));
         },
         configurable: ![],
       }),
-      Object[_0x9a0e70(0x2bd)](document, _0x9a0e70(0x2a7), {
+      Object[_0x595930(0x217)](document, "fullscreenEnabled", {
         get: function () {
           return ![];
         },
         configurable: ![],
       }),
-      Object[_0x9a0e70(0x2bd)](document, "onfullscreenchange", {
+      Object[_0x595930(0x217)](document, _0x595930(0x28b), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }),
-      Object[_0x9a0e70(0x2bd)](document, _0x9a0e70(0x226), {
+      Object[_0x595930(0x217)](document, _0x595930(0x2c1), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }),
-      (Element[_0x9a0e70(0x26c)]["requestFullscreen"] = function () {
-        const _0x34b9cb = _0x9a0e70;
-        return Promise[_0x34b9cb(0x27d)](new Error(_0x34b9cb(0x223)));
+      (Element["prototype"][_0x595930(0x2cb)] = function () {
+        const _0x8fba63 = _0x595930;
+        return Promise[_0x8fba63(0x2b4)](new Error(_0x8fba63(0x22f)));
       }),
-      (document[_0x9a0e70(0x29e)] = function () {
-        return Promise["resolve"]();
+      (document[_0x595930(0x249)] = function () {
+        const _0x263c1c = _0x595930;
+        return Promise[_0x263c1c(0x204)]();
       }));
-    if (Element["prototype"][_0x9a0e70(0x22c)])
-      Element[_0x9a0e70(0x26c)][_0x9a0e70(0x22c)] = function () {
-        const _0x436a91 = _0x9a0e70;
-        return Promise[_0x436a91(0x27d)](new Error(_0x436a91(0x223)));
+    if (Element[_0x595930(0x211)]["webkitRequestFullscreen"])
+      Element["prototype"][_0x595930(0x22d)] = function () {
+        return Promise["reject"](new Error("Fullscreen\x20request\x20blocked"));
       };
-    if (document["webkitExitFullscreen"])
-      document[_0x9a0e70(0x246)] = function () {
-        const _0x479654 = _0x9a0e70;
-        return Promise[_0x479654(0x2bc)]();
+    if (document[_0x595930(0x2d0)])
+      document[_0x595930(0x2d0)] = function () {
+        const _0x529a21 = _0x595930;
+        return Promise[_0x529a21(0x204)]();
       };
-    if (Element[_0x9a0e70(0x26c)][_0x9a0e70(0x2ee)])
-      Element["prototype"][_0x9a0e70(0x2ee)] = function () {
-        const _0xc82537 = _0x9a0e70;
-        return Promise["reject"](new Error(_0xc82537(0x223)));
+    if (Element[_0x595930(0x211)]["mozRequestFullScreen"])
+      Element["prototype"]["mozRequestFullScreen"] = function () {
+        const _0x3fec21 = _0x595930;
+        return Promise[_0x3fec21(0x2b4)](new Error(_0x3fec21(0x22f)));
       };
-    if (document[_0x9a0e70(0x1f2)])
-      document[_0x9a0e70(0x1f2)] = function () {
+    if (document[_0x595930(0x243)])
+      document[_0x595930(0x243)] = function () {
         return Promise["resolve"]();
       };
-    if (Element[_0x9a0e70(0x26c)][_0x9a0e70(0x1cf)])
-      Element[_0x9a0e70(0x26c)][_0x9a0e70(0x1cf)] = function () {
-        const _0x56e7fe = _0x9a0e70;
-        return Promise[_0x56e7fe(0x27d)](new Error(_0x56e7fe(0x223)));
+    if (Element[_0x595930(0x211)][_0x595930(0x2f6)])
+      Element[_0x595930(0x211)][_0x595930(0x2f6)] = function () {
+        const _0x2cc41f = _0x595930;
+        return Promise[_0x2cc41f(0x2b4)](
+          new Error("Fullscreen\x20request\x20blocked"),
+        );
       };
-    if (document["msExitFullscreen"])
-      document["msExitFullscreen"] = function () {
-        return Promise["resolve"]();
+    if (document[_0x595930(0x1ef)])
+      document[_0x595930(0x1ef)] = function () {
+        const _0x4f1624 = _0x595930;
+        return Promise[_0x4f1624(0x204)]();
       };
-    (Object[_0x9a0e70(0x2bd)](document, _0x9a0e70(0x2c0), {
+    (Object["defineProperty"](document, _0x595930(0x2ce), {
       get: function () {
         return function () {};
       },
       set: function () {},
       configurable: ![],
     }),
-      Object[_0x9a0e70(0x2bd)](window, "oncontextmenu", {
+      Object[_0x595930(0x217)](window, _0x595930(0x2ce), {
         get: function () {
           return function () {};
         },
         set: function () {},
         configurable: ![],
       }),
-      (window[_0x9a0e70(0x2a9)] = function (_0x2b97e6, _0x3d8176, _0x4c2e04) {
-        const _0x47b4a0 = _0x9a0e70;
-        if (_0x11468d[_0x47b4a0(0x2d0)](_0x2b97e6) !== -0x1) return;
-        return _0x408256[_0x47b4a0(0x2d6)](
+      (window[_0x595930(0x2f3)] = function (_0x140bcd, _0x2645d0, _0x1540ef) {
+        const _0x26dac9 = _0x595930;
+        if (_0x3f72e9["indexOf"](_0x140bcd) !== -0x1) return;
+        return _0x49c4b5[_0x26dac9(0x1de)](
           this,
-          _0x2b97e6,
-          _0x3d8176,
-          _0x4c2e04,
+          _0x140bcd,
+          _0x2645d0,
+          _0x1540ef,
         );
       }),
-      (document["addEventListener"] = function (
-        _0x12f339,
-        _0x241528,
-        _0x4cbf74,
-      ) {
-        const _0x188520 = _0x9a0e70;
-        if (_0x11468d[_0x188520(0x2d0)](_0x12f339) !== -0x1) return;
-        return _0x3f9b1b[_0x188520(0x2d6)](
+      (document[_0x595930(0x2f3)] = function (_0x48fce0, _0x10d885, _0x37c161) {
+        const _0x34ec47 = _0x595930;
+        if (_0x3f72e9[_0x34ec47(0x2ea)](_0x48fce0) !== -0x1) return;
+        return _0x158a6f[_0x34ec47(0x1de)](
           this,
-          _0x12f339,
-          _0x241528,
-          _0x4cbf74,
+          _0x48fce0,
+          _0x10d885,
+          _0x37c161,
         );
       }));
     EventTarget &&
-      EventTarget[_0x9a0e70(0x26c)] &&
-      _0x2aec9f &&
-      (EventTarget[_0x9a0e70(0x26c)][_0x9a0e70(0x2a9)] = function (
-        _0x4517e5,
-        _0x57f7b5,
-        _0x24404c,
+      EventTarget["prototype"] &&
+      _0x52f1fd &&
+      (EventTarget[_0x595930(0x211)][_0x595930(0x2f3)] = function (
+        _0x327dfc,
+        _0x3ca414,
+        _0x579cfb,
       ) {
-        const _0x25702b = _0x9a0e70;
-        if (_0x11468d[_0x25702b(0x2d0)](_0x4517e5) !== -0x1) return;
-        return _0x2aec9f["call"](this, _0x4517e5, _0x57f7b5, _0x24404c);
+        const _0x4c86cc = _0x595930;
+        if (_0x3f72e9[_0x4c86cc(0x2ea)](_0x327dfc) !== -0x1) return;
+        return _0x52f1fd[_0x4c86cc(0x1de)](
+          this,
+          _0x327dfc,
+          _0x3ca414,
+          _0x579cfb,
+        );
       });
-    console[_0x9a0e70(0x297)](
-      "[Bypass]\x20Detection\x20bypass\x20loaded\x20successfully!",
-    );
-    const _0x1a201f = document[_0x9a0e70(0x2c1)](_0x9a0e70(0x224));
-    if (_0x1a201f) _0x1a201f["remove"]();
-    const _0x381143 = document["getElementById"](_0x9a0e70(0x28f));
-    if (_0x381143) _0x381143[_0x9a0e70(0x237)]();
-    let _0x1d3fcb = null,
-      _0x1acdba = ![],
-      _0x2ee9ee = _0x9a0e70(0x1f1);
-    function _0x213038() {
-      const _0x1df7af = _0x9a0e70;
-      _0x229190();
-      const _0x5f352f = document[_0x1df7af(0x284)](_0x1df7af(0x1d4));
-      _0x5f352f["id"] = _0x1df7af(0x224);
-      const _0x28e2ef = window[_0x1df7af(0x240)] <= 0x300;
-      Object[_0x1df7af(0x261)](_0x5f352f[_0x1df7af(0x244)], {
-        position: _0x1df7af(0x1d1),
-        top: _0x28e2ef ? "10px" : _0x1df7af(0x20a),
-        right: _0x28e2ef ? _0x1df7af(0x26a) : _0x1df7af(0x20a),
-        left: _0x28e2ef ? _0x1df7af(0x26a) : _0x1df7af(0x1c6),
-        width: _0x28e2ef ? _0x1df7af(0x2e0) : _0x1df7af(0x2ae),
-        maxHeight: _0x28e2ef ? _0x1df7af(0x1cd) : _0x1df7af(0x2b5),
-        height: _0x28e2ef ? _0x1df7af(0x1c6) : _0x1df7af(0x2b5),
-        backgroundColor: "#fff",
-        borderRadius: _0x28e2ef ? "8px" : _0x1df7af(0x1e8),
-        border: _0x1df7af(0x303),
-        boxShadow: _0x1df7af(0x2e3),
-        zIndex: "999999",
-        display: "flex",
-        flexDirection: _0x1df7af(0x2e8),
-        overflow: _0x1df7af(0x1eb),
-        fontFamily: _0x1df7af(0x25d),
+    console["log"](_0x595930(0x2e2));
+    const _0x2a8d08 = document[_0x595930(0x1cb)]("quizizz-hack-frame");
+    if (_0x2a8d08) _0x2a8d08[_0x595930(0x1f0)]();
+    const _0x3b87d4 = document["getElementById"]("quizizz-hack-toggle");
+    if (_0x3b87d4) _0x3b87d4[_0x595930(0x1f0)]();
+    let _0x668de3 = null,
+      _0x1bf2ff = ![],
+      _0x2b3120 = _0x595930(0x20a);
+    function _0x1b6ec9() {
+      const _0x590b77 = _0x595930;
+      _0x92c9ce();
+      const _0x18c6eb = document[_0x590b77(0x2c6)]("div");
+      _0x18c6eb["id"] = "quizizz-hack-frame";
+      const _0x32a6a7 = window["innerWidth"] <= 0x300;
+      Object[_0x590b77(0x1d0)](_0x18c6eb[_0x590b77(0x23c)], {
+        position: _0x590b77(0x278),
+        top: _0x32a6a7 ? _0x590b77(0x2a8) : _0x590b77(0x1b8),
+        right: _0x32a6a7 ? "10px" : _0x590b77(0x1b8),
+        left: _0x32a6a7 ? _0x590b77(0x2a8) : "auto",
+        width: _0x32a6a7 ? "calc(100%\x20-\x2020px)" : _0x590b77(0x25d),
+        maxHeight: _0x32a6a7 ? _0x590b77(0x1f5) : _0x590b77(0x2bf),
+        height: _0x32a6a7 ? _0x590b77(0x223) : "500px",
+        backgroundColor: _0x590b77(0x2c4),
+        borderRadius: _0x32a6a7 ? _0x590b77(0x254) : "12px",
+        border: _0x590b77(0x263),
+        boxShadow: "0\x206px\x2020px\x20rgba(0,0,0,0.3)",
+        zIndex: _0x590b77(0x206),
+        display: _0x590b77(0x297),
+        flexDirection: _0x590b77(0x2ad),
+        overflow: _0x590b77(0x240),
+        fontFamily: _0x590b77(0x28d),
       });
-      const _0x41df2d = document[_0x1df7af(0x284)](_0x1df7af(0x1d4));
-      Object[_0x1df7af(0x261)](_0x41df2d[_0x1df7af(0x244)], {
-        height: _0x28e2ef ? _0x1df7af(0x250) : "44px",
-        minHeight: _0x28e2ef ? _0x1df7af(0x250) : _0x1df7af(0x206),
-        backgroundColor: _0x1df7af(0x2b0),
-        color: "white",
-        display: _0x1df7af(0x241),
-        alignItems: _0x1df7af(0x1c0),
-        justifyContent: "space-between",
-        padding: _0x28e2ef ? _0x1df7af(0x1fe) : "0\x2010px",
-        cursor: _0x1df7af(0x213),
-        userSelect: _0x1df7af(0x236),
+      const _0x1b6610 = document[_0x590b77(0x2c6)](_0x590b77(0x245));
+      Object[_0x590b77(0x1d0)](_0x1b6610[_0x590b77(0x23c)], {
+        height: _0x32a6a7 ? _0x590b77(0x288) : _0x590b77(0x219),
+        minHeight: _0x32a6a7 ? _0x590b77(0x288) : _0x590b77(0x219),
+        backgroundColor: _0x590b77(0x1b6),
+        color: _0x590b77(0x2e9),
+        display: _0x590b77(0x297),
+        alignItems: _0x590b77(0x1db),
+        justifyContent: _0x590b77(0x28a),
+        padding: _0x32a6a7 ? _0x590b77(0x27c) : _0x590b77(0x292),
+        cursor: _0x590b77(0x1d5),
+        userSelect: _0x590b77(0x2eb),
         flexShrink: "0",
       });
-      const _0x6a1444 = document[_0x1df7af(0x284)](_0x1df7af(0x2b2));
-      ((_0x6a1444[_0x1df7af(0x1ff)] = _0x1df7af(0x201)),
-        (_0x6a1444[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          _0x1df7af(0x280) +
-          (_0x28e2ef ? _0x1df7af(0x2cb) : _0x1df7af(0x2ea)) +
-          _0x1df7af(0x1f8)),
-        _0x41df2d[_0x1df7af(0x252)](_0x6a1444));
-      const _0x52a0b2 = document["createElement"]("button");
-      ((_0x52a0b2[_0x1df7af(0x1d9)] = _0x1df7af(0x1d7)),
-        (_0x52a0b2[_0x1df7af(0x2db)] = _0x1df7af(0x275)),
-        (_0x52a0b2[_0x1df7af(0x272)] =
-          "<i\x20class=\x22fa-solid\x20fa-arrow-right-from-bracket\x22\x20aria-hidden=\x22true\x22></i>"),
-        (_0x52a0b2[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          _0x1df7af(0x2e2) +
-          (_0x28e2ef ? _0x1df7af(0x2e5) : _0x1df7af(0x21a)) +
+      const _0x48af54 = document[_0x590b77(0x2c6)](_0x590b77(0x279));
+      ((_0x48af54[_0x590b77(0x242)] = "DitHack!"),
+        (_0x48af54[_0x590b77(0x23c)]["cssText"] =
+          _0x590b77(0x1d9) +
+          (_0x32a6a7 ? _0x590b77(0x29b) : _0x590b77(0x20e)) +
+          _0x590b77(0x2fe)),
+        _0x1b6610[_0x590b77(0x1ce)](_0x48af54));
+      const _0x5970cd = document["createElement"]("button");
+      ((_0x5970cd[_0x590b77(0x2fa)] = _0x590b77(0x2ec)),
+        (_0x5970cd[_0x590b77(0x28c)] = _0x590b77(0x29e)),
+        (_0x5970cd[_0x590b77(0x2ae)] = _0x590b77(0x1cf)),
+        (_0x5970cd[_0x590b77(0x23c)][_0x590b77(0x226)] =
+          "\x0a\x20\x20\x20\x20\x20\x20margin-left:\x208px;\x20width:\x20" +
+          (_0x32a6a7 ? "30px" : _0x590b77(0x1ed)) +
           ";\x20height:\x20" +
-          (_0x28e2ef ? _0x1df7af(0x2e5) : _0x1df7af(0x21a)) +
-          _0x1df7af(0x21c) +
-          (_0x28e2ef ? _0x1df7af(0x233) : _0x1df7af(0x1e8)) +
-          ";\x0a\x20\x20\x20\x20\x20\x20flex-shrink:\x200;\x0a\x20\x20\x20\x20"),
-        _0x41df2d["appendChild"](_0x52a0b2));
-      const _0x2320e5 = document[_0x1df7af(0x284)](_0x1df7af(0x1d4));
-      ((_0x2320e5[_0x1df7af(0x244)]["display"] = _0x1df7af(0x241)),
-        (_0x2320e5["style"][_0x1df7af(0x1d6)] = "8px"),
-        (_0x2320e5[_0x1df7af(0x244)][_0x1df7af(0x202)] = _0x1df7af(0x1c6)));
-      const _0x27cdf5 = document["createElement"](_0x1df7af(0x2b2));
-      ((_0x27cdf5[_0x1df7af(0x1ff)] = "—"),
-        (_0x27cdf5[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          _0x1df7af(0x1f9) +
-          (_0x28e2ef ? "18px" : _0x1df7af(0x2cb)) +
-          ";\x20padding:\x204px\x208px;"));
-      const _0x4aa501 = document["createElement"](_0x1df7af(0x2b2));
-      ((_0x4aa501[_0x1df7af(0x1ff)] = "✕"),
-        (_0x4aa501[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          _0x1df7af(0x295) +
-          (_0x28e2ef ? _0x1df7af(0x2cb) : _0x1df7af(0x1e8)) +
-          ";"),
-        _0x2320e5[_0x1df7af(0x252)](_0x27cdf5),
-        _0x2320e5[_0x1df7af(0x252)](_0x4aa501),
-        _0x41df2d["appendChild"](_0x2320e5));
-      const _0x4e4466 = document["createElement"](_0x1df7af(0x1d4));
-      ((_0x4e4466["id"] = _0x1df7af(0x2b6)),
-        Object[_0x1df7af(0x261)](_0x4e4466[_0x1df7af(0x244)], {
+          (_0x32a6a7 ? "30px" : "28px") +
+          _0x590b77(0x2dd) +
+          (_0x32a6a7 ? _0x590b77(0x299) : _0x590b77(0x29c)) +
+          _0x590b77(0x23e)),
+        _0x1b6610[_0x590b77(0x1ce)](_0x5970cd));
+      const _0x536c09 = document[_0x590b77(0x2c6)](_0x590b77(0x245));
+      ((_0x536c09[_0x590b77(0x23c)][_0x590b77(0x1be)] = _0x590b77(0x297)),
+        (_0x536c09[_0x590b77(0x23c)]["gap"] = _0x590b77(0x254)),
+        (_0x536c09[_0x590b77(0x23c)][_0x590b77(0x26f)] = "auto"));
+      const _0x343695 = document["createElement"](_0x590b77(0x279));
+      ((_0x343695[_0x590b77(0x242)] = "—"),
+        (_0x343695["style"][_0x590b77(0x226)] =
+          "cursor:\x20pointer;\x20font-weight:\x20bold;\x20font-size:\x20" +
+          (_0x32a6a7 ? _0x590b77(0x2f4) : "14px") +
+          _0x590b77(0x2de)));
+      const _0x2f308d = document[_0x590b77(0x2c6)](_0x590b77(0x279));
+      ((_0x2f308d[_0x590b77(0x242)] = "✕"),
+        (_0x2f308d[_0x590b77(0x23c)][_0x590b77(0x226)] =
+          _0x590b77(0x235) + (_0x32a6a7 ? "14px" : _0x590b77(0x29c)) + ";"),
+        _0x536c09["appendChild"](_0x343695),
+        _0x536c09[_0x590b77(0x1ce)](_0x2f308d),
+        _0x1b6610["appendChild"](_0x536c09));
+      const _0x16707f = document[_0x590b77(0x2c6)](_0x590b77(0x245));
+      ((_0x16707f["id"] = "quizizz-content"),
+        Object[_0x590b77(0x1d0)](_0x16707f[_0x590b77(0x23c)], {
           flex: "1",
-          overflowY: _0x1df7af(0x1c6),
-          padding: _0x28e2ef ? "8px" : _0x1df7af(0x1e8),
-          backgroundColor: _0x1df7af(0x1ea),
-          minHeight: _0x1df7af(0x288),
+          overflowY: _0x590b77(0x223),
+          padding: _0x32a6a7 ? "8px" : _0x590b77(0x29c),
+          backgroundColor: _0x590b77(0x2a1),
+          minHeight: "200px",
         }));
-      const _0x12fa66 = document["createElement"](_0x1df7af(0x1d4));
-      Object[_0x1df7af(0x261)](_0x12fa66["style"], {
-        position: _0x1df7af(0x1dc),
+      const _0x5b4d3b = document[_0x590b77(0x2c6)](_0x590b77(0x245));
+      Object[_0x590b77(0x1d0)](_0x5b4d3b["style"], {
+        position: _0x590b77(0x231),
         top: "0",
-        display: _0x1df7af(0x241),
-        alignItems: _0x1df7af(0x210),
-        width: _0x1df7af(0x1e2),
-        backgroundColor: _0x1df7af(0x1ea),
-        marginBottom: _0x28e2ef ? "8px" : _0x1df7af(0x1e8),
-        gap: _0x1df7af(0x1e0),
-        height: "40px",
+        display: _0x590b77(0x297),
+        alignItems: _0x590b77(0x261),
+        width: _0x590b77(0x266),
+        backgroundColor: _0x590b77(0x2a1),
+        marginBottom: _0x32a6a7 ? "8px" : _0x590b77(0x29c),
+        gap: _0x590b77(0x21d),
+        height: _0x590b77(0x288),
       });
-      const _0x1cfc5a = document["createElement"](_0x1df7af(0x249));
-      ((_0x1cfc5a[_0x1df7af(0x1d9)] = "text"),
-        (_0x1cfc5a["placeholder"] = _0x1df7af(0x219)),
-        (_0x1cfc5a[_0x1df7af(0x244)][_0x1df7af(0x230)] = _0x1df7af(0x1b9)));
-      const _0x38f3c8 = document["createElement"](_0x1df7af(0x1d7));
-      ((_0x38f3c8["textContent"] = "✕"),
-        (_0x38f3c8[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2012px\x20!important;\x20background:\x20#e5e7eb\x20!important;\x20border:\x201px\x20solid\x20#ccc\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-left:\x20none\x20!important;\x20border-radius:\x200\x208px\x208px\x200\x20!important;\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px\x20!important;\x20height:\x2040px\x20!important;\x20font-size:\x2014px\x20!important;\x20line-height:\x2040px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x20margin:\x200\x20!important;\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20"),
-        _0x12fa66["appendChild"](_0x1cfc5a),
-        _0x12fa66[_0x1df7af(0x252)](_0x38f3c8));
-      const _0x51b76b = document[_0x1df7af(0x284)](_0x1df7af(0x1d4));
-      ((_0x51b76b["id"] = "quizizz-results"),
-        (_0x51b76b[_0x1df7af(0x244)][_0x1df7af(0x230)] =
-          _0x1df7af(0x2d7) +
-          (_0x28e2ef ? _0x1df7af(0x286) : _0x1df7af(0x1bb)) +
+      const _0x4f0344 = document[_0x590b77(0x2c6)]("input");
+      ((_0x4f0344[_0x590b77(0x2fa)] = _0x590b77(0x2ed)),
+        (_0x4f0344[_0x590b77(0x2d9)] = _0x590b77(0x25c)),
+        (_0x4f0344[_0x590b77(0x23c)][_0x590b77(0x226)] =
+          "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201\x20!important;\x20padding:\x208px\x2012px\x20!important;\x20border-radius:\x208px\x200\x200\x208px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc\x20!important;\x20border-right:\x20none\x20!important;\x20font-size:\x2014px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px\x20!important;\x20line-height:\x2024px\x20!important;\x20box-sizing:\x20border-box\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20outline:\x20none\x20!important;\x20margin:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20"));
+      const _0x625b01 = document[_0x590b77(0x2c6)]("button");
+      ((_0x625b01[_0x590b77(0x242)] = "✕"),
+        (_0x625b01[_0x590b77(0x23c)][_0x590b77(0x226)] = _0x590b77(0x207)),
+        _0x5b4d3b["appendChild"](_0x4f0344),
+        _0x5b4d3b[_0x590b77(0x1ce)](_0x625b01));
+      const _0x2bfb2b = document["createElement"](_0x590b77(0x245));
+      ((_0x2bfb2b["id"] = _0x590b77(0x1dc)),
+        (_0x2bfb2b[_0x590b77(0x23c)][_0x590b77(0x226)] =
+          "display:\x20flex;\x20flex-direction:\x20column;\x20gap:\x20" +
+          (_0x32a6a7 ? _0x590b77(0x25f) : _0x590b77(0x254)) +
           ";"),
-        _0x4e4466[_0x1df7af(0x252)](_0x12fa66),
-        _0x4e4466[_0x1df7af(0x252)](_0x51b76b),
-        _0x5f352f["appendChild"](_0x41df2d),
-        _0x5f352f["appendChild"](_0x4e4466));
-      const _0x3fa334 = document[_0x1df7af(0x284)](_0x1df7af(0x1d4));
+        _0x16707f[_0x590b77(0x1ce)](_0x5b4d3b),
+        _0x16707f[_0x590b77(0x1ce)](_0x2bfb2b),
+        _0x18c6eb[_0x590b77(0x1ce)](_0x1b6610),
+        _0x18c6eb["appendChild"](_0x16707f));
+      const _0x4b60db = document[_0x590b77(0x2c6)](_0x590b77(0x245));
       return (
-        Object["assign"](_0x3fa334["style"], {
-          position: _0x1df7af(0x1bf),
+        Object[_0x590b77(0x1d0)](_0x4b60db[_0x590b77(0x23c)], {
+          position: _0x590b77(0x24e),
           bottom: "0",
           right: "0",
-          width: _0x28e2ef ? _0x1df7af(0x2aa) : _0x1df7af(0x1d8),
-          height: _0x28e2ef ? _0x1df7af(0x2aa) : _0x1df7af(0x1d8),
-          cursor: _0x1df7af(0x2b8),
-          background: _0x1df7af(0x266),
-          borderBottomRightRadius: _0x28e2ef ? "8px" : _0x1df7af(0x1e8),
+          width: _0x32a6a7 ? _0x590b77(0x1fc) : _0x590b77(0x2f8),
+          height: _0x32a6a7 ? _0x590b77(0x1fc) : _0x590b77(0x2f8),
+          cursor: "se-resize",
+          background: _0x590b77(0x250),
+          borderBottomRightRadius: _0x32a6a7 ? "8px" : _0x590b77(0x29c),
         }),
-        _0x5f352f[_0x1df7af(0x252)](_0x3fa334),
-        document["body"][_0x1df7af(0x252)](_0x5f352f),
+        _0x18c6eb[_0x590b77(0x1ce)](_0x4b60db),
+        document[_0x590b77(0x225)]["appendChild"](_0x18c6eb),
         {
-          container: _0x5f352f,
-          header: _0x41df2d,
-          content: _0x4e4466,
-          searchBar: _0x1cfc5a,
-          clearBtn: _0x38f3c8,
-          resultsWrap: _0x51b76b,
-          logoutBtn: _0x52a0b2,
-          minimizeBtn: _0x27cdf5,
-          hideBtn: _0x4aa501,
-          resizeHandle: _0x3fa334,
+          container: _0x18c6eb,
+          header: _0x1b6610,
+          content: _0x16707f,
+          searchBar: _0x4f0344,
+          clearBtn: _0x625b01,
+          resultsWrap: _0x2bfb2b,
+          logoutBtn: _0x5970cd,
+          minimizeBtn: _0x343695,
+          hideBtn: _0x2f308d,
+          resizeHandle: _0x4b60db,
         }
       );
     }
-    function _0x5b790a() {
-      const _0x2c3f5a = _0x9a0e70,
-        _0x11a7cb = document["createElement"](_0x2c3f5a(0x1d7));
-      _0x11a7cb["id"] = _0x2c3f5a(0x28f);
-      const _0x470bcd = document[_0x2c3f5a(0x284)](_0x2c3f5a(0x24b));
+    function _0x12850f() {
+      const _0xb325f1 = _0x595930,
+        _0x404cf4 = document[_0xb325f1(0x2c6)]("button");
+      _0x404cf4["id"] = _0xb325f1(0x2c7);
+      const _0x5cd01c = document[_0xb325f1(0x2c6)]("img");
       return (
-        (_0x470bcd["src"] = _0x2c3f5a(0x207)),
-        (_0x470bcd[_0x2c3f5a(0x281)] = "DitHack"),
-        (_0x470bcd[_0x2c3f5a(0x244)][_0x2c3f5a(0x230)] = _0x2c3f5a(0x23d)),
-        _0x11a7cb["appendChild"](_0x470bcd),
-        (_0x11a7cb[_0x2c3f5a(0x244)][_0x2c3f5a(0x230)] = _0x2c3f5a(0x1fb)),
-        _0x11a7cb[_0x2c3f5a(0x2a9)](_0x2c3f5a(0x238), function () {
-          const _0x2aa476 = _0x2c3f5a;
-          _0x11a7cb[_0x2aa476(0x244)][_0x2aa476(0x214)] = _0x2aa476(0x260);
+        (_0x5cd01c[_0xb325f1(0x268)] = _0xb325f1(0x21e)),
+        (_0x5cd01c[_0xb325f1(0x24c)] = _0xb325f1(0x1d1)),
+        (_0x5cd01c[_0xb325f1(0x23c)]["cssText"] =
+          "\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2042px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2042px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20contain\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none\x20!important;\x0a\x20\x20\x20\x20"),
+        _0x404cf4[_0xb325f1(0x1ce)](_0x5cd01c),
+        (_0x404cf4["style"]["cssText"] =
+          "\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2020px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20999998\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s\x20ease,\x20transform\x200.2s\x20ease\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20"),
+        _0x404cf4["addEventListener"]("touchstart", function () {
+          const _0x341a53 = _0xb325f1;
+          _0x404cf4[_0x341a53(0x23c)]["transform"] = _0x341a53(0x22c);
         }),
-        _0x11a7cb[_0x2c3f5a(0x2a9)](_0x2c3f5a(0x255), function () {
-          const _0xa8d4f7 = _0x2c3f5a;
-          _0x11a7cb[_0xa8d4f7(0x244)][_0xa8d4f7(0x214)] = _0xa8d4f7(0x2dd);
+        _0x404cf4[_0xb325f1(0x2f3)](_0xb325f1(0x2e0), function () {
+          const _0x242974 = _0xb325f1;
+          _0x404cf4[_0x242974(0x23c)][_0x242974(0x24b)] = _0x242974(0x2aa);
         }),
-        (_0x11a7cb[_0x2c3f5a(0x24f)] = function () {
-          const _0x32946a = _0x2c3f5a,
-            _0x4b70f6 = document["getElementById"](_0x32946a(0x224));
-          _0x4b70f6 &&
-            ((_0x4b70f6[_0x32946a(0x244)][_0x32946a(0x2c7)] = "flex"),
-            (_0x11a7cb[_0x32946a(0x244)]["opacity"] = "0"));
+        (_0x404cf4[_0xb325f1(0x1dd)] = function () {
+          const _0x2cf4e4 = _0xb325f1,
+            _0x5e540f = document[_0x2cf4e4(0x1cb)](_0x2cf4e4(0x241));
+          _0x5e540f &&
+            ((_0x5e540f[_0x2cf4e4(0x23c)][_0x2cf4e4(0x1be)] = "flex"),
+            (_0x404cf4[_0x2cf4e4(0x23c)][_0x2cf4e4(0x2c3)] = "0"));
         }),
-        document["body"][_0x2c3f5a(0x252)](_0x11a7cb),
-        _0x11a7cb
+        document[_0xb325f1(0x225)]["appendChild"](_0x404cf4),
+        _0x404cf4
       );
     }
-    function _0x48951f(_0x22033a) {
-      const _0x281d0b = _0x9a0e70,
-        _0x52d404 = document["getElementById"](_0x281d0b(0x2c8));
-      if (_0x52d404) _0x52d404[_0x281d0b(0x237)]();
-      const _0xf83abd = document[_0x281d0b(0x284)](_0x281d0b(0x1d4));
-      ((_0xf83abd["id"] = _0x281d0b(0x2c8)),
-        (_0xf83abd[_0x281d0b(0x244)][_0x281d0b(0x230)] = _0x281d0b(0x2ed)));
-      const _0x3addb8 = document[_0x281d0b(0x284)](_0x281d0b(0x1d4));
-      _0x3addb8[_0x281d0b(0x244)][_0x281d0b(0x230)] = _0x281d0b(0x25b);
-      const _0x505aeb = document["createElement"](_0x281d0b(0x1d4));
-      ((_0x505aeb["textContent"] = _0x281d0b(0x2f3)),
-        (_0x505aeb["style"][_0x281d0b(0x230)] = _0x281d0b(0x1c2)));
-      const _0x1a9b67 = document["createElement"](_0x281d0b(0x1d4));
-      ((_0x1a9b67["textContent"] = _0x281d0b(0x1ed)),
-        (_0x1a9b67[_0x281d0b(0x244)][_0x281d0b(0x230)] = _0x281d0b(0x1d5)));
-      const _0x3d7460 = document["createElement"](_0x281d0b(0x1d4));
-      _0x3d7460[_0x281d0b(0x244)]["cssText"] = _0x281d0b(0x26f);
-      const _0x186b74 = document[_0x281d0b(0x284)](_0x281d0b(0x1d7));
-      ((_0x186b74[_0x281d0b(0x1ff)] = _0x281d0b(0x23f)),
-        (_0x186b74["style"]["cssText"] = _0x281d0b(0x1b7)));
-      const _0xfbc6a5 = document["createElement"](_0x281d0b(0x1d7));
-      ((_0xfbc6a5["textContent"] = "Logout"),
-        (_0xfbc6a5[_0x281d0b(0x244)][_0x281d0b(0x230)] =
-          "flex:1\x20!important;\x20padding:10px\x20!important;\x20border:none\x20!important;\x20border-radius:7px\x20!important;\x20background:#ef4444\x20!important;\x20color:#fff\x20!important;\x20cursor:pointer\x20!important;\x20font-weight:700\x20!important;"),
-        (_0x186b74["onclick"] = () => _0xf83abd["remove"]()),
-        (_0xf83abd[_0x281d0b(0x24f)] = (_0x2e88ed) => {
-          const _0x43f88d = _0x281d0b;
-          if (_0x2e88ed[_0x43f88d(0x1c8)] === _0xf83abd)
-            _0xf83abd[_0x43f88d(0x237)]();
+    function _0x3395d1(_0x586294) {
+      const _0x1813fa = _0x595930,
+        _0x26f6e4 = document[_0x1813fa(0x1cb)](_0x1813fa(0x280));
+      if (_0x26f6e4) _0x26f6e4["remove"]();
+      const _0x10298b = document[_0x1813fa(0x2c6)](_0x1813fa(0x245));
+      ((_0x10298b["id"] = _0x1813fa(0x280)),
+        (_0x10298b[_0x1813fa(0x23c)][_0x1813fa(0x226)] = _0x1813fa(0x22b)));
+      const _0x148f17 = document[_0x1813fa(0x2c6)](_0x1813fa(0x245));
+      _0x148f17[_0x1813fa(0x23c)][_0x1813fa(0x226)] = _0x1813fa(0x281);
+      const _0x34c9d6 = document[_0x1813fa(0x2c6)](_0x1813fa(0x245));
+      ((_0x34c9d6[_0x1813fa(0x242)] = "Logout\x20DitHack?"),
+        (_0x34c9d6[_0x1813fa(0x23c)][_0x1813fa(0x226)] = _0x1813fa(0x296)));
+      const _0x4ee061 = document[_0x1813fa(0x2c6)](_0x1813fa(0x245));
+      ((_0x4ee061[_0x1813fa(0x242)] = _0x1813fa(0x1eb)),
+        (_0x4ee061["style"][_0x1813fa(0x226)] = _0x1813fa(0x2a6)));
+      const _0x42201e = document["createElement"](_0x1813fa(0x245));
+      _0x42201e["style"][_0x1813fa(0x226)] =
+        "display:flex\x20!important;\x20gap:10px\x20!important;\x20justify-content:center\x20!important;";
+      const _0x7f5383 = document[_0x1813fa(0x2c6)](_0x1813fa(0x2ec));
+      ((_0x7f5383["textContent"] = _0x1813fa(0x2d3)),
+        (_0x7f5383["style"][_0x1813fa(0x226)] = _0x1813fa(0x212)));
+      const _0x182f67 = document["createElement"]("button");
+      ((_0x182f67["textContent"] = _0x1813fa(0x29e)),
+        (_0x182f67[_0x1813fa(0x23c)][_0x1813fa(0x226)] = _0x1813fa(0x2ba)),
+        (_0x7f5383["onclick"] = () => _0x10298b[_0x1813fa(0x1f0)]()),
+        (_0x10298b["onclick"] = (_0x581d54) => {
+          const _0x2c5770 = _0x1813fa;
+          if (_0x581d54[_0x2c5770(0x1ba)] === _0x10298b)
+            _0x10298b[_0x2c5770(0x1f0)]();
         }),
-        (_0xfbc6a5[_0x281d0b(0x24f)] = async () => {
-          const _0x220983 = _0x281d0b;
-          ((_0xfbc6a5[_0x220983(0x1e6)] = !![]),
-            (_0xfbc6a5[_0x220983(0x1ff)] = "Logout..."),
-            await _0x22033a(),
-            _0xf83abd["remove"]());
+        (_0x182f67[_0x1813fa(0x1dd)] = async () => {
+          const _0x5b8544 = _0x1813fa;
+          ((_0x182f67[_0x5b8544(0x2fc)] = !![]),
+            (_0x182f67[_0x5b8544(0x242)] = _0x5b8544(0x227)),
+            await _0x586294(),
+            _0x10298b[_0x5b8544(0x1f0)]());
         }),
-        _0x3d7460["appendChild"](_0x186b74),
-        _0x3d7460[_0x281d0b(0x252)](_0xfbc6a5),
-        _0x3addb8[_0x281d0b(0x252)](_0x505aeb),
-        _0x3addb8["appendChild"](_0x1a9b67),
-        _0x3addb8["appendChild"](_0x3d7460),
-        _0xf83abd[_0x281d0b(0x252)](_0x3addb8),
-        document[_0x281d0b(0x2d1)]["appendChild"](_0xf83abd));
+        _0x42201e[_0x1813fa(0x1ce)](_0x7f5383),
+        _0x42201e[_0x1813fa(0x1ce)](_0x182f67),
+        _0x148f17["appendChild"](_0x34c9d6),
+        _0x148f17[_0x1813fa(0x1ce)](_0x4ee061),
+        _0x148f17[_0x1813fa(0x1ce)](_0x42201e),
+        _0x10298b[_0x1813fa(0x1ce)](_0x148f17),
+        document[_0x1813fa(0x225)][_0x1813fa(0x1ce)](_0x10298b));
     }
-    async function _0x2099c9() {
-      const _0x1885fa = _0x9a0e70,
-        _0x3d5555 = localStorage[_0x1885fa(0x208)](_0x1885fa(0x239));
-      if (_0x3d5555)
+    async function _0x2d4843() {
+      const _0x5ba6c4 = _0x595930,
+        _0x2d32d9 = localStorage[_0x5ba6c4(0x21c)](_0x5ba6c4(0x285));
+      if (_0x2d32d9)
         try {
-          await fetch(_0x196f80 + _0x1885fa(0x29b), {
-            method: "POST",
-            headers: _0x863dec(),
+          await fetch(_0xed865b + _0x5ba6c4(0x29d), {
+            method: _0x5ba6c4(0x27e),
+            headers: _0x19917c(),
           });
-        } catch (_0x38d55e) {
-          console[_0x1885fa(0x1c3)]("[License]\x20Logout\x20error:", _0x38d55e);
+        } catch (_0x7bb1eb) {
+          console[_0x5ba6c4(0x1fe)]("[License]\x20Logout\x20error:", _0x7bb1eb);
         }
-      (localStorage["removeItem"](_0x1885fa(0x239)),
-        document[_0x1885fa(0x2c1)](_0x1885fa(0x224))?.["remove"](),
-        document[_0x1885fa(0x2c1)]("quizizz-hack-toggle")?.["remove"](),
-        _0x2573f0());
+      (localStorage["removeItem"](_0x5ba6c4(0x285)),
+        document[_0x5ba6c4(0x1cb)](_0x5ba6c4(0x241))?.[_0x5ba6c4(0x1f0)](),
+        document[_0x5ba6c4(0x1cb)](_0x5ba6c4(0x2c7))?.[_0x5ba6c4(0x1f0)](),
+        _0xc9efc8());
     }
-    async function _0x2da5b0(_0x428dc6) {
-      const _0x458d75 = _0x9a0e70;
+    async function _0x4de6d9(_0x1dd64f) {
+      const _0x4f8e36 = _0x595930;
       try {
-        const _0x513721 = await fetch(
-          _0x196f80 + _0x458d75(0x27b) + encodeURIComponent(_0x428dc6),
-          { headers: _0x863dec() },
+        const _0xc06afc = await fetch(
+          _0xed865b + _0x4f8e36(0x27f) + encodeURIComponent(_0x1dd64f),
+          { headers: _0x19917c() },
         );
-        if (_0x513721[_0x458d75(0x2bb)] === 0x199)
-          return { error: _0x458d75(0x216) };
-        if (!_0x513721["ok"]) return null;
-        const _0x496dd0 = await _0x513721[_0x458d75(0x2ba)]();
-        if (!_0x496dd0) return null;
-        return _0x496dd0;
-      } catch (_0x11a306) {
-        return (console[_0x458d75(0x1c3)](_0x458d75(0x2b9), _0x11a306), null);
+        if (_0xc06afc[_0x4f8e36(0x2ff)] === 0x199)
+          return { error: _0x4f8e36(0x205) };
+        if (!_0xc06afc["ok"]) return null;
+        const _0x5d1fe3 = await _0xc06afc[_0x4f8e36(0x236)]();
+        if (!_0x5d1fe3) return null;
+        return _0x5d1fe3;
+      } catch (_0x4113d2) {
+        return (console[_0x4f8e36(0x1fe)](_0x4f8e36(0x260), _0x4113d2), null);
       }
     }
-    async function _0x4ce7c2(_0x38e28f) {
-      const _0x33e60b = _0x9a0e70;
+    async function _0xea7a8d(_0x2aac69) {
+      const _0x5be046 = _0x595930;
       try {
-        const _0x5a2afd = await fetch(
-          _0x196f80 + _0x33e60b(0x269) + encodeURIComponent(_0x38e28f),
-          { headers: _0x863dec() },
+        const _0x601bf2 = await fetch(
+          _0xed865b + _0x5be046(0x26b) + encodeURIComponent(_0x2aac69),
+          { headers: _0x19917c() },
         );
-        if (_0x5a2afd[_0x33e60b(0x2bb)] === 0x199)
-          return { error: _0x33e60b(0x216) };
-        if (!_0x5a2afd["ok"]) return null;
-        const _0xa56e70 = await _0x5a2afd[_0x33e60b(0x2ba)]();
+        if (_0x601bf2[_0x5be046(0x2ff)] === 0x199)
+          return {
+            error: "Token\x20sudah\x20digunakan\x20di\x20perangkat\x20lain",
+          };
+        if (!_0x601bf2["ok"]) return null;
+        const _0x5b4b56 = await _0x601bf2[_0x5be046(0x236)]();
         if (
-          !_0xa56e70 ||
-          (_0xa56e70[_0x33e60b(0x29f)] &&
-            _0xa56e70[_0x33e60b(0x29f)][_0x33e60b(0x1e4)] === 0x0)
+          !_0x5b4b56 ||
+          (_0x5b4b56[_0x5be046(0x1c8)] &&
+            _0x5b4b56["answers"][_0x5be046(0x2cf)] === 0x0)
         )
           return null;
-        return _0xa56e70;
-      } catch (_0x131e74) {
-        return (console[_0x33e60b(0x1c3)](_0x33e60b(0x2a0), _0x131e74), null);
+        return _0x5b4b56;
+      } catch (_0x7d727b) {
+        return (console[_0x5be046(0x1fe)](_0x5be046(0x203), _0x7d727b), null);
       }
     }
-    function _0x2549a0(_0x4e1229) {
-      const _0x3f4144 = _0x9a0e70;
-      if (!_0x4e1229) return null;
+    function _0x37e663(_0x1aaffb) {
+      const _0x17a14b = _0x595930;
+      if (!_0x1aaffb) return null;
       if (
-        _0x4e1229[_0x3f4144(0x2f1)] !== undefined &&
-        Array[_0x3f4144(0x26d)](_0x4e1229[_0x3f4144(0x29f)])
+        _0x1aaffb[_0x17a14b(0x1e0)] !== undefined &&
+        Array[_0x17a14b(0x20b)](_0x1aaffb[_0x17a14b(0x1c8)])
       )
-        return _0x4e1229[_0x3f4144(0x29f)]["map"]((_0x2f5cc5) => {
-          const _0x3159f3 = _0x3f4144,
-            _0x2c2ed0 = _0x2f5cc5[_0x3159f3(0x1de)] || "";
-          let _0x5f5a55 = null;
+        return _0x1aaffb["answers"][_0x17a14b(0x229)]((_0xb7d51a) => {
+          const _0x4d6329 = _0x17a14b,
+            _0x4e01a4 = _0xb7d51a[_0x4d6329(0x2b6)] || "";
+          let _0xa7959b = null;
           if (
-            Array[_0x3159f3(0x26d)](_0x2f5cc5["media"]) &&
-            _0x2f5cc5[_0x3159f3(0x1da)][_0x3159f3(0x1e4)] > 0x0
+            Array[_0x4d6329(0x20b)](_0xb7d51a[_0x4d6329(0x26e)]) &&
+            _0xb7d51a[_0x4d6329(0x26e)]["length"] > 0x0
           ) {
-            const _0x31406e = _0x2f5cc5[_0x3159f3(0x1da)][_0x3159f3(0x215)](
-              (_0x247da9) => _0x247da9 && _0x247da9[_0x3159f3(0x25a)],
+            const _0x14d8f3 = _0xb7d51a["media"][_0x4d6329(0x286)](
+              (_0x415e4b) => _0x415e4b && _0x415e4b["url"],
             );
-            if (_0x31406e) _0x5f5a55 = _0x31406e[_0x3159f3(0x25a)];
+            if (_0x14d8f3) _0xa7959b = _0x14d8f3[_0x4d6329(0x29f)];
           } else
-            _0x2f5cc5[_0x3159f3(0x1da)] &&
-              _0x2f5cc5[_0x3159f3(0x1da)]["url"] &&
-              (_0x5f5a55 = _0x2f5cc5[_0x3159f3(0x1da)][_0x3159f3(0x25a)]);
-          const _0x2e903f = Array[_0x3159f3(0x26d)](_0x2f5cc5["answer"])
-              ? _0x2f5cc5[_0x3159f3(0x2fc)]
-              : [_0x2f5cc5[_0x3159f3(0x2fc)]],
-            _0x2ac32a =
-              _0x2f5cc5[_0x3159f3(0x1d9)] === _0x3159f3(0x1f0) ||
-              _0x2f5cc5[_0x3159f3(0x2f6)];
-          let _0x2bc3e0 = [];
+            _0xb7d51a[_0x4d6329(0x26e)] &&
+              _0xb7d51a[_0x4d6329(0x26e)]["url"] &&
+              (_0xa7959b = _0xb7d51a[_0x4d6329(0x26e)][_0x4d6329(0x29f)]);
+          const _0x3a71de = Array["isArray"](_0xb7d51a[_0x4d6329(0x1ee)])
+              ? _0xb7d51a["answer"]
+              : [_0xb7d51a[_0x4d6329(0x1ee)]],
+            _0xbdde95 =
+              _0xb7d51a[_0x4d6329(0x2fa)] === _0x4d6329(0x289) ||
+              _0xb7d51a["ignoreAnswers"];
+          let _0x23e920 = [];
           return (
-            _0x2ac32a
-              ? (_0x2bc3e0 = (_0x2f5cc5[_0x3159f3(0x2fe)] || [])[
-                  _0x3159f3(0x20c)
-                ]((_0x3d3791) => ({
-                  text: _0x3d3791["text"] || "",
-                  mediaUrl: _0x307827(_0x3d3791),
-                })))
-              : (_0x2bc3e0 = _0x2e903f["map"]((_0x179c37) => {
-                  const _0x501f6c = _0x3159f3,
-                    _0x5e00c6 =
-                      _0x2f5cc5["options"] && _0x2f5cc5["options"][_0x179c37];
-                  if (!_0x5e00c6) return null;
+            _0xbdde95
+              ? (_0x23e920 = (_0xb7d51a[_0x4d6329(0x23b)] || [])["map"](
+                  (_0xc36a62) => ({
+                    text: _0xc36a62[_0x4d6329(0x2ed)] || "",
+                    mediaUrl: _0x191936(_0xc36a62),
+                  }),
+                ))
+              : (_0x23e920 = _0x3a71de["map"]((_0x80a517) => {
+                  const _0x4875ad = _0x4d6329,
+                    _0x571d8c =
+                      _0xb7d51a[_0x4875ad(0x23b)] &&
+                      _0xb7d51a[_0x4875ad(0x23b)][_0x80a517];
+                  if (!_0x571d8c) return null;
                   return {
-                    text: _0x5e00c6[_0x501f6c(0x2dc)] || "",
-                    mediaUrl: _0x307827(_0x5e00c6),
+                    text: _0x571d8c[_0x4875ad(0x2ed)] || "",
+                    mediaUrl: _0x191936(_0x571d8c),
                   };
-                })[_0x3159f3(0x1fa)](Boolean)),
+                })["filter"](Boolean)),
             {
-              question: _0x2c2ed0,
-              questionMedia: _0x5f5a55,
-              answers: _0x2bc3e0,
-              type: _0x2f5cc5[_0x3159f3(0x1d9)] || _0x3159f3(0x2f4),
-              layout: _0x2f5cc5[_0x3159f3(0x23a)] || null,
-              multiAnswer: _0x2e903f[_0x3159f3(0x1e4)] > 0x1,
-              isBlank: _0x2ac32a,
+              question: _0x4e01a4,
+              questionMedia: _0xa7959b,
+              answers: _0x23e920,
+              type: _0xb7d51a[_0x4d6329(0x2fa)] || "MCQ",
+              layout: _0xb7d51a[_0x4d6329(0x237)] || null,
+              multiAnswer: _0x3a71de[_0x4d6329(0x2cf)] > 0x1,
+              isBlank: _0xbdde95,
             }
           );
         });
-      let _0x4a823a = null;
-      if (
-        _0x4e1229[_0x3f4144(0x24d)] &&
-        _0x4e1229[_0x3f4144(0x24d)][_0x3f4144(0x29f)]
-      )
-        _0x4a823a = _0x4e1229[_0x3f4144(0x24d)][_0x3f4144(0x29f)];
+      let _0x5bd2d8 = null;
+      if (_0x1aaffb[_0x17a14b(0x27a)] && _0x1aaffb["data"][_0x17a14b(0x1c8)])
+        _0x5bd2d8 = _0x1aaffb["data"][_0x17a14b(0x1c8)];
       else {
-        if (Array[_0x3f4144(0x26d)](_0x4e1229[_0x3f4144(0x24d)]))
-          _0x4a823a = _0x4e1229[_0x3f4144(0x24d)];
+        if (Array[_0x17a14b(0x20b)](_0x1aaffb[_0x17a14b(0x27a)]))
+          _0x5bd2d8 = _0x1aaffb[_0x17a14b(0x27a)];
         else {
-          if (Array[_0x3f4144(0x26d)](_0x4e1229[_0x3f4144(0x29f)]))
-            _0x4a823a = _0x4e1229[_0x3f4144(0x29f)];
+          if (Array[_0x17a14b(0x20b)](_0x1aaffb[_0x17a14b(0x1c8)]))
+            _0x5bd2d8 = _0x1aaffb[_0x17a14b(0x1c8)];
           else {
-            if (Array[_0x3f4144(0x26d)](_0x4e1229)) _0x4a823a = _0x4e1229;
+            if (Array[_0x17a14b(0x20b)](_0x1aaffb)) _0x5bd2d8 = _0x1aaffb;
           }
         }
       }
-      if (_0x4a823a)
-        return _0x4a823a[_0x3f4144(0x20c)]((_0x1e7ffc) => {
-          const _0x579b08 = _0x3f4144,
-            _0x2d6908 =
-              (_0x1e7ffc[_0x579b08(0x1de)] &&
-                (_0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x2dc)] ||
-                  (_0x1e7ffc[_0x579b08(0x1de)]["structure"] &&
-                    _0x1e7ffc["question"][_0x579b08(0x2eb)][
-                      _0x579b08(0x2dc)
+      if (_0x5bd2d8)
+        return _0x5bd2d8[_0x17a14b(0x229)]((_0x3a315d) => {
+          const _0x2c578b = _0x17a14b,
+            _0x1d513b =
+              (_0x3a315d[_0x2c578b(0x2b6)] &&
+                (_0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x2ed)] ||
+                  (_0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x1e4)] &&
+                    _0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x1e4)][
+                      _0x2c578b(0x2ed)
                     ]))) ||
               "";
-          let _0x51c0c8 = null;
+          let _0xe5ba97 = null;
           if (
-            _0x1e7ffc[_0x579b08(0x1de)] &&
-            _0x1e7ffc["question"][_0x579b08(0x28a)]
+            _0x3a315d[_0x2c578b(0x2b6)] &&
+            _0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x2e5)]
           )
-            _0x51c0c8 = _0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x28a)];
+            _0xe5ba97 = _0x3a315d[_0x2c578b(0x2b6)]["image"];
           else {
             if (
-              _0x1e7ffc[_0x579b08(0x1de)] &&
-              _0x1e7ffc["question"][_0x579b08(0x1da)]
+              _0x3a315d["question"] &&
+              _0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x26e)]
             ) {
-              const _0x4ceb31 = Array[_0x579b08(0x26d)](
-                _0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x1da)],
+              const _0x35c5b9 = Array["isArray"](
+                _0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x26e)],
               )
-                ? _0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x1da)][
-                    _0x579b08(0x215)
-                  ]((_0x130fdc) => _0x130fdc && _0x130fdc[_0x579b08(0x25a)])
-                : _0x1e7ffc["question"][_0x579b08(0x1da)];
-              if (_0x4ceb31 && _0x4ceb31[_0x579b08(0x25a)])
-                _0x51c0c8 = _0x4ceb31["url"];
+                ? _0x3a315d[_0x2c578b(0x2b6)]["media"][_0x2c578b(0x286)](
+                    (_0x4cf932) => _0x4cf932 && _0x4cf932[_0x2c578b(0x29f)],
+                  )
+                : _0x3a315d["question"][_0x2c578b(0x26e)];
+              if (_0x35c5b9 && _0x35c5b9["url"]) _0xe5ba97 = _0x35c5b9["url"];
             } else {
               if (
-                _0x1e7ffc[_0x579b08(0x1de)] &&
-                _0x1e7ffc["question"]["structure"] &&
-                _0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x2eb)]["media"]
+                _0x3a315d[_0x2c578b(0x2b6)] &&
+                _0x3a315d[_0x2c578b(0x2b6)]["structure"] &&
+                _0x3a315d[_0x2c578b(0x2b6)][_0x2c578b(0x1e4)]["media"]
               ) {
-                const _0x28aaf1 =
-                  _0x1e7ffc[_0x579b08(0x1de)][_0x579b08(0x2eb)][
-                    _0x579b08(0x1da)
-                  ];
-                if (_0x28aaf1 && _0x28aaf1[_0x579b08(0x25a)])
-                  _0x51c0c8 = _0x28aaf1[_0x579b08(0x25a)];
+                const _0x218f33 =
+                  _0x3a315d["question"][_0x2c578b(0x1e4)][_0x2c578b(0x26e)];
+                if (_0x218f33 && _0x218f33[_0x2c578b(0x29f)])
+                  _0xe5ba97 = _0x218f33[_0x2c578b(0x29f)];
               }
             }
           }
-          const _0x451925 = (_0x1e7ffc["answers"] || [])[_0x579b08(0x20c)](
-            (_0x223e9b) => ({
-              text: _0x223e9b[_0x579b08(0x2dc)] || "",
-              mediaUrl: _0x307827(_0x223e9b),
+          const _0x188d70 = (_0x3a315d["answers"] || [])[_0x2c578b(0x229)](
+            (_0x5e6682) => ({
+              text: _0x5e6682[_0x2c578b(0x2ed)] || "",
+              mediaUrl: _0x191936(_0x5e6682),
             }),
           );
           return {
-            question: _0x2d6908,
-            questionMedia: _0x51c0c8,
-            answers: _0x451925,
-            type: _0x579b08(0x2f4),
+            question: _0x1d513b,
+            questionMedia: _0xe5ba97,
+            answers: _0x188d70,
+            type: "MCQ",
             isBlank: ![],
           };
         });
       return null;
     }
-    function _0x307827(_0x1ffa2f) {
-      const _0x474e91 = _0x9a0e70;
-      if (!_0x1ffa2f) return null;
+    function _0x191936(_0x581689) {
+      const _0x51f437 = _0x595930;
+      if (!_0x581689) return null;
       if (
-        _0x1ffa2f["image"] &&
-        typeof _0x1ffa2f[_0x474e91(0x28a)] === _0x474e91(0x24a)
+        _0x581689[_0x51f437(0x2e5)] &&
+        typeof _0x581689["image"] === _0x51f437(0x1d2)
       )
-        return _0x1ffa2f["image"];
-      if (_0x1ffa2f["media"]) {
-        if (typeof _0x1ffa2f[_0x474e91(0x1da)] === _0x474e91(0x24a))
-          return _0x1ffa2f[_0x474e91(0x1da)];
-        if (_0x1ffa2f["media"][_0x474e91(0x25a)])
-          return _0x1ffa2f["media"][_0x474e91(0x25a)];
-        if (Array["isArray"](_0x1ffa2f[_0x474e91(0x1da)])) {
-          const _0x8191c6 = _0x1ffa2f["media"]["find"](
-            (_0x440294) => _0x440294 && _0x440294["url"],
+        return _0x581689[_0x51f437(0x2e5)];
+      if (_0x581689[_0x51f437(0x26e)]) {
+        if (typeof _0x581689[_0x51f437(0x26e)] === _0x51f437(0x1d2))
+          return _0x581689[_0x51f437(0x26e)];
+        if (_0x581689[_0x51f437(0x26e)]["url"])
+          return _0x581689[_0x51f437(0x26e)][_0x51f437(0x29f)];
+        if (Array[_0x51f437(0x20b)](_0x581689["media"])) {
+          const _0xfeca21 = _0x581689[_0x51f437(0x26e)][_0x51f437(0x286)](
+            (_0x42575f) => _0x42575f && _0x42575f["url"],
           );
-          if (_0x8191c6) return _0x8191c6[_0x474e91(0x25a)];
+          if (_0xfeca21) return _0xfeca21[_0x51f437(0x29f)];
         }
       }
       return null;
     }
-    function _0x55b325(_0x242104) {
-      const _0x4f0615 = _0x9a0e70;
-      if (!_0x242104) return "";
-      const _0x4c64ce = document["createElement"](_0x4f0615(0x1d4));
+    function _0x1b3e47(_0x16faf2) {
+      const _0x59d8a4 = _0x595930;
+      if (!_0x16faf2) return "";
+      const _0x1e4491 = document[_0x59d8a4(0x2c6)](_0x59d8a4(0x245));
       return (
-        (_0x4c64ce[_0x4f0615(0x272)] = _0x242104),
-        _0x4c64ce["querySelectorAll"](_0x4f0615(0x232))[_0x4f0615(0x2a2)](
-          (_0x55a9d3) => _0x55a9d3[_0x4f0615(0x237)](),
-        ),
-        _0x4c64ce[_0x4f0615(0x271)]("blank")[_0x4f0615(0x2a2)]((_0x5cf615) => {
-          const _0x23c6ea = _0x4f0615;
-          let _0x1ab81e = _0x5cf615[_0x23c6ea(0x2d9)];
-          while (_0x1ab81e) {
-            const _0x3d9dbb = _0x1ab81e;
-            _0x1ab81e = _0x1ab81e["previousSibling"];
+        (_0x1e4491["innerHTML"] = _0x16faf2),
+        _0x1e4491[_0x59d8a4(0x21b)](
+          "script[type=\x22math/tex\x22],\x20script[type=\x22math/asciimath\x22]",
+        )["forEach"]((_0x2163f3) => _0x2163f3["remove"]()),
+        _0x1e4491[_0x59d8a4(0x21b)]("blank")[_0x59d8a4(0x1b4)]((_0x43fc56) => {
+          const _0x3ce4a0 = _0x59d8a4;
+          let _0x1a8f9b = _0x43fc56[_0x3ce4a0(0x2dc)];
+          while (_0x1a8f9b) {
+            const _0x2e9709 = _0x1a8f9b;
+            _0x1a8f9b = _0x1a8f9b["previousSibling"];
             if (
-              _0x3d9dbb[_0x23c6ea(0x1ba)] === "BR" ||
-              (_0x3d9dbb[_0x23c6ea(0x26b)] === Node[_0x23c6ea(0x2e7)] &&
-                _0x3d9dbb[_0x23c6ea(0x1ff)][_0x23c6ea(0x2f5)]() === "")
+              _0x2e9709["nodeName"] === "BR" ||
+              (_0x2e9709[_0x3ce4a0(0x1e5)] === Node["TEXT_NODE"] &&
+                _0x2e9709["textContent"][_0x3ce4a0(0x1d3)]() === "")
             )
-              _0x3d9dbb[_0x23c6ea(0x237)]();
+              _0x2e9709[_0x3ce4a0(0x1f0)]();
             else break;
           }
-          _0x5cf615[_0x23c6ea(0x237)]();
+          _0x43fc56["remove"]();
         }),
-        _0x4c64ce[_0x4f0615(0x271)](_0x4f0615(0x25c))["forEach"]((_0x86bf81) =>
-          _0x86bf81[_0x4f0615(0x237)](),
+        _0x1e4491["querySelectorAll"](_0x59d8a4(0x2a3))[_0x59d8a4(0x1b4)](
+          (_0x593ebe) => _0x593ebe["remove"](),
         ),
-        _0x4c64ce[_0x4f0615(0x271)](_0x4f0615(0x282))[_0x4f0615(0x2a2)](
-          (_0xcfca68) => {
-            const _0x5d5ca7 = _0x4f0615;
-            ((_0xcfca68[_0x5d5ca7(0x244)][_0x5d5ca7(0x2e6)] = _0x5d5ca7(0x1eb)),
-              (_0xcfca68[_0x5d5ca7(0x244)][_0x5d5ca7(0x2c7)] = "inline-block"));
+        _0x1e4491["querySelectorAll"](_0x59d8a4(0x294))[_0x59d8a4(0x1b4)](
+          (_0x2fc759) => {
+            const _0x519479 = _0x59d8a4;
+            ((_0x2fc759["style"][_0x519479(0x274)] = _0x519479(0x240)),
+              (_0x2fc759[_0x519479(0x23c)][_0x519479(0x1be)] =
+                _0x519479(0x2f2)));
           },
         ),
-        _0x4c64ce["querySelectorAll"](_0x4f0615(0x247))[_0x4f0615(0x2a2)](
-          (_0x1747cf) => {
-            const _0x3b4e20 = _0x4f0615;
-            ((_0x1747cf["style"][_0x3b4e20(0x2c7)] = "inline-block"),
-              (_0x1747cf[_0x3b4e20(0x244)]["margin"] = _0x3b4e20(0x2d5)),
-              (_0x1747cf[_0x3b4e20(0x244)][_0x3b4e20(0x2a4)] =
-                _0x3b4e20(0x2e9)));
+        _0x1e4491[_0x59d8a4(0x21b)](".katex-display")[_0x59d8a4(0x1b4)](
+          (_0x5b09a2) => {
+            const _0x539409 = _0x59d8a4;
+            ((_0x5b09a2["style"]["display"] = _0x539409(0x2f2)),
+              (_0x5b09a2[_0x539409(0x23c)][_0x539409(0x213)] = "0\x200.1em"),
+              (_0x5b09a2["style"][_0x539409(0x1b5)] = _0x539409(0x1fd)));
           },
         ),
-        _0x4c64ce[_0x4f0615(0x272)]
+        _0x1e4491[_0x59d8a4(0x2ae)]
       );
     }
-    function _0x3c2750(
-      _0x5c087d,
-      _0x56824d = "",
-      _0x3b15f4 = _0x9a0e70(0x2b0),
+    function _0x1d6979(
+      _0x4d58b2,
+      _0x1f3c5a = "",
+      _0x467a45 = _0x595930(0x1b6),
     ) {
-      const _0x40ec2e = _0x9a0e70,
-        _0x1367d7 = document[_0x40ec2e(0x2c1)]("quizizz-results");
-      if (!_0x1367d7) return;
-      _0x1367d7[_0x40ec2e(0x272)] = "";
-      if (!_0x5c087d || _0x5c087d[_0x40ec2e(0x1e4)] === 0x0) {
-        _0x1367d7["innerHTML"] = _0x40ec2e(0x2d3);
+      const _0x1eb468 = _0x595930,
+        _0x59a5b0 = document[_0x1eb468(0x1cb)]("quizizz-results");
+      if (!_0x59a5b0) return;
+      _0x59a5b0[_0x1eb468(0x2ae)] = "";
+      if (!_0x4d58b2 || _0x4d58b2["length"] === 0x0) {
+        _0x59a5b0[_0x1eb468(0x2ae)] =
+          "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Belum\x20ada\x20data\x20jawaban</div>";
         return;
       }
-      let _0x34137c = _0x5c087d;
-      if (_0x56824d) {
-        const _0x200d18 = _0x56824d["toLowerCase"]();
-        _0x34137c = _0x5c087d["filter"]((_0x168a06) => {
-          const _0xa8128 = _0x40ec2e,
-            _0x36f396 = _0x168a06[_0xa8128(0x1de)]
-              [_0xa8128(0x276)](/<[^>]*>/g, "")
+      let _0x1109cc = _0x4d58b2;
+      if (_0x1f3c5a) {
+        const _0xa0d4a4 = _0x1f3c5a["toLowerCase"]();
+        _0x1109cc = _0x4d58b2["filter"]((_0x40bc7c) => {
+          const _0x1dc239 = _0x1eb468,
+            _0x1069f6 = _0x40bc7c["question"]
+              [_0x1dc239(0x2bd)](/<[^>]*>/g, "")
               ["toLowerCase"](),
-            _0x4bfc4a = _0x168a06[_0xa8128(0x29f)]
-              [_0xa8128(0x20c)]((_0x2dfc78) => _0x2dfc78[_0xa8128(0x2dc)])
-              [_0xa8128(0x1f4)]("\x20")
-              [_0xa8128(0x2be)]();
+            _0x241268 = _0x40bc7c[_0x1dc239(0x1c8)]
+              [_0x1dc239(0x229)]((_0x375471) => _0x375471[_0x1dc239(0x2ed)])
+              [_0x1dc239(0x246)]("\x20")
+              [_0x1dc239(0x2d1)]();
           return (
-            _0x36f396[_0xa8128(0x2ce)](_0x200d18) ||
-            _0x4bfc4a[_0xa8128(0x2ce)](_0x200d18)
+            _0x1069f6[_0x1dc239(0x1e3)](_0xa0d4a4) ||
+            _0x241268[_0x1dc239(0x1e3)](_0xa0d4a4)
           );
         });
       }
-      if (_0x34137c["length"] === 0x0) {
-        _0x1367d7["innerHTML"] = _0x40ec2e(0x259);
+      if (_0x1109cc[_0x1eb468(0x2cf)] === 0x0) {
+        _0x59a5b0[_0x1eb468(0x2ae)] = _0x1eb468(0x20c);
         return;
       }
-      _0x34137c[_0x40ec2e(0x2a2)]((_0x4047b6, _0x3f6740) => {
-        const _0x16505e = _0x40ec2e,
-          _0x4a6b31 = document[_0x16505e(0x284)](_0x16505e(0x1d4));
-        _0x4a6b31[_0x16505e(0x244)][_0x16505e(0x230)] =
-          _0x16505e(0x21b) + _0x3b15f4 + _0x16505e(0x28c);
-        let _0x4633fc = "";
-        if (_0x4047b6[_0x16505e(0x1d9)] === "MSQ")
-          _0x4633fc =
-            "<span\x20style=\x22background:#fef3c7;\x20color:#d97706;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>MULTI</span>";
+      _0x1109cc["forEach"]((_0x2fd335, _0xaa89e3) => {
+        const _0x3d08a3 = _0x1eb468,
+          _0x278fdd = document[_0x3d08a3(0x2c6)](_0x3d08a3(0x245));
+        _0x278fdd[_0x3d08a3(0x23c)][_0x3d08a3(0x226)] =
+          _0x3d08a3(0x1e8) + _0x467a45 + _0x3d08a3(0x1cc);
+        let _0xe5c936 = "";
+        if (_0x2fd335[_0x3d08a3(0x2fa)] === _0x3d08a3(0x1d6))
+          _0xe5c936 = _0x3d08a3(0x2f5);
         else {
-          if (_0x4047b6[_0x16505e(0x1d9)] === _0x16505e(0x1f0))
-            _0x4633fc = _0x16505e(0x2f8);
+          if (_0x2fd335[_0x3d08a3(0x2fa)] === _0x3d08a3(0x289))
+            _0xe5c936 =
+              "<span\x20style=\x22background:#ede9fe;\x20color:#7c3aed;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>ISIAN</span>";
           else {
             if (
-              _0x4047b6[_0x16505e(0x23a)] === "TRUE_FALSE" ||
-              _0x4047b6["type"] === _0x16505e(0x2da)
+              _0x2fd335[_0x3d08a3(0x237)] === _0x3d08a3(0x218) ||
+              _0x2fd335["type"] === _0x3d08a3(0x1f8)
             )
-              _0x4633fc = _0x16505e(0x2cf);
+              _0xe5c936 = _0x3d08a3(0x202);
             else
-              _0x4047b6[_0x16505e(0x1d9)] === _0x16505e(0x1ec) &&
-                _0x4047b6["multiAnswer"] &&
-                (_0x4633fc = _0x16505e(0x273));
+              _0x2fd335[_0x3d08a3(0x2fa)] === _0x3d08a3(0x234) &&
+                _0x2fd335[_0x3d08a3(0x2db)] &&
+                (_0xe5c936 = _0x3d08a3(0x2f5));
           }
         }
-        const _0xd42ef3 = _0x4047b6[_0x16505e(0x1dd)]
-          ? "<img\x20src=\x22" + _0x4047b6[_0x16505e(0x1dd)] + _0x16505e(0x291)
+        const _0x25b1dd = _0x2fd335[_0x3d08a3(0x27d)]
+          ? _0x3d08a3(0x277) + _0x2fd335[_0x3d08a3(0x27d)] + _0x3d08a3(0x1f3)
           : "";
-        let _0x17823e = "";
-        _0x4047b6[_0x16505e(0x29f)][_0x16505e(0x2a2)]((_0x17cddc) => {
-          const _0x31b426 = _0x16505e;
-          let _0x30ac15 = "";
-          (_0x17cddc[_0x31b426(0x2a6)] &&
-            (_0x30ac15 +=
-              _0x31b426(0x20b) + _0x17cddc["mediaUrl"] + _0x31b426(0x235)),
-            _0x17cddc[_0x31b426(0x2dc)] &&
-              (_0x30ac15 +=
-                "<div>" + _0x55b325(_0x17cddc[_0x31b426(0x2dc)]) + "</div>"),
-            _0x30ac15 &&
-              (_0x17823e += _0x31b426(0x2fa) + _0x30ac15 + "</div>"));
+        let _0x2c65af = "";
+        _0x2fd335[_0x3d08a3(0x1c8)][_0x3d08a3(0x1b4)]((_0x5cb49e) => {
+          const _0x4c6879 = _0x3d08a3;
+          let _0xa415b9 = "";
+          (_0x5cb49e[_0x4c6879(0x265)] &&
+            (_0xa415b9 +=
+              _0x4c6879(0x277) +
+              _0x5cb49e[_0x4c6879(0x265)] +
+              _0x4c6879(0x200)),
+            _0x5cb49e["text"] &&
+              (_0xa415b9 +=
+                _0x4c6879(0x1e9) + _0x1b3e47(_0x5cb49e["text"]) + "</div>"),
+            _0xa415b9 &&
+              (_0x2c65af += _0x4c6879(0x1f6) + _0xa415b9 + _0x4c6879(0x2a7)));
         });
-        !_0x17823e && (_0x17823e = _0x16505e(0x25e));
-        ((_0x4a6b31[_0x16505e(0x272)] =
-          "\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:14px;\x20font-weight:600;\x20color:#111;\x20margin-bottom:8px;\x20word-wrap:break-word;\x20overflow-wrap:break-word;\x20overflow:hidden;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22background:#e5e7eb;\x20padding:2px\x206px;\x20border-radius:4px;\x20margin-right:5px;\x20font-size:12px;\x22>" +
-          (_0x3f6740 + 0x1) +
-          _0x16505e(0x20f) +
-          _0x4633fc +
-          _0x16505e(0x257) +
-          _0x55b325(_0x4047b6[_0x16505e(0x1de)]) +
-          _0x16505e(0x20f) +
-          _0xd42ef3 +
-          _0x16505e(0x1ef) +
-          _0x17823e +
-          "</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20"),
-          _0x4a6b31["querySelectorAll"]("mjx-container,\x20.MathJax")[
-            _0x16505e(0x2a2)
-          ]((_0x4b67b1) => {
-            const _0x3befd5 = _0x16505e;
-            _0x4b67b1[_0x3befd5(0x292)]("data-dithack-done", "1");
-          }),
-          _0x1367d7[_0x16505e(0x252)](_0x4a6b31));
-        if (!document["getElementById"](_0x16505e(0x27e))) {
-          const _0x23a018 = document[_0x16505e(0x284)](_0x16505e(0x28d));
-          ((_0x23a018["id"] = _0x16505e(0x27e)),
-            (_0x23a018[_0x16505e(0x21d)] = _0x16505e(0x304)),
-            (_0x23a018[_0x16505e(0x25f)] = _0x16505e(0x21e)),
-            document[_0x16505e(0x221)][_0x16505e(0x252)](_0x23a018));
+        !_0x2c65af && (_0x2c65af = _0x3d08a3(0x2fb));
+        ((_0x278fdd[_0x3d08a3(0x2ae)] =
+          _0x3d08a3(0x1ec) +
+          (_0xaa89e3 + 0x1) +
+          _0x3d08a3(0x24f) +
+          _0xe5c936 +
+          _0x3d08a3(0x259) +
+          _0x1b3e47(_0x2fd335[_0x3d08a3(0x2b6)]) +
+          "</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+          _0x25b1dd +
+          _0x3d08a3(0x252) +
+          _0x2c65af +
+          _0x3d08a3(0x201)),
+          _0x278fdd["querySelectorAll"](_0x3d08a3(0x1e1))[_0x3d08a3(0x1b4)](
+            (_0x5dd0bb) => {
+              const _0xc532ee = _0x3d08a3;
+              _0x5dd0bb[_0xc532ee(0x276)](_0xc532ee(0x2a0), "1");
+            },
+          ),
+          _0x59a5b0[_0x3d08a3(0x1ce)](_0x278fdd));
+        if (!document["getElementById"](_0x3d08a3(0x1f2))) {
+          const _0x143f30 = document[_0x3d08a3(0x2c6)](_0x3d08a3(0x1e2));
+          ((_0x143f30["id"] = _0x3d08a3(0x1f2)),
+            (_0x143f30[_0x3d08a3(0x1c9)] = "stylesheet"),
+            (_0x143f30[_0x3d08a3(0x1f1)] = _0x3d08a3(0x22a)),
+            document[_0x3d08a3(0x2cd)][_0x3d08a3(0x1ce)](_0x143f30));
         }
-        if (!document[_0x16505e(0x2c1)]("dithack-math-fix-style")) {
-          const _0x54a706 = document["createElement"](_0x16505e(0x244));
-          ((_0x54a706["id"] = "dithack-math-fix-style"),
-            (_0x54a706["textContent"] = _0x16505e(0x2a3)),
-            document[_0x16505e(0x221)][_0x16505e(0x252)](_0x54a706));
+        if (!document[_0x3d08a3(0x1cb)]("dithack-math-fix-style")) {
+          const _0x208a11 = document["createElement"](_0x3d08a3(0x23c));
+          ((_0x208a11["id"] = "dithack-math-fix-style"),
+            (_0x208a11[_0x3d08a3(0x242)] = _0x3d08a3(0x2c5)),
+            document[_0x3d08a3(0x2cd)][_0x3d08a3(0x1ce)](_0x208a11));
         }
       });
     }
-    function _0x46e4ca(_0xef732e = "") {
-      const _0x3e9b28 = _0x9a0e70,
-        _0x5b080c = _0x2549a0(_0x1d3fcb);
-      _0x3c2750(_0x5b080c, _0xef732e, _0x3e9b28(0x2b0));
+    function _0x2a5e98(_0x1b02c6 = "") {
+      const _0x32e367 = _0x595930,
+        _0x37361f = _0x37e663(_0x668de3);
+      _0x1d6979(_0x37361f, _0x1b02c6, _0x32e367(0x1b6));
     }
-    function _0x49d521(_0x106041 = "") {
-      const _0x14070c = _0x9a0e70,
-        _0x133c5a = _0x2549a0(_0x1d3fcb);
-      _0x3c2750(_0x133c5a, _0x106041, _0x14070c(0x234));
+    function _0x1e0235(_0x53b897 = "") {
+      const _0x2f2ee7 = _0x37e663(_0x668de3);
+      _0x1d6979(_0x2f2ee7, _0x53b897, "#ff6b35");
     }
-    function _0x4efc4e(_0x29aaa4) {
-      const _0xe30daf = _0x9a0e70,
-        _0x4f962a = document[_0xe30daf(0x284)](_0xe30daf(0x1d4));
-      _0x4f962a["style"][_0xe30daf(0x230)] = _0xe30daf(0x283);
-      const _0x10a74d = document[_0xe30daf(0x284)](_0xe30daf(0x1d7));
-      ((_0x10a74d[_0xe30daf(0x1ff)] = _0xe30daf(0x1c4)),
-        (_0x10a74d[_0xe30daf(0x22d)][_0xe30daf(0x1d9)] = _0xe30daf(0x1f1)),
-        (_0x10a74d[_0xe30daf(0x244)][_0xe30daf(0x230)] =
-          "flex:1;\x20padding:10px;\x20background:#4b4bfF;\x20color:white;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;\x20font-weight:bold;"));
-      const _0x1c967c = document[_0xe30daf(0x284)](_0xe30daf(0x1d7));
-      ((_0x1c967c[_0xe30daf(0x1ff)] = _0xe30daf(0x1b8)),
-        (_0x1c967c[_0xe30daf(0x22d)][_0xe30daf(0x1d9)] = _0xe30daf(0x2e1)),
-        (_0x1c967c[_0xe30daf(0x244)][_0xe30daf(0x230)] = _0xe30daf(0x27a)),
-        _0x4f962a[_0xe30daf(0x252)](_0x10a74d),
-        _0x4f962a[_0xe30daf(0x252)](_0x1c967c));
-      function _0x2335d4(_0x43a475) {
-        const _0x439e1e = _0xe30daf;
-        ((_0x2ee9ee = _0x43a475),
-          _0x43a475 === _0x439e1e(0x1f1)
-            ? ((_0x10a74d[_0x439e1e(0x244)]["background"] = "#4b4bfF"),
-              (_0x10a74d[_0x439e1e(0x244)][_0x439e1e(0x1d2)] =
-                _0x439e1e(0x2f7)),
-              (_0x1c967c[_0x439e1e(0x244)]["background"] = "#ccc"),
-              (_0x1c967c[_0x439e1e(0x244)][_0x439e1e(0x1d2)] =
-                _0x439e1e(0x242)),
-              (_0x374bbf[_0x439e1e(0x20d)] = _0x439e1e(0x296)))
-            : ((_0x1c967c[_0x439e1e(0x244)][_0x439e1e(0x270)] = "#ff6b35"),
-              (_0x1c967c[_0x439e1e(0x244)][_0x439e1e(0x1d2)] =
-                _0x439e1e(0x2f7)),
-              (_0x10a74d[_0x439e1e(0x244)][_0x439e1e(0x270)] = "#ccc"),
-              (_0x10a74d[_0x439e1e(0x244)]["color"] = _0x439e1e(0x242)),
-              (_0x374bbf[_0x439e1e(0x20d)] = _0x439e1e(0x2a8))));
+    function _0x51cd82(_0x37c91c) {
+      const _0x50538f = _0x595930,
+        _0x2357d9 = document[_0x50538f(0x2c6)](_0x50538f(0x245));
+      _0x2357d9[_0x50538f(0x23c)][_0x50538f(0x226)] = _0x50538f(0x233);
+      const _0x50a21f = document[_0x50538f(0x2c6)](_0x50538f(0x2ec));
+      ((_0x50a21f[_0x50538f(0x242)] = "Wayground"),
+        (_0x50a21f[_0x50538f(0x238)][_0x50538f(0x2fa)] = _0x50538f(0x20a)),
+        (_0x50a21f[_0x50538f(0x23c)][_0x50538f(0x226)] = _0x50538f(0x1da)));
+      const _0x16ca0b = document["createElement"](_0x50538f(0x2ec));
+      ((_0x16ca0b[_0x50538f(0x242)] = _0x50538f(0x2f9)),
+        (_0x16ca0b[_0x50538f(0x238)][_0x50538f(0x2fa)] = _0x50538f(0x224)),
+        (_0x16ca0b["style"][_0x50538f(0x226)] = _0x50538f(0x2b5)),
+        _0x2357d9[_0x50538f(0x1ce)](_0x50a21f),
+        _0x2357d9[_0x50538f(0x1ce)](_0x16ca0b));
+      function _0x11385e(_0x380902) {
+        const _0x1fdf6a = _0x50538f;
+        ((_0x2b3120 = _0x380902),
+          _0x380902 === _0x1fdf6a(0x20a)
+            ? ((_0x50a21f[_0x1fdf6a(0x23c)]["background"] = _0x1fdf6a(0x1b6)),
+              (_0x50a21f[_0x1fdf6a(0x23c)][_0x1fdf6a(0x2c2)] = "white"),
+              (_0x16ca0b[_0x1fdf6a(0x23c)]["background"] = _0x1fdf6a(0x291)),
+              (_0x16ca0b[_0x1fdf6a(0x23c)][_0x1fdf6a(0x2c2)] =
+                _0x1fdf6a(0x1e6)),
+              (_0xbacdc6[_0x1fdf6a(0x2d9)] = "Kode\x20Game\x20Wayground"))
+            : ((_0x16ca0b[_0x1fdf6a(0x23c)]["background"] = _0x1fdf6a(0x267)),
+              (_0x16ca0b[_0x1fdf6a(0x23c)][_0x1fdf6a(0x2c2)] =
+                _0x1fdf6a(0x2e9)),
+              (_0x50a21f[_0x1fdf6a(0x23c)][_0x1fdf6a(0x23f)] = "#ccc"),
+              (_0x50a21f[_0x1fdf6a(0x23c)]["color"] = _0x1fdf6a(0x1e6)),
+              (_0xbacdc6[_0x1fdf6a(0x2d9)] = _0x1fdf6a(0x2bc))));
       }
-      ((_0x10a74d["onclick"] = () => _0x2335d4(_0xe30daf(0x1f1))),
-        (_0x1c967c[_0xe30daf(0x24f)] = () => _0x2335d4(_0xe30daf(0x2e1))));
-      const _0x374bbf = document["createElement"](_0xe30daf(0x249));
-      ((_0x374bbf[_0xe30daf(0x1d9)] = "text"),
-        (_0x374bbf["id"] = _0xe30daf(0x278)),
-        (_0x374bbf[_0xe30daf(0x20d)] = _0xe30daf(0x296)),
-        (_0x374bbf[_0xe30daf(0x244)]["cssText"] = _0xe30daf(0x222)));
-      const _0x449c44 = document[_0xe30daf(0x284)](_0xe30daf(0x1d7));
+      ((_0x50a21f[_0x50538f(0x1dd)] = () => _0x11385e("quizizz")),
+        (_0x16ca0b[_0x50538f(0x1dd)] = () => _0x11385e(_0x50538f(0x224))));
+      const _0xbacdc6 = document[_0x50538f(0x2c6)](_0x50538f(0x26c));
+      ((_0xbacdc6[_0x50538f(0x2fa)] = "text"),
+        (_0xbacdc6["id"] = _0x50538f(0x215)),
+        (_0xbacdc6[_0x50538f(0x2d9)] = _0x50538f(0x1c1)),
+        (_0xbacdc6[_0x50538f(0x23c)][_0x50538f(0x226)] = _0x50538f(0x1bd)));
+      const _0x131056 = document["createElement"]("button");
       return (
-        (_0x449c44["id"] = _0xe30daf(0x2c5)),
-        (_0x449c44[_0xe30daf(0x1ff)] = "Ambil\x20Jawaban"),
-        (_0x449c44["style"][_0xe30daf(0x230)] = _0xe30daf(0x2cc)),
-        (_0x449c44[_0xe30daf(0x24f)] = async () => {
-          const _0x1cbb84 = _0xe30daf,
-            _0x5ec8d1 = _0x374bbf[_0x1cbb84(0x217)][_0x1cbb84(0x2f5)]();
-          if (!_0x5ec8d1) return;
-          const _0x3635b2 = document["getElementById"](_0x1cbb84(0x1f3));
-          _0x3635b2[_0x1cbb84(0x272)] = _0x1cbb84(0x211);
-          if (_0x2ee9ee === _0x1cbb84(0x1f1)) {
-            _0x1d3fcb = await _0x2da5b0(_0x5ec8d1);
-            if (_0x1d3fcb?.[_0x1cbb84(0x1c3)]) {
-              _0x3635b2["innerHTML"] =
-                _0x1cbb84(0x2b1) + _0x1d3fcb[_0x1cbb84(0x1c3)] + "</div>";
+        (_0x131056["id"] = _0x50538f(0x247)),
+        (_0x131056[_0x50538f(0x242)] = _0x50538f(0x2d5)),
+        (_0x131056["style"][_0x50538f(0x226)] =
+          "width:80%;\x20padding:10px;\x20background:#4b4bfF;\x20color:white;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;"),
+        (_0x131056[_0x50538f(0x1dd)] = async () => {
+          const _0x2334a1 = _0x50538f,
+            _0x1de144 = _0xbacdc6[_0x2334a1(0x284)][_0x2334a1(0x1d3)]();
+          if (!_0x1de144) return;
+          const _0x484edf = document[_0x2334a1(0x1cb)]("quizizz-results");
+          _0x484edf[_0x2334a1(0x2ae)] = _0x2334a1(0x1fb);
+          if (_0x2b3120 === _0x2334a1(0x20a)) {
+            _0x668de3 = await _0x4de6d9(_0x1de144);
+            if (_0x668de3?.[_0x2334a1(0x1fe)]) {
+              _0x484edf[_0x2334a1(0x2ae)] =
+                _0x2334a1(0x220) + _0x668de3[_0x2334a1(0x1fe)] + "</div>";
               return;
             }
-            const _0x406e43 = _0x2549a0(_0x1d3fcb);
-            _0x406e43 && _0x406e43[_0x1cbb84(0x1e4)] > 0x0
-              ? _0x3c2750(_0x406e43, "", _0x1cbb84(0x2b0))
-              : (_0x3635b2[_0x1cbb84(0x272)] = _0x1cbb84(0x1c7));
+            const _0x12f1bd = _0x37e663(_0x668de3);
+            _0x12f1bd && _0x12f1bd["length"] > 0x0
+              ? _0x1d6979(_0x12f1bd, "", _0x2334a1(0x1b6))
+              : (_0x484edf[_0x2334a1(0x2ae)] = _0x2334a1(0x256));
           } else {
-            _0x1d3fcb = await _0x4ce7c2(_0x5ec8d1);
-            if (_0x1d3fcb?.[_0x1cbb84(0x1c3)]) {
-              _0x3635b2[_0x1cbb84(0x272)] =
-                _0x1cbb84(0x2b1) +
-                _0x1d3fcb[_0x1cbb84(0x1c3)] +
-                _0x1cbb84(0x27f);
+            _0x668de3 = await _0xea7a8d(_0x1de144);
+            if (_0x668de3?.[_0x2334a1(0x1fe)]) {
+              _0x484edf[_0x2334a1(0x2ae)] =
+                _0x2334a1(0x220) + _0x668de3["error"] + _0x2334a1(0x2a7);
               return;
             }
-            const _0x32a3f9 = _0x2549a0(_0x1d3fcb);
-            _0x32a3f9 && _0x32a3f9[_0x1cbb84(0x1e4)] > 0x0
-              ? _0x3c2750(_0x32a3f9, "", _0x1cbb84(0x234))
-              : (_0x3635b2[_0x1cbb84(0x272)] = _0x1cbb84(0x1c7));
+            const _0x4ab452 = _0x37e663(_0x668de3);
+            _0x4ab452 && _0x4ab452["length"] > 0x0
+              ? _0x1d6979(_0x4ab452, "", "#ff6b35")
+              : (_0x484edf[_0x2334a1(0x2ae)] = _0x2334a1(0x256));
           }
         }),
         {
-          gameTypeSelector: _0x4f962a,
-          pinInput: _0x374bbf,
-          fetchBtn: _0x449c44,
+          gameTypeSelector: _0x2357d9,
+          pinInput: _0xbacdc6,
+          fetchBtn: _0x131056,
         }
       );
     }
-    async function _0x3fe2cb() {
-      const _0x333c6e = _0x9a0e70,
+    async function _0x56fb04() {
+      const _0x3a90e7 = _0x595930,
         {
-          container: _0x141adb,
-          header: _0x2c82ff,
-          content: _0x28c47e,
-          searchBar: _0x512d51,
-          clearBtn: _0x47970f,
-          resultsWrap: _0x5d463e,
-          logoutBtn: _0x2f2eeb,
-          minimizeBtn: _0x30d86f,
-          hideBtn: _0x4f3738,
-          resizeHandle: _0xb89544,
-        } = _0x213038();
-      _0x5b790a();
-      let _0x3a5813 = "";
-      const _0x870fe1 = window[_0x333c6e(0x203)][_0x333c6e(0x251)],
-        _0x37f615 = _0x870fe1[_0x333c6e(0x2ce)](_0x333c6e(0x1f1)),
-        _0x4eac1e = new URLSearchParams(window["location"][_0x333c6e(0x2b3)]),
-        _0x527cb9 =
-          _0x4eac1e[_0x333c6e(0x2f0)](_0x333c6e(0x293)) ||
-          _0x4eac1e[_0x333c6e(0x2f0)]("gamePin");
-      if (_0x527cb9 && _0x37f615) _0x3a5813 = _0x527cb9;
+          container: _0xff8546,
+          header: _0x5723fb,
+          content: _0x102b20,
+          searchBar: _0x366a05,
+          clearBtn: _0x28132e,
+          resultsWrap: _0x25ff29,
+          logoutBtn: _0x1c3e51,
+          minimizeBtn: _0x5dc49d,
+          hideBtn: _0x2300c5,
+          resizeHandle: _0x280e8b,
+        } = _0x1b6ec9();
+      _0x12850f();
+      let _0x55dc66 = "";
+      const _0x3974ce = window[_0x3a90e7(0x24a)][_0x3a90e7(0x2f7)],
+        _0x36381a = _0x3974ce[_0x3a90e7(0x1e3)](_0x3a90e7(0x20a)),
+        _0x5c3465 = new URLSearchParams(
+          window[_0x3a90e7(0x24a)][_0x3a90e7(0x1c3)],
+        ),
+        _0x334a00 =
+          _0x5c3465["get"]("pin") ||
+          _0x5c3465[_0x3a90e7(0x1f7)](_0x3a90e7(0x1d4));
+      if (_0x334a00 && _0x36381a) _0x55dc66 = _0x334a00;
       else {
-        if (_0x37f615) {
-          const _0x4c9942 = document["querySelector"](_0x333c6e(0x294));
-          _0x4c9942 &&
-            (_0x3a5813 =
-              _0x4c9942[_0x333c6e(0x1ff)] ||
-              _0x4c9942["getAttribute"](_0x333c6e(0x1e1)) ||
+        if (_0x36381a) {
+          const _0x547994 = document["querySelector"](_0x3a90e7(0x1c2));
+          _0x547994 &&
+            (_0x55dc66 =
+              _0x547994[_0x3a90e7(0x242)] ||
+              _0x547994[_0x3a90e7(0x2e3)](_0x3a90e7(0x1c0)) ||
               "");
         }
       }
-      if (!_0x3a5813 || _0x3a5813[_0x333c6e(0x1e4)] < 0x4) {
-        const _0x5ce148 = document[_0x333c6e(0x284)](_0x333c6e(0x1d4));
-        _0x5ce148[_0x333c6e(0x244)][_0x333c6e(0x230)] = _0x333c6e(0x212);
+      if (!_0x55dc66 || _0x55dc66[_0x3a90e7(0x2cf)] < 0x4) {
+        const _0x1d81c1 = document["createElement"]("div");
+        _0x1d81c1[_0x3a90e7(0x23c)][_0x3a90e7(0x226)] = _0x3a90e7(0x282);
         const {
-          gameTypeSelector: _0xa4e4d3,
-          pinInput: _0x3a29da,
-          fetchBtn: _0x543850,
-        } = _0x4efc4e(_0x5ce148);
-        (_0x5ce148[_0x333c6e(0x252)](_0xa4e4d3),
-          _0x5ce148["appendChild"](_0x3a29da),
-          _0x5ce148[_0x333c6e(0x252)](_0x543850),
-          _0x5d463e[_0x333c6e(0x252)](_0x5ce148));
+          gameTypeSelector: _0x14b636,
+          pinInput: _0x13bb41,
+          fetchBtn: _0x46e697,
+        } = _0x51cd82(_0x1d81c1);
+        (_0x1d81c1["appendChild"](_0x14b636),
+          _0x1d81c1[_0x3a90e7(0x1ce)](_0x13bb41),
+          _0x1d81c1[_0x3a90e7(0x1ce)](_0x46e697),
+          _0x25ff29["appendChild"](_0x1d81c1));
       } else {
-        const _0x46a886 = document[_0x333c6e(0x2c1)](_0x333c6e(0x1f3));
-        ((_0x46a886[_0x333c6e(0x272)] = _0x333c6e(0x211)),
-          (_0x1d3fcb = await _0x2da5b0(_0x3a5813)));
-        if (_0x1d3fcb?.["error"]) {
-          _0x46a886["innerHTML"] =
-            _0x333c6e(0x2b1) + _0x1d3fcb[_0x333c6e(0x1c3)] + _0x333c6e(0x27f);
+        const _0x4b57fe = document[_0x3a90e7(0x1cb)](_0x3a90e7(0x1dc));
+        ((_0x4b57fe[_0x3a90e7(0x2ae)] =
+          "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Memuat\x20data...</div>"),
+          (_0x668de3 = await _0x4de6d9(_0x55dc66)));
+        if (_0x668de3?.[_0x3a90e7(0x1fe)]) {
+          _0x4b57fe[_0x3a90e7(0x2ae)] =
+            _0x3a90e7(0x220) + _0x668de3[_0x3a90e7(0x1fe)] + _0x3a90e7(0x2a7);
           return;
         }
-        const _0x4f45a4 = _0x2549a0(_0x1d3fcb);
-        if (_0x4f45a4 && _0x4f45a4["length"] > 0x0)
-          _0x3c2750(_0x4f45a4, "", _0x333c6e(0x2b0));
+        const _0x3b3aee = _0x37e663(_0x668de3);
+        if (_0x3b3aee && _0x3b3aee["length"] > 0x0)
+          _0x1d6979(_0x3b3aee, "", _0x3a90e7(0x1b6));
         else {
-          _0x5d463e[_0x333c6e(0x272)] = _0x333c6e(0x218);
-          const _0x5174b8 = document[_0x333c6e(0x284)]("div");
-          _0x5174b8[_0x333c6e(0x244)][_0x333c6e(0x230)] =
+          _0x25ff29[_0x3a90e7(0x2ae)] = _0x3a90e7(0x216);
+          const _0x4c0b28 = document["createElement"]("div");
+          _0x4c0b28[_0x3a90e7(0x23c)][_0x3a90e7(0x226)] =
             "padding:20px;\x20text-align:center;\x20margin-top:10px;";
           const {
-            gameTypeSelector: _0x474ab6,
-            pinInput: _0x1e8bb3,
-            fetchBtn: _0x388f10,
-          } = _0x4efc4e(_0x5174b8);
-          (_0x5174b8[_0x333c6e(0x252)](_0x474ab6),
-            _0x5174b8["appendChild"](_0x1e8bb3),
-            _0x5174b8[_0x333c6e(0x252)](_0x388f10),
-            _0x5d463e[_0x333c6e(0x252)](_0x5174b8));
+            gameTypeSelector: _0x54b401,
+            pinInput: _0x431fba,
+            fetchBtn: _0x1cc707,
+          } = _0x51cd82(_0x4c0b28);
+          (_0x4c0b28[_0x3a90e7(0x1ce)](_0x54b401),
+            _0x4c0b28[_0x3a90e7(0x1ce)](_0x431fba),
+            _0x4c0b28[_0x3a90e7(0x1ce)](_0x1cc707),
+            _0x25ff29["appendChild"](_0x4c0b28));
         }
       }
-      (_0x512d51["addEventListener"](_0x333c6e(0x249), function () {
-        const _0x3c3d62 = _0x333c6e;
-        if (!_0x1d3fcb) return;
-        const _0x4de308 = this[_0x3c3d62(0x217)];
-        _0x2ee9ee === _0x3c3d62(0x2e1)
-          ? _0x49d521(_0x4de308)
-          : _0x46e4ca(_0x4de308);
+      (_0x366a05[_0x3a90e7(0x2f3)](_0x3a90e7(0x26c), function () {
+        const _0x50dc2f = _0x3a90e7;
+        if (!_0x668de3) return;
+        const _0x4f78ac = this[_0x50dc2f(0x284)];
+        _0x2b3120 === "kahoot" ? _0x1e0235(_0x4f78ac) : _0x2a5e98(_0x4f78ac);
       }),
-        _0x47970f[_0x333c6e(0x2a9)](_0x333c6e(0x2ac), function () {
-          const _0x581595 = _0x333c6e;
-          _0x512d51[_0x581595(0x217)] = "";
-          if (!_0x1d3fcb) return;
-          _0x2ee9ee === _0x581595(0x2e1) ? _0x49d521() : _0x46e4ca();
+        _0x28132e[_0x3a90e7(0x2f3)](_0x3a90e7(0x300), function () {
+          const _0x52dde8 = _0x3a90e7;
+          _0x366a05[_0x52dde8(0x284)] = "";
+          if (!_0x668de3) return;
+          _0x2b3120 === _0x52dde8(0x224) ? _0x1e0235() : _0x2a5e98();
         }),
-        (_0x2f2eeb[_0x333c6e(0x24f)] = function () {
-          _0x48951f(_0x2099c9);
+        (_0x1c3e51[_0x3a90e7(0x1dd)] = function () {
+          _0x3395d1(_0x2d4843);
         }),
-        (_0x30d86f[_0x333c6e(0x24f)] = function () {
-          const _0x5d1209 = _0x333c6e;
-          _0x1acdba = !_0x1acdba;
-          const _0x48062c = window[_0x5d1209(0x240)] <= 0x300;
-          _0x1acdba
-            ? ((_0x28c47e[_0x5d1209(0x244)][_0x5d1209(0x2c7)] =
-                _0x5d1209(0x236)),
-              (_0x141adb[_0x5d1209(0x244)][_0x5d1209(0x1d0)] = _0x48062c
-                ? "40px"
-                : _0x5d1209(0x206)),
-              (_0x30d86f[_0x5d1209(0x1ff)] = "▢"))
-            : ((_0x28c47e["style"][_0x5d1209(0x2c7)] = _0x5d1209(0x23e)),
-              (_0x141adb[_0x5d1209(0x244)][_0x5d1209(0x1d0)] = _0x48062c
-                ? _0x5d1209(0x1c6)
+        (_0x5dc49d["onclick"] = function () {
+          const _0x4ec60d = _0x3a90e7;
+          _0x1bf2ff = !_0x1bf2ff;
+          const _0x2dd1bf = window[_0x4ec60d(0x1f4)] <= 0x300;
+          _0x1bf2ff
+            ? ((_0x102b20[_0x4ec60d(0x23c)][_0x4ec60d(0x1be)] =
+                _0x4ec60d(0x2eb)),
+              (_0xff8546[_0x4ec60d(0x23c)][_0x4ec60d(0x1d8)] = _0x2dd1bf
+                ? _0x4ec60d(0x288)
+                : _0x4ec60d(0x219)),
+              (_0x5dc49d[_0x4ec60d(0x242)] = "▢"))
+            : ((_0x102b20["style"][_0x4ec60d(0x1be)] = _0x4ec60d(0x21f)),
+              (_0xff8546[_0x4ec60d(0x23c)][_0x4ec60d(0x1d8)] = _0x2dd1bf
+                ? _0x4ec60d(0x223)
+                : _0x4ec60d(0x2bf)),
+              (_0xff8546[_0x4ec60d(0x23c)][_0x4ec60d(0x251)] = _0x2dd1bf
+                ? _0x4ec60d(0x1f5)
                 : "500px"),
-              (_0x141adb["style"][_0x5d1209(0x2ca)] = _0x48062c
-                ? _0x5d1209(0x1cd)
-                : _0x5d1209(0x2b5)),
-              (_0x30d86f[_0x5d1209(0x1ff)] = "—"));
+              (_0x5dc49d[_0x4ec60d(0x242)] = "—"));
         }),
-        (_0x4f3738[_0x333c6e(0x24f)] = function () {
-          const _0x2a835b = _0x333c6e;
-          _0x141adb[_0x2a835b(0x244)][_0x2a835b(0x2c7)] = _0x2a835b(0x236);
-          const _0x4a7365 = document[_0x2a835b(0x2c1)](_0x2a835b(0x28f));
-          if (_0x4a7365)
-            _0x4a7365["style"][_0x2a835b(0x228)] = _0x2a835b(0x267);
+        (_0x2300c5[_0x3a90e7(0x1dd)] = function () {
+          const _0x286913 = _0x3a90e7;
+          _0xff8546["style"][_0x286913(0x1be)] = _0x286913(0x2eb);
+          const _0x504181 = document[_0x286913(0x1cb)](_0x286913(0x2c7));
+          if (_0x504181)
+            _0x504181[_0x286913(0x23c)]["opacity"] = _0x286913(0x2bb);
         }));
-      let _0x1c3942 = ![],
-        _0x37fee7,
-        _0x174f2c;
-      (_0x2c82ff[_0x333c6e(0x2a9)](_0x333c6e(0x277), function (_0x407ba7) {
-        const _0x3675e8 = _0x333c6e;
+      let _0xabb58a = ![],
+        _0x1d0301,
+        _0x34be0e;
+      (_0x5723fb[_0x3a90e7(0x2f3)](_0x3a90e7(0x1fa), function (_0x10a781) {
+        const _0x1f7b65 = _0x3a90e7;
         if (
-          _0x407ba7[_0x3675e8(0x1c8)] === _0x30d86f ||
-          _0x407ba7["target"] === _0x4f3738 ||
-          _0x407ba7[_0x3675e8(0x1c8)] === _0x2f2eeb ||
-          _0x2f2eeb["contains"](_0x407ba7[_0x3675e8(0x1c8)])
+          _0x10a781[_0x1f7b65(0x1ba)] === _0x5dc49d ||
+          _0x10a781[_0x1f7b65(0x1ba)] === _0x2300c5 ||
+          _0x10a781[_0x1f7b65(0x1ba)] === _0x1c3e51 ||
+          _0x1c3e51[_0x1f7b65(0x29a)](_0x10a781["target"])
         )
           return;
-        ((_0x1c3942 = !![]),
-          (_0x37fee7 = _0x407ba7["clientX"] - _0x141adb["offsetLeft"]),
-          (_0x174f2c = _0x407ba7[_0x3675e8(0x28e)] - _0x141adb["offsetTop"]),
-          (document[_0x3675e8(0x2d1)][_0x3675e8(0x244)][_0x3675e8(0x2af)] =
-            "none"));
+        ((_0xabb58a = !![]),
+          (_0x1d0301 = _0x10a781[_0x1f7b65(0x2b2)] - _0xff8546["offsetLeft"]),
+          (_0x34be0e = _0x10a781["clientY"] - _0xff8546[_0x1f7b65(0x2cc)]),
+          (document["body"][_0x1f7b65(0x23c)][_0x1f7b65(0x293)] =
+            _0x1f7b65(0x2eb)));
       }),
-        document["addEventListener"]("mousemove", function (_0x144cc5) {
-          const _0x59edfc = _0x333c6e;
-          if (!_0x1c3942) return;
-          ((_0x141adb[_0x59edfc(0x244)]["left"] =
-            _0x144cc5[_0x59edfc(0x301)] - _0x37fee7 + "px"),
-            (_0x141adb[_0x59edfc(0x244)]["top"] =
-              _0x144cc5[_0x59edfc(0x28e)] - _0x174f2c + "px"),
-            (_0x141adb["style"][_0x59edfc(0x2ab)] = _0x59edfc(0x1c6)));
+        document[_0x3a90e7(0x2f3)](_0x3a90e7(0x273), function (_0x13960f) {
+          const _0x5edfa1 = _0x3a90e7;
+          if (!_0xabb58a) return;
+          ((_0xff8546["style"][_0x5edfa1(0x2b8)] =
+            _0x13960f[_0x5edfa1(0x2b2)] - _0x1d0301 + "px"),
+            (_0xff8546[_0x5edfa1(0x23c)][_0x5edfa1(0x2da)] =
+              _0x13960f[_0x5edfa1(0x228)] - _0x34be0e + "px"),
+            (_0xff8546[_0x5edfa1(0x23c)][_0x5edfa1(0x2ac)] = _0x5edfa1(0x223)));
         }),
-        document[_0x333c6e(0x2a9)](_0x333c6e(0x2b7), function () {
-          const _0x31bc52 = _0x333c6e;
-          ((_0x1c3942 = ![]),
-            (document[_0x31bc52(0x2d1)]["style"][_0x31bc52(0x2af)] =
-              _0x31bc52(0x1c6)));
+        document[_0x3a90e7(0x2f3)](_0x3a90e7(0x20f), function () {
+          const _0x3a5617 = _0x3a90e7;
+          ((_0xabb58a = ![]),
+            (document[_0x3a5617(0x225)][_0x3a5617(0x23c)]["userSelect"] =
+              _0x3a5617(0x223)));
         }),
-        _0x2c82ff[_0x333c6e(0x2a9)](
-          _0x333c6e(0x238),
-          function (_0x3ce7e9) {
-            const _0x210603 = _0x333c6e;
+        _0x5723fb[_0x3a90e7(0x2f3)](
+          _0x3a90e7(0x26a),
+          function (_0x2f4bf3) {
+            const _0x85e2ae = _0x3a90e7;
             if (
-              _0x3ce7e9[_0x210603(0x1c8)] === _0x30d86f ||
-              _0x3ce7e9[_0x210603(0x1c8)] === _0x4f3738 ||
-              _0x3ce7e9[_0x210603(0x1c8)] === _0x2f2eeb ||
-              _0x2f2eeb[_0x210603(0x1c1)](_0x3ce7e9[_0x210603(0x1c8)])
+              _0x2f4bf3[_0x85e2ae(0x1ba)] === _0x5dc49d ||
+              _0x2f4bf3[_0x85e2ae(0x1ba)] === _0x2300c5 ||
+              _0x2f4bf3["target"] === _0x1c3e51 ||
+              _0x1c3e51[_0x85e2ae(0x29a)](_0x2f4bf3[_0x85e2ae(0x1ba)])
             )
               return;
-            const _0x57843c = _0x3ce7e9[_0x210603(0x22f)][0x0];
-            ((_0x1c3942 = !![]),
-              (_0x37fee7 = _0x57843c["clientX"] - _0x141adb["offsetLeft"]),
-              (_0x174f2c = _0x57843c["clientY"] - _0x141adb[_0x210603(0x2c3)]));
+            const _0x1abcb2 = _0x2f4bf3[_0x85e2ae(0x2e1)][0x0];
+            ((_0xabb58a = !![]),
+              (_0x1d0301 =
+                _0x1abcb2[_0x85e2ae(0x2b2)] - _0xff8546[_0x85e2ae(0x2ab)]),
+              (_0x34be0e = _0x1abcb2["clientY"] - _0xff8546[_0x85e2ae(0x2cc)]));
           },
           { passive: ![] },
         ),
-        document["addEventListener"](
-          _0x333c6e(0x20e),
-          function (_0x3ae718) {
-            const _0x212b4d = _0x333c6e;
-            if (!_0x1c3942) return;
-            _0x3ae718[_0x212b4d(0x2e4)]();
-            const _0x39dffb = _0x3ae718[_0x212b4d(0x22f)][0x0];
-            ((_0x141adb[_0x212b4d(0x244)][_0x212b4d(0x285)] =
-              _0x39dffb[_0x212b4d(0x301)] - _0x37fee7 + "px"),
-              (_0x141adb[_0x212b4d(0x244)][_0x212b4d(0x1d3)] =
-                _0x39dffb[_0x212b4d(0x28e)] - _0x174f2c + "px"),
-              (_0x141adb[_0x212b4d(0x244)][_0x212b4d(0x2ab)] = "auto"));
+        document[_0x3a90e7(0x2f3)](
+          _0x3a90e7(0x1bc),
+          function (_0x4c0619) {
+            const _0x31019c = _0x3a90e7;
+            if (!_0xabb58a) return;
+            _0x4c0619[_0x31019c(0x2f0)]();
+            const _0x8d4886 = _0x4c0619[_0x31019c(0x2e1)][0x0];
+            ((_0xff8546["style"][_0x31019c(0x2b8)] =
+              _0x8d4886[_0x31019c(0x2b2)] - _0x1d0301 + "px"),
+              (_0xff8546[_0x31019c(0x23c)][_0x31019c(0x2da)] =
+                _0x8d4886[_0x31019c(0x228)] - _0x34be0e + "px"),
+              (_0xff8546[_0x31019c(0x23c)]["right"] = "auto"));
           },
           { passive: ![] },
         ),
-        document[_0x333c6e(0x2a9)](_0x333c6e(0x255), function () {
-          _0x1c3942 = ![];
+        document[_0x3a90e7(0x2f3)](_0x3a90e7(0x2e0), function () {
+          _0xabb58a = ![];
         }));
-      let _0x30b9f6 = ![],
-        _0x4fd863,
-        _0x4cf075,
-        _0x2e53e9,
-        _0x266978;
-      const _0x19b03c = 0xc8,
-        _0x3c981e = 0xc8;
-      (_0xb89544[_0x333c6e(0x2a9)]("mousedown", function (_0x518172) {
-        const _0x3b62a0 = _0x333c6e;
-        (_0x518172[_0x3b62a0(0x2e4)](),
-          _0x518172["stopPropagation"](),
-          (_0x30b9f6 = !![]),
-          (_0x4fd863 = _0x518172[_0x3b62a0(0x301)]),
-          (_0x4cf075 = _0x518172[_0x3b62a0(0x28e)]),
-          (_0x2e53e9 = _0x141adb[_0x3b62a0(0x1f5)]),
-          (_0x266978 = _0x141adb[_0x3b62a0(0x200)]),
-          (document["body"][_0x3b62a0(0x244)]["userSelect"] =
-            _0x3b62a0(0x236)));
+      let _0x2b2dc0 = ![],
+        _0x3da933,
+        _0x4edb80,
+        _0x49b2c1,
+        _0x126109;
+      const _0x548172 = 0xc8,
+        _0x31b18b = 0xc8;
+      (_0x280e8b["addEventListener"]("mousedown", function (_0x480fd2) {
+        const _0x527ecc = _0x3a90e7;
+        (_0x480fd2["preventDefault"](),
+          _0x480fd2[_0x527ecc(0x28e)](),
+          (_0x2b2dc0 = !![]),
+          (_0x3da933 = _0x480fd2[_0x527ecc(0x2b2)]),
+          (_0x4edb80 = _0x480fd2["clientY"]),
+          (_0x49b2c1 = _0xff8546[_0x527ecc(0x2d8)]),
+          (_0x126109 = _0xff8546[_0x527ecc(0x283)]),
+          (document[_0x527ecc(0x225)][_0x527ecc(0x23c)][_0x527ecc(0x293)] =
+            _0x527ecc(0x2eb)));
       }),
-        document[_0x333c6e(0x2a9)](_0x333c6e(0x22b), function (_0xf8e079) {
-          const _0x57dde7 = _0x333c6e;
-          if (!_0x30b9f6) return;
-          ((_0x141adb[_0x57dde7(0x244)]["width"] =
-            Math["max"](
-              _0x19b03c,
-              _0x2e53e9 + (_0xf8e079[_0x57dde7(0x301)] - _0x4fd863),
+        document[_0x3a90e7(0x2f3)](_0x3a90e7(0x273), function (_0x44567e) {
+          const _0x432c15 = _0x3a90e7;
+          if (!_0x2b2dc0) return;
+          ((_0xff8546["style"][_0x432c15(0x264)] =
+            Math[_0x432c15(0x1c5)](
+              _0x548172,
+              _0x49b2c1 + (_0x44567e[_0x432c15(0x2b2)] - _0x3da933),
             ) + "px"),
-            (_0x141adb[_0x57dde7(0x244)][_0x57dde7(0x1d0)] =
-              Math[_0x57dde7(0x2cd)](
-                _0x3c981e,
-                _0x266978 + (_0xf8e079[_0x57dde7(0x28e)] - _0x4cf075),
-              ) + "px"),
-            (_0x141adb[_0x57dde7(0x244)][_0x57dde7(0x2ca)] = _0x57dde7(0x236)));
-        }),
-        document[_0x333c6e(0x2a9)]("mouseup", function () {
-          const _0x8a9b8f = _0x333c6e;
-          ((_0x30b9f6 = ![]),
-            (document["body"][_0x8a9b8f(0x244)][_0x8a9b8f(0x2af)] =
-              _0x8a9b8f(0x1c6)));
-        }),
-        _0xb89544[_0x333c6e(0x2a9)](
-          _0x333c6e(0x238),
-          function (_0x1a0eb0) {
-            const _0x207994 = _0x333c6e;
-            (_0x1a0eb0[_0x207994(0x2e4)](), _0x1a0eb0[_0x207994(0x287)]());
-            const _0x586844 = _0x1a0eb0["touches"][0x0];
-            ((_0x30b9f6 = !![]),
-              (_0x4fd863 = _0x586844[_0x207994(0x301)]),
-              (_0x4cf075 = _0x586844["clientY"]),
-              (_0x2e53e9 = _0x141adb["offsetWidth"]),
-              (_0x266978 = _0x141adb["offsetHeight"]));
-          },
-          { passive: ![] },
-        ),
-        document["addEventListener"](
-          _0x333c6e(0x20e),
-          function (_0x218c63) {
-            const _0x1f4a6b = _0x333c6e;
-            if (!_0x30b9f6) return;
-            _0x218c63[_0x1f4a6b(0x2e4)]();
-            const _0x5b3944 = _0x218c63[_0x1f4a6b(0x22f)][0x0];
-            ((_0x141adb["style"][_0x1f4a6b(0x220)] =
+            (_0xff8546["style"][_0x432c15(0x1d8)] =
               Math["max"](
-                _0x19b03c,
-                _0x2e53e9 + (_0x5b3944["clientX"] - _0x4fd863),
+                _0x31b18b,
+                _0x126109 + (_0x44567e["clientY"] - _0x4edb80),
               ) + "px"),
-              (_0x141adb[_0x1f4a6b(0x244)][_0x1f4a6b(0x1d0)] =
-                Math[_0x1f4a6b(0x2cd)](
-                  _0x3c981e,
-                  _0x266978 + (_0x5b3944["clientY"] - _0x4cf075),
-                ) + "px"),
-              (_0x141adb[_0x1f4a6b(0x244)]["maxHeight"] = _0x1f4a6b(0x236)));
+            (_0xff8546["style"][_0x432c15(0x251)] = "none"));
+        }),
+        document["addEventListener"]("mouseup", function () {
+          const _0x424f40 = _0x3a90e7;
+          ((_0x2b2dc0 = ![]),
+            (document[_0x424f40(0x225)][_0x424f40(0x23c)][_0x424f40(0x293)] =
+              "auto"));
+        }),
+        _0x280e8b[_0x3a90e7(0x2f3)](
+          "touchstart",
+          function (_0x1e7ff1) {
+            const _0x11af9f = _0x3a90e7;
+            (_0x1e7ff1[_0x11af9f(0x2f0)](), _0x1e7ff1[_0x11af9f(0x28e)]());
+            const _0x4a909f = _0x1e7ff1[_0x11af9f(0x2e1)][0x0];
+            ((_0x2b2dc0 = !![]),
+              (_0x3da933 = _0x4a909f[_0x11af9f(0x2b2)]),
+              (_0x4edb80 = _0x4a909f["clientY"]),
+              (_0x49b2c1 = _0xff8546[_0x11af9f(0x2d8)]),
+              (_0x126109 = _0xff8546[_0x11af9f(0x283)]));
           },
           { passive: ![] },
         ),
-        document[_0x333c6e(0x2a9)](_0x333c6e(0x255), function () {
-          _0x30b9f6 = ![];
+        document[_0x3a90e7(0x2f3)](
+          _0x3a90e7(0x1bc),
+          function (_0x4b401c) {
+            const _0x3f7eb7 = _0x3a90e7;
+            if (!_0x2b2dc0) return;
+            _0x4b401c[_0x3f7eb7(0x2f0)]();
+            const _0x3de453 = _0x4b401c[_0x3f7eb7(0x2e1)][0x0];
+            ((_0xff8546[_0x3f7eb7(0x23c)]["width"] =
+              Math[_0x3f7eb7(0x1c5)](
+                _0x548172,
+                _0x49b2c1 + (_0x3de453[_0x3f7eb7(0x2b2)] - _0x3da933),
+              ) + "px"),
+              (_0xff8546[_0x3f7eb7(0x23c)][_0x3f7eb7(0x1d8)] =
+                Math[_0x3f7eb7(0x1c5)](
+                  _0x31b18b,
+                  _0x126109 + (_0x3de453[_0x3f7eb7(0x228)] - _0x4edb80),
+                ) + "px"),
+              (_0xff8546[_0x3f7eb7(0x23c)][_0x3f7eb7(0x251)] = "none"));
+          },
+          { passive: ![] },
+        ),
+        document[_0x3a90e7(0x2f3)]("touchend", function () {
+          _0x2b2dc0 = ![];
         }));
     }
-    (_0x5697b0(), console[_0x9a0e70(0x297)](_0x9a0e70(0x231)));
+    (_0x36dfe0(), console[_0x595930(0x2ef)](_0x595930(0x23a)));
   })());
+function a0_0x50c6(_0x35a3bf, _0x24dd2f) {
+  _0x35a3bf = _0x35a3bf - 0x1b4;
+  const _0x1fb2c0 = a0_0x1fb2();
+  let _0x50c61a = _0x1fb2c0[_0x35a3bf];
+  return _0x50c61a;
+}
+function a0_0x1fb2() {
+  const _0x54f2fc = [
+    "media",
+    "marginLeft",
+    "dithack_device_id",
+    "color:\x20#666\x20!important;\x20font-size:\x20",
+    "setMockDimensions",
+    "mousemove",
+    "overflow",
+    "100ZNHsJJ",
+    "setAttribute",
+    "<img\x20src=\x22",
+    "fixed",
+    "span",
+    "data",
+    "focus",
+    "0\x208px",
+    "questionMedia",
+    "POST",
+    "/quizizz?pin=",
+    "dithack-logout-modal",
+    "\x0a\x20\x20\x20\x20\x20\x20width:\x20min(320px,\x2092vw)\x20!important;\x20background:\x20#fff\x20!important;\x20color:\x20#111827\x20!important;\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2010px\x20!important;\x20border:\x201px\x20solid\x20#e5e7eb\x20!important;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x2012px\x2030px\x20rgba(0,0,0,0.25)\x20!important;\x20padding:\x2018px\x20!important;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center\x20!important;\x0a\x20\x20\x20\x20",
+    "padding:20px;\x20text-align:center;",
+    "offsetHeight",
+    "value",
+    "auth",
+    "find",
+    "fullscreenElement",
+    "40px",
+    "BLANK",
+    "space-between",
+    "onfullscreenchange",
+    "title",
+    "Inter,\x20system-ui,\x20sans-serif",
+    "stopPropagation",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x20padding:\x20",
+    "#008800",
+    "#ccc",
+    "0\x2010px",
+    "userSelect",
+    ".hide-tail",
+    "Login",
+    "font-size:16px\x20!important;\x20font-weight:700\x20!important;\x20margin-bottom:8px\x20!important;",
+    "flex",
+    "visible",
+    "13px",
+    "contains",
+    "14px",
+    "12px",
+    "/logout",
+    "Logout",
+    "url",
+    "data-dithack-done",
+    "#f9fafb",
+    "#ff6b6b",
+    ".katex-mathml",
+    "keypress",
+    "Selamat\x20datang\x20",
+    "font-size:13px\x20!important;\x20line-height:1.45\x20!important;\x20color:#4b5563\x20!important;\x20margin-bottom:16px\x20!important;",
+    "</div>",
+    "10px",
+    "\x20!important;\x20text-align:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
+    "scale(1)",
+    "offsetLeft",
+    "right",
+    "column",
+    "innerHTML",
+    "#00aa00",
+    "fullscreenerror",
+    "9022940kuLXuE",
+    "clientX",
+    "randomUUID",
+    "reject",
+    "flex:1;\x20padding:10px;\x20background:#ccc;\x20color:#333;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;\x20font-weight:bold;",
+    "question",
+    "\x20!important;",
+    "left",
+    "contextmenu",
+    "flex:1\x20!important;\x20padding:10px\x20!important;\x20border:none\x20!important;\x20border-radius:7px\x20!important;\x20background:#ef4444\x20!important;\x20color:#fff\x20!important;\x20cursor:pointer\x20!important;\x20font-weight:700\x20!important;",
+    "0.1",
+    "QuizID\x20Kahoot",
+    "replace",
+    "31362WcMnrq",
+    "500px",
+    "dithack-license-modal",
+    "onfullscreenerror",
+    "color",
+    "opacity",
+    "#fff",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Sembunyikan\x20katex-mathml\x20(duplikat\x20teks)\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex-mathml\x20{\x20display:\x20none\x20!important;\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20katex-display:\x20inline\x20agar\x20menyatu\x20dengan\x20teks\x20soal\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex-display\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200.15em\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Kunci\x20fix\x20garis\x20akar:\x20.hide-tail\x20harus\x20overflow:hidden\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.hide-tail\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20SVG\x20akar:\x20width=\x22400em\x22\x20dihapus\x20di\x20JS,\x20pastikan\x20max-width\x20via\x20CSS\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Pastikan\x20card\x20tidak\x20overflow\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#quizizz-hack-frame\x20.katex\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
+    "createElement",
+    "quizizz-hack-toggle",
+    "Aktif!",
+    "Error\x20validasi\x20Token.\x20Pastikan\x20terhubung\x20internet!",
+    "dithack-fontawesome",
+    "requestFullscreen",
+    "offsetTop",
+    "head",
+    "oncontextmenu",
+    "length",
+    "webkitExitFullscreen",
+    "toLowerCase",
+    "toString",
+    "Batal",
+    "onresize",
+    "Ambil\x20Jawaban",
+    "valid",
+    "75500ajFiIJ",
+    "offsetWidth",
+    "placeholder",
+    "top",
+    "multiAnswer",
+    "previousSibling",
+    ";\x0a\x20\x20\x20\x20\x20\x20display:\x20inline-flex;\x20align-items:\x20center;\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20border:\x20none;\x20border-radius:\x206px;\x20background:\x20rgba(255,255,255,0.2);\x0a\x20\x20\x20\x20\x20\x20color:\x20white;\x20cursor:\x20pointer;\x20font-size:\x20",
+    ";\x20padding:\x204px\x208px;",
+    "4px",
+    "touchend",
+    "touches",
+    "[Bypass]\x20Detection\x20bypass\x20loaded\x20successfully!",
+    "getAttribute",
+    "onfocus",
+    "image",
+    "availWidth",
+    "dithack-license-message",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x20top:\x200\x20!important;\x20left:\x200\x20!important;\x20right:\x200\x20!important;\x20bottom:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.85)\x20!important;\x20display:\x20flex\x20!important;\x20align-items:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center\x20!important;\x20z-index:\x209999999\x20!important;\x20font-family:\x20\x27Segoe\x20UI\x27,\x20Inter,\x20system-ui,\x20sans-serif\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
+    "white",
+    "indexOf",
+    "none",
+    "button",
+    "text",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#ffffff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x20",
+    "log",
+    "preventDefault",
+    "1236815ggoYWZ",
+    "inline-block",
+    "addEventListener",
+    "18px",
+    "<span\x20style=\x22background:#fef3c7;\x20color:#d97706;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>MULTI</span>",
+    "msRequestFullscreen",
+    "hostname",
+    "15px",
+    "Kahoot",
+    "type",
+    "<div\x20style=\x22color:#999;\x20font-size:12px;\x20font-style:italic;\x22>Tidak\x20ada\x20jawaban\x20tersedia</div>",
+    "disabled",
+    "color:\x20#333\x20!important;\x20margin:\x200\x200\x20",
+    ";\x20font-weight:\x20bold;",
+    "status",
+    "click",
+    "forEach",
+    "verticalAlign",
+    "#4b4bfF",
+    "9qSGwBB",
+    "50px",
+    "\x20!important;\x20margin-top:\x20",
+    "target",
+    "stylesheet",
+    "touchmove",
+    "width:80%;\x20padding:10px;\x20border:1px\x20solid\x20#ccc;\x20border-radius:8px;\x20margin-bottom:10px;\x20font-size:14px;",
+    "display",
+    "Belum\x20punya\x20token?\x20<a\x20href=\x22https://dithack.vercel.app\x22\x20target=\x22_blank\x22\x20style=\x22color:\x20#4b4bfF;\x20text-decoration:\x20none;\x22>Beli\x20di\x20sini</a>",
+    "data-pin",
+    "Kode\x20Game\x20Wayground",
+    "[data-pin],\x20.game-pin,\x20[class*=\x22pin\x22]",
+    "search",
+    "active",
+    "max",
+    "Token\x20tidak\x20aktif!",
+    "\x200\x20!important;\x20font-size:\x20",
+    "answers",
+    "rel",
+    "setItem",
+    "getElementById",
+    ";\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20",
+    "crypto",
+    "appendChild",
+    "<i\x20class=\x22fa-solid\x20fa-arrow-right-from-bracket\x22\x20aria-hidden=\x22true\x22></i>",
+    "assign",
+    "DitHack",
+    "string",
+    "trim",
+    "gamePin",
+    "move",
+    "MSQ",
+    "now",
+    "height",
+    "font-size:\x20",
+    "flex:1;\x20padding:10px;\x20background:#4b4bfF;\x20color:white;\x20border:none;\x20border-radius:8px;\x20cursor:pointer;\x20font-size:14px;\x20font-weight:bold;",
+    "center",
+    "quizizz-results",
+    "onclick",
+    "call",
+    "Memvalidasi...",
+    "success",
+    "mjx-container,\x20.MathJax",
+    "link",
+    "includes",
+    "structure",
+    "nodeType",
+    "#333",
+    "\x20!important;\x20min-height:\x2020px\x20!important;",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x202px\x204px\x20rgba(0,0,0,0.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-left:\x204px\x20solid\x20",
+    "<div>",
+    "298nBwOMq",
+    "Token\x20akan\x20dilepas\x20dari\x20perangkat\x20ini\x20dan\x20perlu\x20login\x20ulang\x20untuk\x20memakai\x20DitHack.",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:14px;\x20font-weight:600;\x20color:#111;\x20margin-bottom:8px;\x20word-wrap:break-word;\x20overflow-wrap:break-word;\x20overflow:hidden;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22background:#e5e7eb;\x20padding:2px\x206px;\x20border-radius:4px;\x20margin-right:5px;\x20font-size:12px;\x22>",
+    "28px",
+    "answer",
+    "msExitFullscreen",
+    "remove",
+    "href",
+    "dithack-katex-css",
+    "\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22max-width:100%;\x20border-radius:8px;\x20margin-top:8px;\x20display:block;\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onerror=\x22this.style.display=\x27none\x27\x22>",
+    "innerWidth",
+    "70vh",
+    "<div\x20style=\x22border:2px\x20solid\x20#22c55e;\x20border-radius:8px;\x20padding:8px\x2010px;\x20background:#f0fdf4;\x20margin-bottom:6px;\x20font-size:13px;\x20color:#10b981;\x20font-weight:bold;\x20word-wrap:break-word;\x20overflow-wrap:break-word;\x20box-sizing:border-box;\x20overflow:hidden;\x22>",
+    "get",
+    "true_false",
+    "dithack-license-input",
+    "mousedown",
+    "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Memuat\x20data...</div>",
+    "20px",
+    "middle",
+    "error",
+    "dh-",
+    "\x22\x20style=\x22width:100%;\x20height:auto;\x20max-height:160px;\x20object-fit:contain;\x20border-radius:6px;\x20margin-bottom:4px;\x20display:block;\x20box-sizing:border-box;\x22\x20onerror=\x22this.style.display=\x27none\x27\x22>",
+    "</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20",
+    "<span\x20style=\x22background:#dbeafe;\x20color:#1d4ed8;\x20font-size:10px;\x20padding:1px\x205px;\x20border-radius:4px;\x20margin-left:4px;\x20font-weight:bold;\x22>B/S</span>",
+    "Error\x20fetching\x20Kahoot\x20answers:",
+    "resolve",
+    "Token\x20sudah\x20digunakan\x20di\x20perangkat\x20lain",
+    "999999",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2012px\x20!important;\x20background:\x20#e5e7eb\x20!important;\x20border:\x201px\x20solid\x20#ccc\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-left:\x20none\x20!important;\x20border-radius:\x200\x208px\x208px\x200\x20!important;\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px\x20!important;\x20height:\x2040px\x20!important;\x20font-size:\x2014px\x20!important;\x20line-height:\x2040px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x20margin:\x200\x20!important;\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
+    "8877806vzITTA",
+    "\x20!important;\x20border-radius:\x206px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none\x20!important;\x20background:\x20#0066ff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white\x20!important;\x20font-size:\x20",
+    "quizizz",
+    "isArray",
+    "<div\x20style=\x22text-align:center;\x20color:#666;\x20padding:20px;\x22>Tidak\x20ada\x20hasil\x20pencarian</div>",
+    "message",
+    "16px",
+    "mouseup",
+    "DitHack!",
+    "prototype",
+    "flex:1\x20!important;\x20padding:10px\x20!important;\x20border:1px\x20solid\x20#d1d5db\x20!important;\x20border-radius:7px\x20!important;\x20background:#fff\x20!important;\x20color:#111827\x20!important;\x20cursor:pointer\x20!important;\x20font-weight:600\x20!important;",
+    "margin",
+    "outerWidth",
+    "quizizz-pin-input",
+    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>Gagal\x20mengambil\x20data.\x20Coba\x20masukkan\x20PIN\x20manual.</div>",
+    "defineProperty",
+    "TRUE_FALSE",
+    "44px",
+    "\x20!important;\x20font-weight:\x20bold\x20!important;",
+    "querySelectorAll",
+    "getItem",
+    "0px",
+    "https://dithack.vercel.app/img/icodh.png",
+    "block",
+    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>",
+    "8435048ATygEn",
+    "focusout",
+    "auto",
+    "kahoot",
+    "body",
+    "cssText",
+    "Logout...",
+    "clientY",
+    "map",
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+    "\x0a\x20\x20\x20\x20\x20\x20position:\x20fixed\x20!important;\x20inset:\x200\x20!important;\x20z-index:\x2010000000\x20!important;\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(0,0,0,0.6)\x20!important;\x20display:\x20flex\x20!important;\x0a\x20\x20\x20\x20\x20\x20align-items:\x20center\x20!important;\x20justify-content:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20font-family:\x20Inter,\x20system-ui,\x20sans-serif\x20!important;\x20padding:\x2014px\x20!important;\x0a\x20\x20\x20\x20",
+    "scale(0.95)",
+    "webkitRequestFullscreen",
+    "innerHeight",
+    "Fullscreen\x20request\x20blocked",
+    "Bearer\x20",
+    "sticky",
+    "Server\x20error,\x20hubungi\x20admin!",
+    "display:flex;\x20gap:8px;\x20margin-bottom:12px;\x20justify-content:center;",
+    "quiz",
+    "cursor:\x20pointer;\x20padding:\x206px\x2010px;\x20background:\x20rgba(255,255,255,0.2);\x20border-radius:\x206px;\x20font-size:\x20",
+    "json",
+    "layout",
+    "dataset",
+    "onvisibilitychange",
+    "DitHack\x20loaded!",
+    "options",
+    "style",
+    "3703404OcfybG",
+    ";\x0a\x20\x20\x20\x20\x20\x20flex-shrink:\x200;\x0a\x20\x20\x20\x20",
+    "background",
+    "hidden",
+    "quizizz-hack-frame",
+    "textContent",
+    "mozExitFullScreen",
+    "resize",
+    "div",
+    "join",
+    "quizizz-fetch-btn",
+    "visibilityState",
+    "exitFullscreen",
+    "location",
+    "transform",
+    "alt",
+    "Token\x20Anda",
+    "absolute",
+    "</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20",
+    "linear-gradient(135deg,\x20transparent\x2050%,\x20#4b4bfF\x2050%)",
+    "maxHeight",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:8px;\x20overflow:hidden;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22math-answer\x20dithack-nomath\x22>",
+    "onblur",
+    "8px",
+    "expired",
+    "<div\x20style=\x22text-align:center;\x20color:#ef4444;\x20padding:20px;\x22>Gagal\x20mengambil\x20data</div>",
+    "color:\x20#d00\x20!important;\x20font-size:\x20",
+    "visibilitychange",
+    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22dithack-nomath\x22>",
+    "\x20!important;\x20outline:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box\x20!important;\x20margin-bottom:\x20",
+    "key",
+    "Cari\x20soal...",
+    "360px",
+    "\x20!important;\x20font-weight:\x20bold\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20",
+    "6px",
+    "Error\x20fetching\x20answers:",
+    "stretch",
+    "[License]\x20Validation\x20error:",
+    "2px\x20solid\x20#fbbf24",
+    "width",
+    "mediaUrl",
+    "100%",
+    "#ff6b35",
+    "src",
+    "[Bypass]\x20Mock\x20dimensions\x20set\x20to:\x20",
+    "touchstart",
+    "/kahoot?link=",
+    "input",
+    "owner",
+  ];
+  a0_0x1fb2 = function () {
+    return _0x54f2fc;
+  };
+  return a0_0x1fb2();
+}

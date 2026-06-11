@@ -504,7 +504,7 @@
 
     // buat image icon
     const img = document.createElement("img");
-    img.src = `${API_BASE_URL}/icon`;
+    img.src = "https://dithack.vercel.app/img/icodh.png";
     img.alt = "DitHack";
     img.style.cssText = `
         width: 42px !important;
