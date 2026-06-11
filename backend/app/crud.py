@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app import models
+from backend.app import models
 
 def get_license(db: Session, code: str):
     return db.query(models.License).filter(models.License.code == code).first()

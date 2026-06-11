@@ -14,10 +14,10 @@ from sqlalchemy.orm import Session
 from starlette.requests import Request
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
-from app.database import SessionLocal, engine
-from app import models, schemas, crud
-from app.models import License, CacheQuizizz, CacheKahoot, UsageLog, CheatNetworkAccount
-from app.admin_router import router as admin_router
+from backend.app.database import SessionLocal, engine
+from backend.app import models, schemas, crud
+from backend.app.models import License, CacheQuizizz, CacheKahoot, UsageLog, CheatNetworkAccount
+from backend.app.admin_router import router as admin_router
 
 load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -101,6 +101,10 @@ def admin_panel():
 @app.get("/favicon.ico")
 def favicon():
     return FileResponse(f"{BASE_DIR}/static/favicon.ico")
+
+@app.get("/icon")
+def icon():
+    return FileResponse(f"{BASE_DIR}/static/icodh.png")
 
 # ─── Public license check ────────────────────────────────────────────────────
 

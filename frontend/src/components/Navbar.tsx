@@ -64,7 +64,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'none', border: 'none', cursor: 'pointer' }}
           >
             <img
-              src="/icodh.png"
+              src="img/icodh.png"
               alt="DitHack logo"
               style={{ width: 32, height: 32, borderRadius: 8, objectFit: 'cover', display: 'block' }}
             />

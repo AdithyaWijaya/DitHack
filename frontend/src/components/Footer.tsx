@@ -7,7 +7,7 @@ export default function Footer() {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 10 }}>
         <img
-          src="/icodh.png"
+          src="img/icodh.png"
           alt="DitHack logo"
           style={{
             width: 26,

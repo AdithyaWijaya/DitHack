@@ -9,8 +9,8 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from sqlalchemy import func, desc
 
-from app.database import SessionLocal
-from app.models import (
+from backend.app.database import SessionLocal
+from backend.app.models import (
     License,
     CacheQuizizz,
     CacheKahoot,
