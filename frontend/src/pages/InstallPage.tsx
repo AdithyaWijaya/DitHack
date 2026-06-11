@@ -13,11 +13,11 @@ const steps = [
   { title: 'Wayground', desc: 'Untuk Wayground, masukan kode game yang disediakan guru.' },
   { title: 'Kahoot', desc: 'Khusus Kahoot, masukan quizId yang ada di URL Bar layar guru.' },
   { title: 'Ambil Jawaban', desc: 'Klik tombol "Ambil Jawaban" dan jawaban benar akan muncul.' },
-  { title: 'Selesai! 🎉', desc: 'Nikmati semua jawaban yang muncul secara otomatis.' },
+  { title: 'Selesai!', desc: 'Nikmati semua jawaban yang muncul secara otomatis.' },
 ];
 
 const warnings = [
-  'Jangan sampai ter-refresh. Jika ter-refresh maka DitHack akan hilang dan harus dijalankan ulang.',
+  'Jangan sampai ter-refresh. Jika ter-refresh maka DitHack akan hilang.',
   'Jangan sampai bar biru keluar dari frame website. Info selengkapnya ada di video tutorial.',
 ];
 
@@ -96,7 +96,7 @@ export default function InstallPage() {
           <span style={{ color: '#a855f7' }}>!</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.95rem' }}>
-            Salin script, buat bookmark, dan mulai gunakan.
+            Salin script, buat bookmark, dan gunakan.
           </p>
         </div>
 
