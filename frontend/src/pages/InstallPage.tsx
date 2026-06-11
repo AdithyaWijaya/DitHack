@@ -157,6 +157,44 @@ export default function InstallPage() {
         </div>
       </motion.section>
 
+      {/* Video Tutorial CTA */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 48 }}>
+        <button
+          onClick={() => { document.getElementById('tutorial')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '13px 28px',
+            borderRadius: 10,
+            background: '#a855f7',
+            border: '1px solid #a855f7',
+            cursor: 'pointer',
+            color: '#fff',
+            fontFamily: 'Space Grotesk',
+            fontWeight: 600,
+            fontSize: '0.95rem',
+            boxShadow: '0 4px 24px rgba(168,85,247,0.25)',
+            transform: 'translateY(0px) scale(1)',
+            transition: 'transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s',
+          }}
+          onMouseEnter={e => {
+            (e.currentTarget as HTMLElement).style.background = '#9333ea';
+            (e.currentTarget as HTMLElement).style.borderColor = '#9333ea';
+            (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px) scale(1.02)';
+            (e.currentTarget as HTMLElement).style.boxShadow = '0 14px 44px rgba(168,85,247,0.45), 0 0 24px rgba(168,85,247,0.25)';
+          }}
+          onMouseLeave={e => {
+            (e.currentTarget as HTMLElement).style.background = '#a855f7';
+            (e.currentTarget as HTMLElement).style.borderColor = '#a855f7';
+            (e.currentTarget as HTMLElement).style.transform = 'translateY(0px) scale(1)';
+            (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(168,85,247,0.25)';
+          }}
+        >
+          Video Tutorial <Play size={16} />
+        </button>
+      </div>
+
       {/* ── STEPS ── */}
       <motion.section
         id="usage" style={{ marginBottom: 48 }}

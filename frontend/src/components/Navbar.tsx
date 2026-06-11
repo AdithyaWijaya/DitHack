@@ -9,6 +9,7 @@ const links = [
   { label: 'Home', page: 'home' },
   { label: 'Install', page: 'install' },
   { label: 'Order', page: 'home', hash: '#pricing' },
+  { label: 'Tutorial', page: 'install', hash: '#tutorial'},
   { label: 'Info Penting', page: 'install', hash: '#warnings' },
   { label: 'Problem Fixed', page: 'install', hash: '#qna' },
   { label: 'Discord', page: 'home', hash: '#contact' },
