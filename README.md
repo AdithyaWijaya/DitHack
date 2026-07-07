@@ -1,6 +1,7 @@
 TO-DO:
 - Cari Hosting VPS & Domain terbaik.
 - Add payment gateway
+- Setting serverless
 
 **Shows the Answer directly in the Wayground & Kahoot tab!**
 
