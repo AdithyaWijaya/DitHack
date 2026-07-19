@@ -1,4 +1,4 @@
-TO-DO:
+TO-DO: (Dear my team)
 - Cari Hosting VPS & Domain terbaik.
 - Add payment gateway
 - Setting serverless
