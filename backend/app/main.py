@@ -494,7 +494,7 @@ def status():
         res = requests.get(
             "https://api-dithack.up.railway.app/quizizz?pin=03682057",
             headers=headers,
-            timeout=5,
+            timeout=20,
         )
         return {"ok": res.status_code == 200}
     except Exception:
