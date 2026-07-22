@@ -42,5 +42,6 @@ Thumbs.db
 # Project-specific
 script/
 TODO.md
-DitHack-demo.js
+DitHack-Legacy.js
 DitHack-Lokal.js
+DitHack-ORIserverless.js
