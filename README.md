@@ -30,59 +30,21 @@ javascript: (function () {
 })();
 ```
 
-**DitHack Demo:**
+**DitHack Dev: (Offline)**
 
 ```javascript
 javascript: (function () {
   let s = document.createElement("script");
-  s.src = "https://dithack.vercel.app/DitHack-demo.js?v=" + Date.now();
+  s.src = "https://dithack.vercel.app/DitHack-Dev.js?v=" + Date.now();
   document.head.appendChild(s);
 })();
 ```
-
-**DitHack Lokal:**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src = "https://dithack.vercel.app/DitHack-Lokal.js?v=" + Date.now();
-  document.head.appendChild(s);
-})();
-```
-
-### Backup Server
-
-**DitHack:**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src =
-    "https://adithyawijaya.github.io/DitExamScript/DitHack-ORIGIN.js?v=" +
-    Date.now();
-  document.head.appendChild(s);
-})();
-```
-
 **DitHack Serverless:**
 
 ```javascript
 javascript: (function () {
   let s = document.createElement("script");
-  s.src =
-    "https://adithyawijaya.github.io/DitExamScript/DitHack-ORIserverless.js?v=" +
-    Date.now();
-  document.head.appendChild(s);
-})();
-```
-
-**DitCheat:**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src =
-    "https://adithyawijaya.github.io/DitExamScript/DitCheat.js?v=" + Date.now();
+  s.src = "https://dithack.vercel.app/DitHack-serverless.js?v=" + Date.now();
   document.head.appendChild(s);
 })();
 ```
@@ -93,22 +55,16 @@ javascript: (function () {
 javascript: (function () {
   let s = document.createElement("script");
   s.src =
-    "https://adithyawijaya.github.io/DitExamScript/DitByPass.js?v=" +
+    "https://dithack.vercel.app/DitByPass.js?v=" +
     Date.now();
   document.head.appendChild(s);
 })();
 ```
 
-### Token Server
+### Token List (Serverless)
 
 **Main:**
 
 ```
 https://dithack.vercel.app/xditt4gt.json
-```
-
-**Backup:**
-
-```
-https://adithyawijaya.github.io/DitExamScript/xditt4gt.json
 ```
