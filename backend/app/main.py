@@ -51,7 +51,7 @@ def get_license_status(lic):
     return "AKTIF"
 
 
-app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
+app = FastAPI()
 
 # ─── Include admin router ────────────────────────────────────────────────────
 app.include_router(admin_router)
@@ -499,3 +499,5 @@ def status():
         return {"ok": res.status_code == 200}
     except Exception:
         return {"ok": False}
+
+#TEST
