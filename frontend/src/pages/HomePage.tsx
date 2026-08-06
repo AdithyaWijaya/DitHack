@@ -73,7 +73,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             marginBottom: 28,
           }}>
             <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#06D6A0', boxShadow: '0 0 8px #06D6A0', display: 'inline-block' }} />
-            #1 CheatTools
+            #1 Test
           </span>
         </motion.div>
 
