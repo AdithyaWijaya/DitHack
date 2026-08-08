@@ -46,3 +46,5 @@ DitHack-Legacy.js
 DitHack-Dev.js
 DitHack-ORIserverless.js
 ServerList.txt
+.vercel
+.env*
