@@ -1,19 +1,15 @@
 import { useState, useEffect } from 'react';
-
-
 const lines = [
   '> Initializing DitHack...',
   '> Loading quiz engine...',
   '> Answer extractor: READY',
   '> Status: UNDETECTED ✓',
 ];
-
 export default function TerminalHero() {
   const [displayedLines, setDisplayedLines] = useState<string[]>([]);
   const [currentLine, setCurrentLine] = useState(0);
   const [currentChar, setCurrentChar] = useState(0);
   const [done, setDone] = useState(false);
-
   useEffect(() => {
     if (currentLine >= lines.length) { setDone(true); return; }
     const line = lines[currentLine];
@@ -29,9 +25,7 @@ export default function TerminalHero() {
       return () => clearTimeout(t);
     }
   }, [currentLine, currentChar]);
-
   const typingLine = currentLine < lines.length ? lines[currentLine].slice(0, currentChar) : '';
-
   return (
     <div style={{
       background: 'rgba(0,0,0,0.6)',
@@ -45,14 +39,12 @@ export default function TerminalHero() {
       textAlign: 'left',
       backdropFilter: 'blur(10px)',
     }}>
-      {/* Terminal title bar */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16, paddingBottom: 12, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#FF5F57' }} />
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#FEBC2E' }} />
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#28C840' }} />
         <span style={{ marginLeft: 8, color: 'rgba(255,255,255,0.3)', fontSize: '0.7rem' }}>dithack — zsh</span>
       </div>
-      {/* Lines */}
       {displayedLines.map((line, i) => (
         <div key={i} style={{ color: i === displayedLines.length - 1 && done ? '#06D6A0' : 'rgba(255,255,255,0.7)', marginBottom: 6 }}>
           {line}

@@ -1,15 +1,9 @@
-import os
 from datetime import datetime, date, timedelta
-from typing import Optional
-
-import requests
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import APIKeyHeader
-from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from sqlalchemy import func, desc
 
-from backend.app.database import SessionLocal
 from backend.app.models import (
     License,
     CacheQuizizz,
@@ -18,175 +12,19 @@ from backend.app.models import (
     UsageLog,
     CheatNetworkAccount,
 )
+from backend.app.dependencies import get_db, verify_api_key, _serialize_license, _fetch_cheatnetwork_me, _serialize_cheatnetwork_account, _resolve_cheatnetwork_account_id
+from backend.app.schemas import LoginRequest, CheatNetworkAccountCreate, LicenseCreate, SaleCreate
+from backend.app.config import API_KEY, ADMIN_USER, ADMIN_PASS
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
-ADMIN_USER = os.getenv("ADMIN_USER")
-ADMIN_PASS = os.getenv("ADMIN_PASS")
-API_KEY = os.getenv("API_KEY")
-
 api_key_header = APIKeyHeader(name="x-api-key", auto_error=False)
-
-
-# ─── Helpers ────────────────────────────────────────────────────────────────
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
-
-def verify_api_key(x_api_key: str = Depends(api_key_header)):
-    if x_api_key != API_KEY:
-        raise HTTPException(status_code=403, detail="Unauthorized")
-
-
-def license_status(lic: License) -> str:
-    if not lic.active:
-        return "TIDAK AKTIF"
-    if lic.expired <= date.today():
-        return "EXPIRED"
-    return "AKTIF"
-
-
-def _serialize_license(l: License) -> dict:
-    """Serialisasi License ke dict, termasuk info device binding."""
-    return {
-        "id": l.id,
-        "code": l.code,
-        "owner": l.owner,
-        "expired": str(l.expired),
-        "active": l.active,
-        "status": license_status(l),
-        # Device binding fields
-        "device_id": l.device_id,
-        "device_name": l.device_name,
-        "bound_at": str(l.bound_at) if l.bound_at else None,
-        "last_seen": str(l.last_seen) if l.last_seen else None,
-        "is_bound": bool(l.device_id),
-        "cheatnetwork_account_id": l.cheatnetwork_account_id,
-        "cheatnetwork_account_name": l.cheatnetwork_account.name if l.cheatnetwork_account else None,
-    }
-
-
-# ─── Auth ────────────────────────────────────────────────────────────────────
-
-class LoginRequest(BaseModel):
-    username: str
-    password: str
-
 
 @router.post("/auth")
 def admin_login(data: LoginRequest):
     if data.username == ADMIN_USER and data.password == ADMIN_PASS:
         return {"api_key": API_KEY}
     raise HTTPException(status_code=401, detail="Username atau password salah")
-
-
-def _fetch_cheatnetwork_me(account: CheatNetworkAccount) -> dict:
-    try:
-        res = requests.get(
-            "https://api.cheatnetwork.eu/auth/me",
-            headers={"Cookie": f"token={account.cookie_token}"},
-            timeout=15,
-        )
-        data = res.json()
-    except ValueError:
-        raise HTTPException(status_code=502, detail="Response CheatNetwork bukan JSON")
-    except requests.RequestException as e:
-        raise HTTPException(status_code=502, detail=f"Gagal ambil data CheatNetwork: {str(e)}")
-
-    if res.status_code >= 400:
-        detail = data.get("detail") or data.get("message") or "Gagal ambil data CheatNetwork"
-        raise HTTPException(status_code=res.status_code, detail=detail)
-
-    return data
-
-
-def _account_usage_snapshot(account: CheatNetworkAccount) -> dict:
-    try:
-        data = _fetch_cheatnetwork_me(account)
-        usage = data.get("usage") or {}
-        user_id = data.get("userId")
-        display_name = data.get("_displayName") or data.get("username") or account.name
-        max_uses = _number_or_zero(usage.get("maxUses"))
-        uses = _number_or_zero(usage.get("uses"))
-        uses_left = _number_or_zero(usage.get("usesLeft"))
-
-        return {
-            "ok": True,
-            "display_name": display_name,
-            "user_id": user_id or account.user_id,
-            "uses": uses,
-            "max_uses": max_uses,
-            "uses_left": uses_left,
-            "timestamp": usage.get("timestamp"),
-        }
-    except HTTPException as e:
-        return {
-            "ok": False,
-            "display_name": account.name,
-            "user_id": account.user_id,
-            "uses": 0,
-            "max_uses": 0,
-            "uses_left": 0,
-            "timestamp": None,
-            "error": e.detail,
-        }
-
-
-def _number_or_zero(value) -> int:
-    try:
-        return int(value or 0)
-    except (TypeError, ValueError):
-        return 0
-
-
-def _serialize_cheatnetwork_account(
-    account: CheatNetworkAccount,
-    db: Session,
-    include_token: bool = False,
-    include_usage: bool = True,
-) -> dict:
-    license_count = (
-        db.query(func.count(License.id))
-        .filter(License.cheatnetwork_account_id == account.id)
-        .scalar()
-        or 0
-    )
-    snapshot = _account_usage_snapshot(account) if include_usage else {}
-    user_id = snapshot.get("user_id") or account.user_id
-    if user_id and user_id != account.user_id:
-        account.user_id = str(user_id)
-        db.commit()
-
-    result = {
-        "id": account.id,
-        "name": account.name,
-        "user_id": user_id,
-        "active": account.active,
-        "license_count": license_count,
-        "usage": {
-            "uses": snapshot.get("uses", 0),
-            "max_uses": snapshot.get("max_uses", 0),
-            "uses_left": snapshot.get("uses_left", 0),
-            "timestamp": snapshot.get("timestamp"),
-        },
-        "display_name": snapshot.get("display_name") or account.name,
-        "ok": snapshot.get("ok", True),
-        "error": snapshot.get("error"),
-    }
-    if include_token:
-        result["cookie_token"] = account.cookie_token
-    return result
-
-
-class CheatNetworkAccountCreate(BaseModel):
-    name: str
-    cookie_token: str
-    active: bool = True
 
 
 @router.get("/cheatnetwork/me")
@@ -314,9 +152,6 @@ def delete_cheatnetwork_account(
     }
 
 
-
-# ─── Dashboard Stats ────────────────────────────────────────────────────────
-
 @router.get("/stats/dashboard")
 def dashboard_stats(
     db: Session = Depends(get_db),
@@ -343,7 +178,6 @@ def dashboard_stats(
         .scalar() or 0
     )
 
-    # Device binding stats
     bound_lic = (
         db.query(func.count(License.id))
         .filter(License.device_id != None)
@@ -444,8 +278,6 @@ def top_users(
     return [{"code": r.license_code, "count": r.count} for r in rows]
 
 
-# ─── Licenses ────────────────────────────────────────────────────────────────
-
 @router.get("/licenses")
 def list_licenses(
     db: Session = Depends(get_db),
@@ -453,30 +285,6 @@ def list_licenses(
 ):
     licenses = db.query(License).order_by(desc(License.id)).all()
     return [_serialize_license(l) for l in licenses]
-
-
-class LicenseCreate(BaseModel):
-    code: str
-    owner: str
-    expired: str   # "YYYY-MM-DD"
-    active: bool
-    cheatnetwork_account_id: Optional[int] = None
-
-
-def _resolve_cheatnetwork_account_id(db: Session, account_id: Optional[int]) -> Optional[int]:
-    if account_id is None:
-        account = (
-            db.query(CheatNetworkAccount)
-            .filter(CheatNetworkAccount.active == True)
-            .order_by(CheatNetworkAccount.id)
-            .first()
-        )
-        return account.id if account else None
-
-    account = db.query(CheatNetworkAccount).filter(CheatNetworkAccount.id == account_id).first()
-    if not account:
-        raise HTTPException(status_code=400, detail="Akun CheatNetwork tidak ditemukan")
-    return account.id
 
 
 @router.post("/licenses")
@@ -533,18 +341,12 @@ def delete_license(
     return {"msg": "License dihapus"}
 
 
-# ─── Device binding management ───────────────────────────────────────────────
-
 @router.post("/licenses/{code}/reset-device")
 def reset_device_binding(
     code: str,
     db: Session = Depends(get_db),
     _: str = Depends(verify_api_key),
 ):
-    """
-    Reset device binding untuk token tertentu.
-    Setelah di-reset, token bisa digunakan di perangkat baru.
-    """
     lic = db.query(License).filter(License.code == code).first()
     if not lic:
         raise HTTPException(status_code=404, detail="License tidak ditemukan")
@@ -556,7 +358,6 @@ def reset_device_binding(
     lic.device_id   = None
     lic.device_name = None
     lic.bound_at    = None
-    # last_seen tetap disimpan sebagai riwayat
     db.commit()
 
     return {
@@ -571,7 +372,6 @@ def get_device_info(
     db: Session = Depends(get_db),
     _: str = Depends(verify_api_key),
 ):
-    """Ambil info device yang ter-bind ke token tertentu."""
     lic = db.query(License).filter(License.code == code).first()
     if not lic:
         raise HTTPException(status_code=404, detail="License tidak ditemukan")
@@ -585,8 +385,6 @@ def get_device_info(
         "last_seen": str(lic.last_seen) if lic.last_seen else None,
     }
 
-
-# ─── Cache ───────────────────────────────────────────────────────────────────
 
 @router.get("/cache/quizizz")
 def cache_quizizz(
@@ -660,17 +458,6 @@ def clear_cache_kahoot(
     return {"msg": "Semua cache Kahoot dihapus"}
 
 
-# ─── Sales Logs ──────────────────────────────────────────────────────────────
-
-class SaleCreate(BaseModel):
-    license_code: str
-    owner: str
-    amount: int
-    phone: str
-    payment_method: str
-    notes: Optional[str] = None
-
-
 @router.get("/sales")
 def list_sales(
     db: Session = Depends(get_db),
@@ -718,8 +505,6 @@ def delete_sale(
     db.commit()
     return {"msg": "Dihapus"}
 
-
-# ─── Usage Logs ──────────────────────────────────────────────────────────────
 
 @router.get("/usage")
 def list_usage(

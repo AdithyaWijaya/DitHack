@@ -12,12 +12,6 @@ class License(Base):
     owner = Column(String(100))
     expired = Column(Date)
     active = Column(Boolean)
-
-    # ── Device binding (1 token 1 device) ────────────────────────────────────
-    # device_id  : fingerprint yang dikirim client saat pertama kali pakai token
-    # device_name: UA string pendek, untuk info di admin panel
-    # bound_at   : kapan device pertama kali di-bind
-    # last_seen  : kapan terakhir kali token ini digunakan
     device_id   = Column(String(200), nullable=True)
     device_name = Column(String(200), nullable=True)
     bound_at    = Column(DateTime, nullable=True)
@@ -60,7 +54,6 @@ class CacheKahoot(Base):
 
 
 class SaleLog(Base):
-    """Tracks every license sale / transaction."""
     __tablename__ = "sale_logs"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -74,7 +67,6 @@ class SaleLog(Base):
 
 
 class UsageLog(Base):
-    """Tracks every API call made through /quizizz and /kahoot."""
     __tablename__ = "usage_logs"
 
     id = Column(Integer, primary_key=True, index=True)

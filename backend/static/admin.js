@@ -1,4 +1,3 @@
-/* ── State ── */
 let API_KEY = null;
 let licenseData = [];
 let licenseFilter = "all";
@@ -17,7 +16,6 @@ let chartRevenue = null,
 let confirmCallback = null;
 let currentPage = "dashboard";
 
-/* ── API helper ── */
 async function api(path, opts = {}) {
   const res = await fetch(path, {
     ...opts,
@@ -34,7 +32,6 @@ async function api(path, opts = {}) {
   return res.json();
 }
 
-/* ── Toast ── */
 function toast(msg, type = "info") {
   const icons = {
     success: '<i class="fa-solid fa-square-check"></i>',
@@ -49,7 +46,6 @@ function toast(msg, type = "info") {
   setTimeout(() => el.remove(), 4000);
 }
 
-/* ── Modal helpers ── */
 function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
@@ -70,7 +66,6 @@ function confirm(title, msg, cb, isDestructive = true) {
   openModal("modal-confirm");
 }
 
-/* ── Login ── */
 document.getElementById("login-btn").onclick = doLogin;
 document.getElementById("login-pass").addEventListener("keydown", (e) => {
   if (e.key === "Enter") doLogin();
@@ -123,7 +118,6 @@ function startApp(user) {
   loadDashboard();
 }
 
-/* ── Logout ── */
 document.getElementById("logout-btn").onclick = () => {
   if (window.innerWidth <= 720) {
     sidebar.classList.remove("open");
@@ -139,7 +133,6 @@ document.getElementById("logout-btn").onclick = () => {
   });
 };
 
-/* ── Navigation ── */
 document.querySelectorAll(".nav-item[data-page]").forEach((el) => {
   el.addEventListener("click", () => {
     navTo(el.dataset.page);
@@ -225,9 +218,6 @@ async function refreshCurrentPage() {
   }
 }
 
-/* ══════════════════════
-   DASHBOARD
-══════════════════════ */
 async function loadDashboard() {
   try {
     const [stats, rev, usg] = await Promise.all([
@@ -471,9 +461,6 @@ async function loadRecentActivity() {
   } catch {}
 }
 
-/* ══════════════════════
-   CHEATNETWORK USAGE
-══════════════════════ */
 async function loadCheatnetworkUsage() {
   const container = document.getElementById("cheatnetwork-content");
   if (container) {
@@ -689,9 +676,6 @@ function formatUnixMs(value) {
   });
 }
 
-/* ══════════════════════
-   LICENSES
-══════════════════════ */
 async function loadLicenses() {
   try {
     const [licenses, options] = await Promise.all([
@@ -959,7 +943,6 @@ function deleteLicense(code) {
   );
 }
 
-/* ── Reset Device Binding ── */
 function resetDevice(code) {
   const lic = licenseData.find((l) => l.code === code);
   const deviceInfo = lic?.device_name
@@ -983,7 +966,7 @@ function resetDevice(code) {
         toast(e.message, "error");
       }
     },
-    false, // bukan destructive — pakai warna primary
+    false, 
   );
 }
 
@@ -1011,20 +994,16 @@ function logoutDevice(code) {
   );
 }
 
-/* ── Device Detail Modal ── */
 function showDeviceDetail(code) {
   const lic = licenseData.find((l) => l.code === code);
   if (!lic || !lic.is_bound) return;
-  // Tampilkan toast informatif saja (bisa dikembangkan jadi modal tersendiri)
+  
   toast(
     `Device: ${(lic.device_name || "").substring(0, 60)} | Last seen: ${formatDate(lic.last_seen)}`,
     "info",
   );
 }
 
-/* ══════════════════════
-   CACHE
-══════════════════════ */
 let activeCacheTab = "quizizz";
 
 function switchCacheTab(tab, el) {
@@ -1137,9 +1116,6 @@ function clearCache(type) {
   );
 }
 
-/* ══════════════════════
-   SALES
-══════════════════════ */
 async function loadSales() {
   try {
     salesData = await api("/api/admin/sales");
@@ -1277,9 +1253,6 @@ function deleteSale(id) {
   });
 }
 
-/* ══════════════════════
-   USAGE
-══════════════════════ */
 async function loadUsage() {
   try {
     usageData = await api("/api/admin/usage?limit=500");
@@ -1352,7 +1325,6 @@ function clearUsage() {
   );
 }
 
-/* ── Utilities ── */
 function emptyRow(cols, msg, icon = '<i class="fa-solid fa-mailbox"></i>') {
   return `<tr><td colspan="${cols}"><div class="empty-state"><div class="empty-icon">${icon}</div><div class="empty-title">${msg}</div></div></td></tr>`;
 }
@@ -1361,7 +1333,7 @@ function formatDate(str) {
   if (!str) return "—";
   try {
     const d = new Date(str.replace(" ", "T"));
-    d.setHours(d.getHours() + 8); // WITA offset
+    d.setHours(d.getHours() + 8); 
     return (
       d.toLocaleDateString("id-ID", {
         day: "2-digit",
@@ -1378,7 +1350,6 @@ function formatDate(str) {
   }
 }
 
-/* ── Auto-restore session ── */
 (function checkSession() {
   const key = sessionStorage.getItem("admin_key");
   const user = sessionStorage.getItem("admin_user") || "Admin";

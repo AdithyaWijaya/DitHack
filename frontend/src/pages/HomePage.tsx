@@ -1,17 +1,14 @@
 import { motion } from 'framer-motion';
 import { ShoppingCart, ArrowRight, CheckCircle2, Crown, ExternalLink } from 'lucide-react';
 import TerminalHero from '../components/TerminalHero';
-
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
-
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.5, delay },
 });
-
 const features = [
   'Tidak terdeteksi oleh sistem',
   'Jawaban pasti benar & akurat',
@@ -20,7 +17,6 @@ const features = [
   'Bisa di Hide & Minimize',
   'Nilai auto 100!',
 ];
-
 const plans = [
   {
     badge: 'BASIC',
@@ -53,11 +49,9 @@ const plans = [
     popular: false,
   },
 ];
-
 export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <main>
-      {/* ── HERO ── */}
       <section style={{ textAlign: 'center', padding: '140px 24px 80px', maxWidth: 900, margin: '0 auto' }}>
         <motion.div {...fadeUp(0)}>
           <span style={{
@@ -76,7 +70,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             #1 CheatTools
           </span>
         </motion.div>
-
         <motion.h1
           {...fadeUp(0.08)}
           style={{
@@ -92,14 +85,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <span style={{ color: '#fbbf24' }}>Hack</span>
           <span style={{ color: '#a855f7' }}>!</span>
         </motion.h1>
-
         <motion.p
           {...fadeUp(0.14)}
           style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.55)', marginBottom: 40, maxWidth: 540, margin: '0 auto 40px' }}
         >
           Shows answers directly in the Wayground & Kahoot tabs. Undetected. Always accurate.
         </motion.p>
-
         <motion.div {...fadeUp(0.2)} style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 60 }}>
           <button
             onClick={() => { onNavigate('install'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
@@ -154,13 +145,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             Order <ShoppingCart size={16} />
           </button>
         </motion.div>
-
         <motion.div {...fadeUp(0.26)}>
           <TerminalHero />
         </motion.div>
       </section>
-
-      {/* ── FEATURES ── */}
       <section style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px 80px' }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -210,8 +198,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </motion.div>
       </section>
-
-      {/* ── PRICING ── */}
       <section id="pricing" style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px 80px' }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -224,7 +210,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </h2>
             <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.06)' }} />
           </div>
-
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
             {plans.map((plan, i) => (
               <motion.div
@@ -256,13 +241,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 }}
                 whileTap={{ y: -4 }}
               >
-                {/* Top accent line */}
                 <div style={{
                   position: 'absolute', top: 0, left: 0, right: 0, height: 3,
                   background: `linear-gradient(90deg, ${plan.accent}, transparent)`,
                 }} />
-
-                {/* Badge */}
                 <span style={{
                   display: 'inline-block',
                   padding: '3px 10px',
@@ -279,7 +261,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 }}>
                   {plan.badge}
                 </span>
-
                 <div style={{ display: 'flex', justifyContent: 'center', fontSize: '2rem', marginBottom: 10 }}>
                   {plan.icon}
                 </div>
@@ -293,7 +274,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 }}>
                   {plan.price}
                 </div>
-
                 <ul style={{ listStyle: 'none', marginBottom: 24 }}>
                   {plan.features.map((f, j) => (
                     <li key={j} style={{
@@ -307,7 +287,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                     </li>
                   ))}
                 </ul>
-
                 <a
                   href={`https://wa.me/6281770067335?text=*${plan.wa}*%0ANama%3A+(nama+anda)%0AStatus%3A+Pending%0AToken%3A+-`}
                   target="_blank"
@@ -330,8 +309,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </motion.div>
       </section>
-
-      {/* ── DISCORD ── */}
       <section id="contact" style={{ maxWidth: 600, margin: '0 auto', padding: '0 24px 100px' }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}

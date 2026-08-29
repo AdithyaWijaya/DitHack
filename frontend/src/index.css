@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 :root {
   --void: #050510;
   --void-2: #0a0a1f;
@@ -26,9 +24,7 @@
   --border: rgba(255,255,255,0.08);
   --border-active: rgba(124, 58, 237, 0.5);
 }
-
 html { scroll-behavior: smooth; }
-
 body {
   font-family: 'Inter', sans-serif;
   background:
@@ -49,8 +45,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
-/* Grid background texture */
 body::before {
   content: '';
   position: fixed;
@@ -63,16 +57,11 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
 #root {
   position: relative;
   z-index: 1;
 }
-
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--void); }
 ::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 3px; }
-
-/* Selection */
 ::selection { background: var(--violet); color: white; }

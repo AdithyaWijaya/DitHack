@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Copy, Check, AlertTriangle, ChevronDown, Play } from 'lucide-react';
-
 const SCRIPT = `javascript: (function () {let s = document.createElement("script");s.src = "https://dithack.vercel.app/DitHack.js?v=" + Date.now();document.head.appendChild(s);})();`;
-
 const steps = [
   { title: 'Salin Script', desc: 'Klik tombol "Salin Script" di atas untuk menyalin kode JavaScript.' },
   { title: 'Buat Bookmark', desc: 'Buat bookmark baru di browser, lalu paste kode di kolom URL.' },
@@ -15,12 +13,10 @@ const steps = [
   { title: 'Ambil Jawaban', desc: 'Klik tombol "Ambil Jawaban" dan jawaban benar akan muncul.' },
   { title: 'Selesai!', desc: 'Nikmati semua jawaban yang muncul secara otomatis.' },
 ];
-
 const warnings = [
   'Jangan sampai ter-refresh. Jika ter-refresh maka DitHack akan hilang.',
   'Jangan sampai bar biru keluar dari frame website. Info selengkapnya ada di video tutorial.',
 ];
-
 const faqs = [
   {
     q: 'Token sudah digunakan di perangkat lain?',
@@ -35,18 +31,15 @@ const faqs = [
     a: 'Kemungkinan kode game bersifat privat, sehingga tidak bisa diakses dari luar. Berlaku untuk Wayground dan Kahoot.',
   },
 ];
-
 const videos = [
   { title: 'Tutorial Pemasangan', id: 'vlC7vEkFFlE' },
   { title: 'Tutorial Pembelian Token', id: 'DV8xgYqj1E0' },
   { title: 'Tutorial Penggunaan', id: 'RdOnwA9ybkU' },
   { title: 'Tutorial Ubah DNS', id: '8QZIhfsbw8A' },
 ];
-
 export default function InstallPage() {
   const [copied, setCopied] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(SCRIPT);
@@ -64,7 +57,6 @@ export default function InstallPage() {
       setTimeout(() => setCopied(false), 2500);
     }
   };
-
   const sectionHeader = (icon: React.ReactNode, title: string) => (
     <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>
       {icon}
@@ -74,11 +66,8 @@ export default function InstallPage() {
       <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.06)' }} />
     </div>
   );
-
   return (
     <main style={{ maxWidth: 860, margin: '0 auto', padding: '120px 24px 80px' }}>
-
-      {/* ── SCRIPT COPY ── */}
       <motion.section
         id="install"
         initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
@@ -99,15 +88,12 @@ export default function InstallPage() {
             Salin script, buat bookmark, dan gunakan.
           </p>
         </div>
-
-        {/* Script block */}
         <div style={{
           background: 'rgba(0,0,0,0.5)',
           border: '1px solid rgba(124,58,237,0.25)',
           borderRadius: 16,
           overflow: 'hidden',
         }}>
-          {/* Header */}
           <div style={{
             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
             padding: '14px 20px',
@@ -144,7 +130,6 @@ export default function InstallPage() {
               </AnimatePresence>
             </button>
           </div>
-          {/* Code */}
           <pre style={{
             padding: '18px 20px',
             fontFamily: 'JetBrains Mono', fontSize: '0.75rem',
@@ -156,8 +141,6 @@ export default function InstallPage() {
           </pre>
         </div>
       </motion.section>
-
-      {/* Video Tutorial CTA */}
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 48 }}>
         <button
           onClick={() => { document.getElementById('tutorial')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
@@ -194,8 +177,6 @@ export default function InstallPage() {
           Video Tutorial <Play size={16} />
         </button>
       </div>
-
-      {/* ── STEPS ── */}
       <motion.section
         id="usage" style={{ marginBottom: 48 }}
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -240,8 +221,6 @@ export default function InstallPage() {
           ))}
         </div>
       </motion.section>
-
-      {/* ── WARNINGS ── */}
       <motion.section
         id="warnings" style={{ marginBottom: 48 }}
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -263,8 +242,6 @@ export default function InstallPage() {
           ))}
         </div>
       </motion.section>
-
-      {/* ── VIDEOS ── */}
       <motion.section
         id="tutorial" style={{ marginBottom: 48 }}
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -302,8 +279,6 @@ export default function InstallPage() {
           ))}
         </div>
       </motion.section>
-
-      {/* ── FAQ ── */}
       <motion.section
         id="qna"
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}

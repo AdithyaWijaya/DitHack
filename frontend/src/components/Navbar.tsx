@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
-
 interface NavbarProps {
   currentPage: string;
   onNavigate: (page: string) => void;
 }
-
 const links = [
   { label: 'Home', page: 'home' },
   { label: 'Install', page: 'install' },
@@ -14,23 +12,18 @@ const links = [
   { label: 'Problem Fixed', page: 'install', hash: '#qna' },
   { label: 'Discord', page: 'home', hash: '#contact' },
 ];
-
 export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  // Lock body scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
-
   const handleClick = (page: string, hash?: string) => {
     onNavigate(page);
     setMenuOpen(false);
@@ -43,7 +36,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
-
   return (
     <>
       <nav
@@ -59,7 +51,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         }}
       >
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          {/* Logo */}
           <button
             onClick={() => handleClick('home')}
             style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'none', border: 'none', cursor: 'pointer' }}
@@ -73,8 +64,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <span style={{ color: '#a855f7' }}>DitHack!</span>
             </span>
           </button>
-
-          {/* Desktop links */}
           <ul style={{ display: 'flex', listStyle: 'none', gap: 8, alignItems: 'center' }} className="desktop-nav">
             {links.map((l) => (
               <li key={l.label}>
@@ -96,8 +85,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               </li>
             ))}
           </ul>
-
-          {/* Animated hamburger/close button */}
           <button
             onClick={() => setMenuOpen(v => !v)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
@@ -119,7 +106,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               position: 'relative',
             }}
           >
-            {/* Three bars that morph into X */}
             <span
               className={`burger-bar bar-top ${menuOpen ? 'open' : ''}`}
             />
@@ -132,8 +118,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           </button>
         </div>
       </nav>
-
-      {/* Overlay (left side, dark) */}
       <div
         onClick={() => setMenuOpen(false)}
         style={{
@@ -147,8 +131,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           transition: 'opacity 0.35s ease',
         }}
       />
-
-      {/* Slide-in panel from right (~55% width) */}
       <div
         style={{
           position: 'fixed',
@@ -170,8 +152,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           gap: 4,
         }}
       > 
-
-        {/* Label */}
         <p style={{
           fontFamily: 'Inter',
           fontSize: '0.7rem',
@@ -183,7 +163,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         }}>
           Menu
         </p>
-
         {links.map((l, i) => (
           <button
             key={l.label}
@@ -203,24 +182,20 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               width: '100%',
               borderBottom: '1px solid rgba(255,255,255,0.06)',
               transition: 'color 0.2s, padding-left 0.2s',
-              // Stagger entrance
               transitionDelay: menuOpen ? `${i * 45}ms` : '0ms',
               transform: menuOpen ? 'translateX(0)' : 'translateX(24px)',
               opacity: menuOpen ? 1 : 0,
-              // Combined transition
             }}
           >
             {l.label}
           </button>
         ))}
       </div>
-
       <style>{`
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-toggle { display: flex !important; }
         }
-
         /* Burger bar base */
         .burger-bar {
           display: block;
@@ -233,11 +208,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                       opacity 0.25s ease,
                       top 0.3s cubic-bezier(0.23, 1, 0.32, 1);
         }
-
         .bar-top    { top: 9px; }
         .bar-mid    { top: 17px; }
         .bar-bot    { top: 25px; }
-
         /* Open state → X */
         .bar-top.open {
           top: 17px;
@@ -251,13 +224,11 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           top: 17px;
           transform: rotate(-45deg);
         }
-
         /* Mobile nav item hover */
         .mobile-nav-item:hover {
           color: #fff !important;
           padding-left: 8px !important;
         }
-
         /* Respect reduced motion */
         @media (prefers-reduced-motion: reduce) {
           .burger-bar, .mobile-nav-item {

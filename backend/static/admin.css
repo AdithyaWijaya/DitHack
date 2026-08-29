@@ -1,6 +1,3 @@
-/* ══════════════════════════════════════════════════
-   RESET & VARIABLES
-══════════════════════════════════════════════════ */
 *,
 *::before,
 *::after {
@@ -64,9 +61,6 @@ body {
   border-radius: 3px;
 }
 
-/* ══════════════════════════════════════════════════
-   LOGIN
-══════════════════════════════════════════════════ */
 #login-screen {
   min-height: 100vh;
   display: flex;
@@ -144,9 +138,6 @@ body {
   display: none;
 }
 
-/* ══════════════════════════════════════════════════
-   FORM ELEMENTS (shared)
-══════════════════════════════════════════════════ */
 .form-group {
   margin-bottom: 16px;
 }
@@ -191,9 +182,6 @@ body {
   min-height: 80px;
 }
 
-/* ══════════════════════════════════════════════════
-   BUTTONS
-══════════════════════════════════════════════════ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -273,16 +261,12 @@ body {
   }
 }
 
-/* ══════════════════════════════════════════════════
-   APP SHELL
-══════════════════════════════════════════════════ */
 #app {
   display: none;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Sidebar */
 #sidebar {
   position: fixed;
   left: 0;
@@ -416,7 +400,6 @@ body {
   color: var(--text-2);
 }
 
-/* Main area */
 #main {
   margin-left: var(--sidebar-w);
   height: 100vh;
@@ -440,7 +423,6 @@ body {
   width: 100%;
 }
 
-/* Topbar */
 #topbar {
   height: var(--topbar-h);
   background: var(--surface);
@@ -519,14 +501,12 @@ body {
   color: var(--text-2);
 }
 
-/* Content area */
 #content {
   flex: 1;
   overflow-y: auto;
   padding: 24px;
 }
 
-/* Pages */
 .page {
   display: none;
 }
@@ -543,9 +523,6 @@ body {
   }
 }
 
-/* ══════════════════════════════════════════════════
-   CARDS
-══════════════════════════════════════════════════ */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -572,9 +549,6 @@ body {
   margin-top: 2px;
 }
 
-/* ══════════════════════════════════════════════════
-   STAT CARDS
-══════════════════════════════════════════════════ */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -682,9 +656,6 @@ body {
   color: var(--text-2);
 }
 
-/* ══════════════════════════════════════════════════
-   CHARTS GRID
-══════════════════════════════════════════════════ */
 .charts-grid {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
@@ -698,9 +669,6 @@ body {
   height: 220px;
 }
 
-/* ══════════════════════════════════════════════════
-   TABLES
-══════════════════════════════════════════════════ */
 .table-wrap {
   overflow-x: auto;
   border-radius: var(--radius-lg);
@@ -740,9 +708,6 @@ tbody tr:hover td {
   font-size: 13px;
 }
 
-/* ══════════════════════════════════════════════════
-   BADGES / STATUS
-══════════════════════════════════════════════════ */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -805,9 +770,6 @@ tbody tr:hover td {
   background: var(--cyan);
 }
 
-/* ══════════════════════════════════════════════════
-   PAGE HEADER
-══════════════════════════════════════════════════ */
 .page-header {
   display: flex;
   align-items: center;
@@ -825,7 +787,6 @@ tbody tr:hover td {
   margin-top: 2px;
 }
 
-/* Search bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -880,9 +841,6 @@ tbody tr:hover td {
   flex-shrink: 0;
 }
 
-/* ══════════════════════════════════════════════════
-   MODALS
-══════════════════════════════════════════════════ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -963,9 +921,6 @@ tbody tr:hover td {
   flex-shrink: 0;
 }
 
-/* ══════════════════════════════════════════════════
-   TOAST
-══════════════════════════════════════════════════ */
 #toast-container {
   position: fixed;
   bottom: 20px;
@@ -1009,9 +964,6 @@ tbody tr:hover td {
   border-left: 3px solid var(--accent);
 }
 
-/* ══════════════════════════════════════════════════
-   EMPTY STATE
-══════════════════════════════════════════════════ */
 .empty-state {
   text-align: center;
   padding: 48px 24px;
@@ -1032,9 +984,6 @@ tbody tr:hover td {
   font-size: 13px;
 }
 
-/* ══════════════════════════════════════════════════
-   TABS
-══════════════════════════════════════════════════ */
 .tabs {
   display: flex;
   gap: 4px;
@@ -1063,9 +1012,6 @@ tbody tr:hover td {
   font-weight: 600;
 }
 
-/* ══════════════════════════════════════════════════
-   ACTIVITY FEED
-══════════════════════════════════════════════════ */
 .activity-list {
   display: flex;
   flex-direction: column;
@@ -1102,18 +1048,12 @@ tbody tr:hover td {
   font-family: var(--font-mono);
 }
 
-/* ══════════════════════════════════════════════════
-   BOTTOM GRID (dashboard)
-══════════════════════════════════════════════════ */
 .bottom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-/* ══════════════════════════════════════════════════
-   UTILS
-══════════════════════════════════════════════════ */
 .flex {
   display: flex;
 }
@@ -1293,7 +1233,6 @@ tbody tr:hover td {
   padding: 8px 10px;
 }
 
-/* Responsive */
 @media (max-width: 1100px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1324,7 +1263,6 @@ tbody tr:hover td {
   }
 }
 
-/* Confirm dialog */
 .confirm-danger .btn-full {
   background: var(--rose);
   color: #fff;

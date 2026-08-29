@@ -4,8 +4,6 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import InstallPage from './pages/InstallPage';
 import './index.css';
-
-// Ambient blobs
 const AmbientBlobs = () => (
   <div style={{ position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0, overflow: 'hidden' }}>
     <div style={{
@@ -22,10 +20,8 @@ const AmbientBlobs = () => (
     }} />
   </div>
 );
-
 export default function App() {
   const [page, setPage] = useState<'home' | 'install'>('home');
-
   return (
     <>
       <AmbientBlobs />
