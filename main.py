@@ -54,7 +54,7 @@ def status():
     try:
         headers = {"Authorization": f"Bearer {TEST_TOKEN}"}
         res = requests.get(
-            "https://api-dithack.up.railway.app/quizizz?pin=03682057",
+            "https://api-dithack.up.railway.app/quizizz?pin=762095",
             headers=headers,
             timeout=20,
         )
