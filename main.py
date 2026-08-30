@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from backend.app.database import engine
-from backend.app import models
+from backend.app.models import Base
 from backend.app.routers.admin_router import router as admin_router
 from backend.app.routers.api_router import router as api_router
 from backend.app.schemas import ProxyHeadersMiddleware
@@ -17,7 +17,7 @@ if not API_KEY:
 if not ADMIN_USER or not ADMIN_PASS:
     raise ValueError("ADMIN_USER / ADMIN_PASS belum diset!")
 
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 

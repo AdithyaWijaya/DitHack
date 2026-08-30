@@ -3,16 +3,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import APIKeyHeader
 from sqlalchemy.orm import Session
 from sqlalchemy import func, desc
-
-from backend.app.models import (
-    License,
-    CacheQuizizz,
-    CacheKahoot,
-    SaleLog,
-    UsageLog,
-    CheatNetworkAccount,
-)
-from backend.app.dependencies import get_db, verify_api_key, _serialize_license, _fetch_cheatnetwork_me, _serialize_cheatnetwork_account, _resolve_cheatnetwork_account_id
+from backend.app.models import License, CacheQuizizz, CacheKahoot, SaleLog, UsageLog, CheatNetworkAccount
+from backend.app.dependencies import get_db, verify_api_key
+from backend.app.services.license_service import serialize_license
+from backend.app.services.cheatnetwork_service import fetch_cheatnetwork_me, serialize_cheatnetwork_account, resolve_cheatnetwork_account_id
 from backend.app.schemas import LoginRequest, CheatNetworkAccountCreate, LicenseCreate, SaleCreate
 from backend.app.config import API_KEY, ADMIN_USER, ADMIN_PASS
 
@@ -40,7 +34,7 @@ def cheatnetwork_me(
     )
     if not account:
         raise HTTPException(status_code=404, detail="Belum ada akun CheatNetwork")
-    return _fetch_cheatnetwork_me(account)
+    return fetch_cheatnetwork_me(account)
 
 
 @router.get("/cheatnetwork/accounts")
@@ -49,7 +43,7 @@ def list_cheatnetwork_accounts(
     _: str = Depends(verify_api_key),
 ):
     accounts = db.query(CheatNetworkAccount).order_by(CheatNetworkAccount.id).all()
-    return [_serialize_cheatnetwork_account(a, db) for a in accounts]
+    return [serialize_cheatnetwork_account(a, db) for a in accounts]
 
 
 @router.get("/cheatnetwork/accounts/options")
@@ -65,7 +59,7 @@ def list_cheatnetwork_account_options(
     )
     options = []
     for account in accounts:
-        item = _serialize_cheatnetwork_account(account, db)
+        item = serialize_cheatnetwork_account(account, db)
         usage = item["usage"]
         label = f"{item['name']} ({usage['uses']}/{usage['max_uses']})"
         options.append({**item, "label": label})
@@ -81,7 +75,7 @@ def get_cheatnetwork_account(
     account = db.query(CheatNetworkAccount).filter(CheatNetworkAccount.id == account_id).first()
     if not account:
         raise HTTPException(status_code=404, detail="Akun CheatNetwork tidak ditemukan")
-    return _serialize_cheatnetwork_account(account, db, include_token=True)
+    return serialize_cheatnetwork_account(account, db, include_token=True)
 
 
 @router.post("/cheatnetwork/accounts")
@@ -284,7 +278,7 @@ def list_licenses(
     _: str = Depends(verify_api_key),
 ):
     licenses = db.query(License).order_by(desc(License.id)).all()
-    return [_serialize_license(l) for l in licenses]
+    return [serialize_license(l) for l in licenses]
 
 
 @router.post("/licenses")
@@ -301,7 +295,7 @@ def create_license(
         owner=data.owner,
         expired=datetime.strptime(data.expired, "%Y-%m-%d").date(),
         active=data.active,
-        cheatnetwork_account_id=_resolve_cheatnetwork_account_id(db, data.cheatnetwork_account_id),
+        cheatnetwork_account_id=resolve_cheatnetwork_account_id(db, data.cheatnetwork_account_id),
     )
     db.add(lic)
     db.commit()
@@ -322,7 +316,7 @@ def update_license(
     lic.owner = data.owner
     lic.expired = datetime.strptime(data.expired, "%Y-%m-%d").date()
     lic.active = data.active
-    lic.cheatnetwork_account_id = _resolve_cheatnetwork_account_id(db, data.cheatnetwork_account_id)
+    lic.cheatnetwork_account_id = resolve_cheatnetwork_account_id(db, data.cheatnetwork_account_id)
     db.commit()
     return {"msg": "License diupdate"}
 

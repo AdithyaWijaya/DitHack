@@ -2,8 +2,8 @@ from datetime import datetime
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from backend.app import dependencies
 from backend.app.dependencies import get_db, verify_api_key
+from backend.app.services.license_service import get_all_licenses
 from backend.app.models import License, CheatNetworkAccount
 from backend.app.schemas import LicenseCreate
 
@@ -11,7 +11,7 @@ router = APIRouter(prefix="", tags=["adminlegacy"])
 
 @router.get("/api/admin/licenses")
 def get_all(db: Session = Depends(get_db), _: str = Depends(verify_api_key)):
-    return dependencies.get_all_licenses(db)
+    return get_all_licenses(db)
 
 def _resolve_cheatnetwork_account_id(db: Session, account_id: Optional[int]) -> Optional[int]:
     if account_id is None:
