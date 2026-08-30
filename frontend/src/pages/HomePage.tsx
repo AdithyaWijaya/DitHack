@@ -43,7 +43,7 @@ const plans = [
     icon: '👑',
     name: 'Paket Lifetime',
     price: 'Rp 10.000.000',
-    features: ['Akses Selamanya', 'Prioritas Server', 'Up To Date!'],
+    features: ['Akses Selamanya', 'Prioritas Server', 'Source Code with MIT Licenses'],
     accent: '#F72585',
     wa: 'PAKET%20LIFETIME',
     popular: false,
