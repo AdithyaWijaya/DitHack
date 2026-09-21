@@ -1,11 +1,9 @@
 import requests
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
-from slowapi.errors import RateLimitExceeded
-from backend.app.services.limiter import limiter
 from backend.app.database import engine
 from backend.app.models import Base
 from backend.app.routers.admin_router import router as admin_router
@@ -22,15 +20,6 @@ if not ADMIN_USER or not ADMIN_PASS:
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
-
-app.state.limiter = limiter
-
-@app.exception_handler(RateLimitExceeded)
-async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
-    return JSONResponse(
-        status_code=429,
-        content={"detail": f"Too many requests, please try again later. ({exc.detail})"},
-    )
 
 app.add_middleware(ProxyHeadersMiddleware)
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])
