@@ -7,3 +7,4 @@ SQLAlchemy
 starlette
 psycopg2-binary
 itsdangerous
+slowapi

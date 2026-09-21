@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import json
 from fastapi import APIRouter,  Depends, HTTPException, Header
 from sqlalchemy.orm import Session
+from backend.app.services.limiter import limiter
 from backend.app.schemas import LicenseResponse
 from backend.app.models import CacheQuizizz, CacheKahoot
 from backend.app.dependencies import get_db, log_usage
@@ -15,6 +16,7 @@ from backend.app.config import CACHE_DURATION
 router = APIRouter(prefix="", tags=["api"])
 
 @router.get("/check/{token}", response_model=LicenseResponse)
+@limiter.limit("5/minute")
 def check_token(
     token: str,
     request: Request,
