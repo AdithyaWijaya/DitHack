@@ -2,6 +2,7 @@ TO-DO: (Dear my team)
 - Cari Hosting VPS & Domain terbaik.
 - Add payment gateway
 - Setting serverless
+- Team Bagus!
 
 **Shows the Answer directly in the Wayground & Kahoot tab!**
 
