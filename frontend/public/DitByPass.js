@@ -17,9 +17,21 @@
         get: function() { return 'visible'; },
         configurable: false
     });
+    Object.defineProperty(document, 'webkitVisibilityState', {
+        get: function() { return 'visible'; },
+        configurable: false
+    });
+    Object.defineProperty(document, 'webkitHidden', {
+        get: function() { return false; },
+        configurable: false
+    });
     Object.defineProperty(document, 'onvisibilitychange', {
         get: function() { return null; },
         set: function() { },
+        configurable: false
+    });
+    Object.defineProperty(document, 'hasFocus', {
+        value: function() { return true; },
         configurable: false
     });
     Object.defineProperty(window, 'onfocus', {
@@ -37,6 +49,10 @@
         set: function() { },
         configurable: false
     });
+    Object.defineProperty(window, 'screenX', { get: function() { return 0; }, configurable: true });
+    Object.defineProperty(window, 'screenY', { get: function() { return 0; }, configurable: true });
+    Object.defineProperty(window, 'scrollX', { get: function() { return 0; }, configurable: true });
+    Object.defineProperty(window, 'scrollY', { get: function() { return 0; }, configurable: true });
     let mockWidth = window.innerWidth;
     let mockHeight = window.innerHeight;
     Object.defineProperty(window, 'innerWidth', {
@@ -65,7 +81,7 @@
         console.log('[Bypass] Mock dimensions set to: ' + width + 'x' + height);
     };
     Object.defineProperty(document, 'fullscreenElement', {
-        get: function() { return document.createElement('div'); },
+        get: function() { return null; },
         configurable: false
     });
     Object.defineProperty(document, 'fullscreenEnabled', {
