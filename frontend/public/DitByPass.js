@@ -1,5 +1,3 @@
-// Bypass Detection!
-// Developer : ADITHYA
 (function() {
     'use strict';
     const originalAddEventListener = window.addEventListener;
@@ -168,13 +166,13 @@
     }, true);
     console.log('[Bypass] Detection bypass loaded successfully!');
     function createPopup() {
-        const existingPopup = document.getElementById('tabhack-popup');
+        const existingPopup = document.getElementById('dxdev-popup');
         if (existingPopup) {
             existingPopup.remove();
             return;
         }
         const popup = document.createElement('div');
-        popup.id = 'tabhack-popup';
+        popup.id = 'dxdev-popup';
         popup.style.cssText = `
             position: fixed;
             top: 50%;
@@ -192,24 +190,23 @@
             border: 2px solid #0f3460;
         `;
         const authorText = document.createElement('div');
-        authorText.innerHTML = '<strong>Developer</strong><br>xDitt4GT++';
+        authorText.innerHTML = '<strong>DXDeV+</strong>';
         authorText.style.cssText = `
             font-size: 14px;
             color: #00d9ff;
             margin-bottom: 15px;
             line-height: 1.8;
-            text-transform: uppercase;
             letter-spacing: 2px;
         `;
         const statusText = document.createElement('div');
-        statusText.innerHTML = '✅ <strong>DitByPass Activated!</strong><br><span style="font-size: 12px; color: #aaa;">Detection Bypassed</span>';
+        statusText.innerHTML = '<strong>Bypass Activated!</strong><br><span style="font-size: 12px; color: #aaa;">Detection Bypassed</span>';
         statusText.style.cssText = `
             font-size: 18px;
             margin-bottom: 15px;
             line-height: 1.6;
         `;
         const warningText = document.createElement('div');
-        warningText.innerHTML = '⚠️ <strong>JANGAN REFRESH!</strong><br><span style="font-size: 11px; color: #ff6b6b;">Refresh akan membuat script tidak berfungsi!</span>';
+        warningText.innerHTML = '<strong>JANGAN REFRESH!</strong><br><span style="font-size: 11px; color: #ff6b6b;">Refresh akan membuat script tidak berfungsi!</span>';
         warningText.style.cssText = `
             font-size: 14px;
             margin-bottom: 20px;
@@ -257,7 +254,7 @@
         }, 10);
     }
     createPopup();
-    window.toggleTabHackPopup = function() {
+    window.toggleDXDevPopup = function() {
         createPopup();
     };
 })();
