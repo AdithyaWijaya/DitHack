@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 const lines = [
-  '> Initializing DitHack...',
+  '> Initializing Dv4Hack...',
   '> Loading quiz engine...',
   '> Answer extractor: READY',
   '> Status: UNDETECTED ✓',
@@ -43,7 +43,7 @@ export default function TerminalHero() {
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#FF5F57' }} />
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#FEBC2E' }} />
         <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#28C840' }} />
-        <span style={{ marginLeft: 8, color: 'rgba(255,255,255,0.3)', fontSize: '0.7rem' }}>dithack — zsh</span>
+        <span style={{ marginLeft: 8, color: 'rgba(255,255,255,0.3)', fontSize: '0.7rem' }}>dv4hack — zsh</span>
       </div>
       {displayedLines.map((line, i) => (
         <div key={i} style={{ color: i === displayedLines.length - 1 && done ? '#06D6A0' : 'rgba(255,255,255,0.7)', marginBottom: 6 }}>

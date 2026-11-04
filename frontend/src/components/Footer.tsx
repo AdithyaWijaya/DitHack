@@ -8,7 +8,7 @@ export default function Footer() {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 10 }}>
         <img
           src="img/icodh.png"
-          alt="DitHack logo"
+          alt="Dv4Hack logo"
           style={{
             width: 26,
             height: 26,
@@ -18,19 +18,12 @@ export default function Footer() {
           }}
         />
         <span style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1rem', letterSpacing: '-0.3px' }}>
-          <span style={{ color: '#a855f7' }}>DitHack!</span>
+          <span style={{ color: '#a855f7' }}>Dv4Hack!</span>
         </span>
       </div>
       <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.8rem' }}>
         © 2026{' '}
-        <a
-          href="https://adithyawijaya.vercel.app/"
-          target="_blank" rel="noopener noreferrer"
-          style={{ color: '#7C3AED', textDecoration: 'none' }}
-        >
-          Adithya
-        </a>
-        . All rights reserved.
+        <a>Dv4Hack</a>. All rights reserved.
       </p>
     </footer>
   );

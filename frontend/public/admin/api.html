@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dithack API</title>
+    <title>Dv4Hack API</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -268,7 +268,7 @@
   <body>
     <div class="hero">
       <h1>
-        <span class="dit-text">DiTX</span><span class="api-text"> API</span>❤️
+        <span class="dit-text">Dv4</span><span class="api-text">API</span>❤️
       </h1>
       <p class="subtitle">Cek status API.</p>
 
@@ -280,7 +280,7 @@
       </div>
       <button onclick="checkStatus()" class="check-btn">Cek Status API</button>
       <footer>
-        <p>© 2026 DIT API. Made with ❤️</p>
+        <p>© 2026 Dv4 API. Made with ❤️</p>
       </footer>
     </div>
     <script>
@@ -297,7 +297,7 @@
         text.style.color = "white";
 
         try {
-          const res = await fetch("https://api-dithack.up.railway.app/status");
+          const res = await fetch("http://localhost:8000/status");
           const data = await res.json();
 
           dot.classList.remove("status-on", "status-off");

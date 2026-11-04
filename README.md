@@ -1,12 +1,6 @@
-TO-DO: (Dear my team)
-- Cari Hosting VPS & Domain terbaik.
-- Add payment gateway
-- Setting serverless
-- Team Bagus!
-
 **Shows the Answer directly in the Wayground & Kahoot tab!**
 
-**Developer: Adithya Wijaya**
+**Developer: WirFreeMan**
 
 **Full Release:**
 
@@ -21,51 +15,12 @@ TO-DO: (Dear my team)
 
 ### Main Server
 
-**DitHack:**
+**Dv4Hack:**
 
 ```javascript
 javascript: (function () {
   let s = document.createElement("script");
-  s.src = "https://dithack.vercel.app/DitHack.js?v=" + Date.now();
+  s.src = "https://dv4hack.vercel.app/Dv4Hack.js?v=" + Date.now();
   document.head.appendChild(s);
 })();
-```
-
-**DitHack Dev: (Offline)**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src = "https://dithack.vercel.app/DitHack-Dev.js?v=" + Date.now();
-  document.head.appendChild(s);
-})();
-```
-**DitHack Serverless:**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src = "https://dithack.vercel.app/DitHack-serverless.js?v=" + Date.now();
-  document.head.appendChild(s);
-})();
-```
-
-**DitByPass:**
-
-```javascript
-javascript: (function () {
-  let s = document.createElement("script");
-  s.src =
-    "https://dithack.vercel.app/DitByPass.js?v=" +
-    Date.now();
-  document.head.appendChild(s);
-})();
-```
-
-### Token List (Serverless)
-
-**Main:**
-
-```
-https://dithack.vercel.app/xditt4gt.json
 ```

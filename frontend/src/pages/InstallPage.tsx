@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Copy, Check, AlertTriangle, ChevronDown, Play } from 'lucide-react';
-const SCRIPT = `javascript: (function () {let s = document.createElement("script");s.src = "https://dithack.vercel.app/DitHack.js?v=" + Date.now();document.head.appendChild(s);})();`;
+const SCRIPT = `javascript: (function () {let s = document.createElement("script");s.src = "https://dv4hack.vercel.app/Dv4Hack.js?v=" + Date.now();document.head.appendChild(s);})();`;
 const steps = [
   { title: 'Salin Script', desc: 'Klik tombol "Salin Script" di atas untuk menyalin kode JavaScript.' },
   { title: 'Buat Bookmark', desc: 'Buat bookmark baru di browser, lalu paste kode di kolom URL.' },
-  { title: 'Simpan', desc: 'Simpan bookmark dengan nama yang mudah diingat, misal "DitHack".' },
+  { title: 'Simpan', desc: 'Simpan bookmark dengan nama yang mudah diingat, misal "Dv4Hack".' },
   { title: 'Jalankan', desc: 'Klik bookmark saat memasukkan nama di Wayground / Kahoot.' },
   { title: 'Masukan Token', desc: 'Masukan token yang sudah dibeli lalu klik Login.' },
   { title: 'Wayground', desc: 'Untuk Wayground, masukan kode game yang disediakan guru.' },
@@ -14,7 +14,7 @@ const steps = [
   { title: 'Selesai!', desc: 'Nikmati semua jawaban yang muncul secara otomatis.' },
 ];
 const warnings = [
-  'Jangan sampai ter-refresh. Jika ter-refresh maka DitHack akan hilang.',
+  'Jangan sampai ter-refresh. Jika ter-refresh maka Dv4Hack akan hilang.',
   'Jangan sampai bar biru keluar dari frame website. Info selengkapnya ada di video tutorial.',
 ];
 const faqs = [
@@ -32,10 +32,10 @@ const faqs = [
   },
 ];
 const videos = [
-  { title: 'Tutorial Pemasangan', id: 'vlC7vEkFFlE' },
-  { title: 'Tutorial Pembelian Token', id: 'DV8xgYqj1E0' },
-  { title: 'Tutorial Penggunaan', id: 'RdOnwA9ybkU' },
-  { title: 'Tutorial Ubah DNS', id: '8QZIhfsbw8A' },
+  { title: 'Tutorial Pemasangan', id: 'xz0QOG_xTrs' },
+  { title: 'Tutorial Pembelian Token', id: 'xz0QOG_xTrs' },
+  { title: 'Tutorial Penggunaan', id: 'xz0QOG_xTrs' },
+  { title: 'Tutorial Ubah DNS', id: 'xz0QOG_xTrs' },
 ];
 export default function InstallPage() {
   const [copied, setCopied] = useState(false);
@@ -80,7 +80,7 @@ export default function InstallPage() {
             fontSize: 'clamp(2rem, 5vw, 2.8rem)', letterSpacing: '-1.5px',
             marginBottom: 10,
           }}>
-            Install <span style={{ color: '#a855f7' }}>Dit</span>
+            Install <span style={{ color: '#a855f7' }}>Dv4</span>
           <span style={{ color: '#fbbf24' }}>Hack</span>
           <span style={{ color: '#a855f7' }}>!</span>
           </h1>
@@ -107,7 +107,7 @@ export default function InstallPage() {
                 ))}
               </div>
               <span style={{ fontFamily: 'JetBrains Mono', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginLeft: 8 }}>
-                DitHack.js
+                Dv4Hack.js
               </span>
             </div>
             <button

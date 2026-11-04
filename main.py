@@ -33,28 +33,16 @@ app.add_middleware(
 
 app.mount("/static", StaticFiles(directory=f"{BASE_DIR}/static"), name="static")
 
-@app.get("/")
-def root():
-    return FileResponse(f"{BASE_DIR}/templates/api.html")
-
-@app.get("/admin")
-def admin_panel():
-    return FileResponse(f"{BASE_DIR}/templates/admin.html")
-
 @app.get("/favicon.ico")
 def favicon():
     return FileResponse(f"{BASE_DIR}/static/favicon.ico")
-
-@app.get("/icon")
-def icon():
-    return FileResponse(f"{BASE_DIR}/static/icodh.png")
 
 @app.get("/status")
 def status():
     try:
         headers = {"Authorization": f"Bearer {TEST_TOKEN}"}
         res = requests.get(
-            "https://api-dithack.up.railway.app/quizizz?pin=762095",
+            "http://localhost:8000/quizizz?pin=762095",
             headers=headers,
             timeout=20,
         )

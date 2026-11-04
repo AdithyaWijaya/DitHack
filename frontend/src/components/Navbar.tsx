@@ -57,11 +57,11 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           >
             <img
               src="img/icodh.png"
-              alt="DitHack logo"
+              alt="Dv4Hack logo"
               style={{ width: 32, height: 32, borderRadius: 8, objectFit: 'cover', display: 'block' }}
             />
             <span style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.2rem', color: '#fff', letterSpacing: '-0.5px' }}>
-              <span style={{ color: '#a855f7' }}>DitHack!</span>
+              <span style={{ color: '#a855f7' }}>Dv4Hack!</span>
             </span>
           </button>
           <ul style={{ display: 'flex', listStyle: 'none', gap: 8, alignItems: 'center' }} className="desktop-nav">

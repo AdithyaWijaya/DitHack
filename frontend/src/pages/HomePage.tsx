@@ -81,7 +81,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             marginBottom: 20,
           }}
         >
-          <span style={{ color: '#a855f7' }}>Dit</span>
+          <span style={{ color: '#a855f7' }}>Dv4</span>
           <span style={{ color: '#fbbf24' }}>Hack</span>
           <span style={{ color: '#a855f7' }}>!</span>
         </motion.h1>
@@ -288,7 +288,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   ))}
                 </ul>
                 <a
-                  href={`https://wa.me/6281770067335?text=*${plan.wa}*%0ANama%3A+(nama+anda)%0AStatus%3A+Pending%0AToken%3A+-`}
+                  href={`https://wa.me/62123456789?text=*${plan.wa}*%0ANama%3A+(nama+anda)%0AStatus%3A+Pending%0AToken%3A+-`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
