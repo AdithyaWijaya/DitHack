@@ -42,9 +42,12 @@ Thumbs.db
 # Project-specific
 script/
 TODO.md
-DitHack-Legacy.js
-DitHack-Dev.js
-DitHack-ORIserverless.js
+BUScriptDH
+Dv4Hack-Legacy.js
+Dv4Hack-Dev.js
+Dv4Hack-ORIserverless.js
+Dv4Hack-serverless.js
+xdv4gt.json
 ServerList.txt
 .vercel
 .env*
