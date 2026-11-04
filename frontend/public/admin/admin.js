@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000"
+const API_BASE_URL = "https://dv4hack.up.railway.app"
 
 let API_KEY = null;
 let licenseData = [];

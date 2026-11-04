@@ -297,7 +297,7 @@
         text.style.color = "white";
 
         try {
-          const res = await fetch("http://localhost:8000/status");
+          const res = await fetch("https://dv4hack.up.railway.app/status");
           const data = await res.json();
 
           dot.classList.remove("status-on", "status-off");
